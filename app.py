@@ -15,7 +15,6 @@ APP_DIR = Path(__file__).resolve().parent
 DATA_DIR = APP_DIR / "data" / "current"
 
 PLAYER_COLORS = ["#0B6E69", "#C2410C"]
-BACKGROUND_COLOR = "#D8DEE9"
 GRID_COLOR = "#E5E7EB"
 PAPER_BG = "#FFFFFF"
 PLOT_BG = "#FBFCFE"
@@ -83,34 +82,101 @@ def stat_tile(label: str, value: object, tone: str = "neutral") -> str:
     )
 
 
-def chart_theme(fig: go.Figure, height: int | None = None) -> go.Figure:
+def theme_palette(ui_theme: str) -> dict[str, str]:
+    if ui_theme == "Dark":
+        return {
+            "app_bg": "#0B1018",
+            "panel": "#111827",
+            "panel_soft": "#172033",
+            "plot_bg": "#0F172A",
+            "paper_bg": "#0F172A",
+            "ink": "#F8FAFC",
+            "muted": "#CBD5E1",
+            "line": "#334155",
+            "grid": "#243244",
+            "note_bg": "#102321",
+            "note_border": "#1F5E58",
+            "badge_bg": "#172554",
+            "badge_ink": "#BFDBFE",
+            "badge_border": "#1D4ED8",
+            "select_bg": "#020617",
+            "select_ink": "#F8FAFC",
+            "background_worm": "#7C8EA5",
+            "header_bg": "#0B1018",
+            "shadow": "0 8px 24px rgba(0, 0, 0, 0.28)",
+        }
+    return {
+        "app_bg": "#F6F8FB",
+        "panel": "#FFFFFF",
+        "panel_soft": "#F8FAFC",
+        "plot_bg": "#FBFCFE",
+        "paper_bg": "#FFFFFF",
+        "ink": "#0F172A",
+        "muted": "#64748B",
+        "line": "#E2E8F0",
+        "grid": "#E5E7EB",
+        "note_bg": "#F6FBFA",
+        "note_border": "#D7E4E2",
+        "badge_bg": "#EFF6FF",
+        "badge_ink": "#1D4ED8",
+        "badge_border": "#BFDBFE",
+        "select_bg": "#0B1018",
+        "select_ink": "#F8FAFC",
+        "background_worm": "#94A3B8",
+        "header_bg": "#F6F8FB",
+        "shadow": "0 8px 24px rgba(15, 23, 42, 0.06)",
+    }
+
+
+def chart_theme(fig: go.Figure, palette: dict[str, str], height: int | None = None) -> go.Figure:
     layout_updates = {
-        "paper_bgcolor": PAPER_BG,
-        "plot_bgcolor": PLOT_BG,
-        "font": {"family": "Inter, Segoe UI, sans-serif", "color": "#172033"},
-        "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1},
+        "paper_bgcolor": palette["paper_bg"],
+        "plot_bgcolor": palette["plot_bg"],
+        "font": {"family": "Inter, Segoe UI, sans-serif", "color": palette["ink"]},
+        "legend": {
+            "orientation": "h",
+            "yanchor": "bottom",
+            "y": 1.02,
+            "xanchor": "right",
+            "x": 1,
+            "font": {"color": palette["ink"], "size": 12},
+        },
         "margin": {"l": 50, "r": 28, "t": 34, "b": 56},
+        "hoverlabel": {
+            "bgcolor": palette["panel"],
+            "bordercolor": palette["line"],
+            "font": {"color": palette["ink"]},
+        },
     }
     if height is not None:
         layout_updates["height"] = height
     fig.update_layout(**layout_updates)
     fig.update_xaxes(
         showgrid=True,
-        gridcolor=GRID_COLOR,
+        gridcolor=palette["grid"],
         zeroline=False,
-        linecolor="#CBD5E1",
-        tickfont={"color": "#475569"},
-        title_font={"color": "#334155"},
+        linecolor=palette["line"],
+        tickfont={"color": palette["muted"]},
+        title_font={"color": palette["ink"]},
+        showspikes=True,
+        spikecolor=palette["muted"],
+        spikethickness=1,
+        spikedash="dot",
     )
     fig.update_yaxes(
         showgrid=True,
-        gridcolor=GRID_COLOR,
+        gridcolor=palette["grid"],
         zeroline=True,
-        zerolinecolor="#CBD5E1",
-        linecolor="#CBD5E1",
-        tickfont={"color": "#475569"},
-        title_font={"color": "#334155"},
+        zerolinecolor=palette["line"],
+        linecolor=palette["line"],
+        tickfont={"color": palette["muted"]},
+        title_font={"color": palette["ink"]},
+        showspikes=True,
+        spikecolor=palette["muted"],
+        spikethickness=1,
+        spikedash="dot",
     )
+    fig.update_layout(hovermode="closest")
     return fig
 
 
@@ -274,7 +340,7 @@ def build_context_phase_summary(selected_context: pd.DataFrame, players: list[st
     return summary
 
 
-def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.Figure:
+def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str], palette: dict[str, str]) -> go.Figure:
     fig = make_subplots(
         rows=1,
         cols=2,
@@ -294,7 +360,7 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
                 x=background["balls"],
                 y=background["sr_points_above_league_phase"],
                 mode="markers",
-                marker={"size": 7, "color": "#CBD5E1", "opacity": 0.65},
+                marker={"size": 7, "color": palette["background_worm"], "opacity": 0.46},
                 text=background["batter"],
                 customdata=background[["runs", "raw_sr", "leave_one_out_league_sr", "runs_above_league_phase_rate"]],
                 hovertemplate=(
@@ -323,7 +389,7 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
                     mode="markers+text",
                     text=player_rows["batter"],
                     textposition="top center",
-                    marker={"size": 16, "color": color, "line": {"width": 2, "color": "#111111"}},
+                    marker={"size": 16, "color": color, "line": {"width": 2, "color": palette["panel"]}},
                     customdata=player_rows[["runs", "raw_sr", "leave_one_out_league_sr", "runs_above_league_phase_rate"]],
                     hovertemplate=(
                         "<b>%{text}</b><br>"
@@ -344,7 +410,7 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
     fig.update_layout(
         height=520,
     )
-    chart_theme(fig, height=520)
+    chart_theme(fig, palette, height=520)
     fig.update_xaxes(title_text="Balls faced in phase", row=1, col=1)
     fig.update_xaxes(title_text="Balls faced in phase", row=1, col=2)
     fig.update_yaxes(title_text="SR points above league phase", row=1, col=1)
@@ -446,7 +512,7 @@ def metric_cards(player_row: pd.Series, label: str, color: str) -> None:
     )
 
 
-def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.Figure:
+def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str, palette: dict[str, str]) -> go.Figure:
     hover_candidates = ["phase_label", "runs", "balls", "strike_rate", "expected_runs", "runs_above_expected"]
     hover_data = []
     for column in hover_candidates:
@@ -464,7 +530,7 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.
         hover_data=hover_data,
     )
     fig.update_layout(xaxis_title="Own-ball phase across innings", yaxis_title=y_title, legend_title=None)
-    chart_theme(fig)
+    chart_theme(fig, palette)
     fig.update_xaxes(
         tickmode="array",
         tickvals=OWN_PHASE_ORDER,
@@ -525,21 +591,58 @@ def main() -> None:
     default_a = default_player(players, ["V Kohli", "Virat Kohli"], "Kohli", 0)
     default_b = default_player(players, ["RG Sharma", "Rohit Sharma"], "Sharma", 1)
 
+    with st.sidebar:
+        st.header("Compare")
+        st.markdown("<div class='sidebar-section'>Appearance</div>", unsafe_allow_html=True)
+        ui_theme = st.radio("Theme", ["Light", "Dark"], horizontal=True, index=0)
+        st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
+        player_a = st.selectbox("Batter A", players, index=players.index(default_a))
+        player_b_options = [player for player in players if player != player_a]
+        player_b_default = default_b if default_b in player_b_options else player_b_options[0]
+        player_b = st.selectbox("Batter B", player_b_options, index=player_b_options.index(player_b_default))
+        player_pair_legend([player_a, player_b])
+
+        st.markdown("<div class='sidebar-section'>View</div>", unsafe_allow_html=True)
+        min_balls = st.slider("Minimum balls", min_value=0, max_value=100, value=6, step=1)
+        metric_choice = st.selectbox(
+            "Own 15-ball chart metric",
+            [
+                "Runs Above Expected",
+                "Runs Above Expected per 100",
+                "Strike rate",
+                "SR points vs match",
+                "SR points vs teammates",
+                "SR points vs league phase",
+                "Difficulty-adjusted strike rate",
+            ],
+        )
+        show_adjusted = st.toggle("Adjusted views", value=True)
+
+    palette = theme_palette(ui_theme)
+
     st.title("IPL Batsman Comparison")
-    st.markdown(
-        """
+    css = """
         <style>
         :root {
-            --ink: #0F172A;
-            --muted: #64748B;
-            --panel: #FFFFFF;
-            --panel-soft: #F8FAFC;
-            --line: #E2E8F0;
+            --ink: {palette["ink"]};
+            --muted: {palette["muted"]};
+            --panel: {palette["panel"]};
+            --panel-soft: {palette["panel_soft"]};
+            --line: {palette["line"]};
             --accent: #0B6E69;
             --accent-two: #C2410C;
+            --app-bg: {palette["app_bg"]};
+            --select-bg: {palette["select_bg"]};
+            --select-ink: {palette["select_ink"]};
+            --note-bg: {palette["note_bg"]};
+            --note-border: {palette["note_border"]};
+            --badge-bg: {palette["badge_bg"]};
+            --badge-ink: {palette["badge_ink"]};
+            --badge-border: {palette["badge_border"]};
+            --card-shadow: {palette["shadow"]};
         }
         .stApp {
-            background: #F6F8FB;
+            background: var(--app-bg);
             color: var(--ink);
         }
         html,
@@ -547,26 +650,26 @@ def main() -> None:
         [data-testid="stAppViewContainer"],
         [data-testid="stMain"],
         .main {
-            background: #F6F8FB !important;
+            background: var(--app-bg) !important;
             color: var(--ink) !important;
         }
         header[data-testid="stHeader"] {
-            background: #F6F8FB !important;
+            background: {palette["header_bg"]} !important;
             border-bottom: 1px solid var(--line) !important;
             box-shadow: none !important;
         }
         header[data-testid="stHeader"] *,
         [data-testid="stToolbar"] *,
         [data-testid="stStatusWidget"] * {
-            color: #334155 !important;
-            fill: #334155 !important;
+            color: var(--ink) !important;
+            fill: var(--ink) !important;
             opacity: 1 !important;
         }
         [data-testid="stDecoration"] {
             display: none !important;
         }
         section[data-testid="stSidebar"] {
-            background: #FFFFFF;
+            background: var(--panel);
             border-right: 1px solid var(--line);
         }
         section[data-testid="stSidebar"],
@@ -576,24 +679,24 @@ def main() -> None:
         section[data-testid="stSidebar"] h1,
         section[data-testid="stSidebar"] h2,
         section[data-testid="stSidebar"] h3 {
-            color: #334155 !important;
+            color: var(--ink) !important;
             opacity: 1 !important;
         }
         section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p,
         section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] label,
         section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
-            color: #334155 !important;
+            color: var(--ink) !important;
             opacity: 1 !important;
         }
         section[data-testid="stSidebar"] [data-baseweb="select"] span,
         section[data-testid="stSidebar"] [data-baseweb="select"] div,
         section[data-testid="stSidebar"] [data-baseweb="select"] svg {
-            color: #F8FAFC !important;
-            fill: #F8FAFC !important;
+            color: var(--select-ink) !important;
+            fill: var(--select-ink) !important;
         }
         section[data-testid="stSidebar"] [data-baseweb="select"] > div {
-            background-color: #0B1018 !important;
-            border-color: #1E293B !important;
+            background-color: var(--select-bg) !important;
+            border-color: var(--line) !important;
         }
         section[data-testid="stSidebar"] [role="slider"] {
             background-color: #EF4444 !important;
@@ -606,11 +709,18 @@ def main() -> None:
         div[data-testid="stMarkdownContainer"] span {
             opacity: 1;
         }
+        div[data-testid="stRadio"] label,
+        div[data-testid="stRadio"] p,
+        div[data-testid="stToggle"] label,
+        div[data-testid="stToggle"] p {
+            color: var(--ink) !important;
+            opacity: 1 !important;
+        }
         div[data-testid="stTabs"] button[role="tab"],
         div[data-testid="stTabs"] button[role="tab"] p,
         div[data-testid="stTabs"] button[data-baseweb="tab"],
         div[data-testid="stTabs"] button[data-baseweb="tab"] p {
-            color: #334155 !important;
+            color: var(--muted) !important;
             opacity: 1 !important;
             font-weight: 700 !important;
         }
@@ -625,7 +735,7 @@ def main() -> None:
             background-color: #E2E8F0 !important;
         }
         div[data-testid="stTabs"] {
-            color: #334155 !important;
+            color: var(--ink) !important;
         }
         .block-container {
             padding-top: 2rem;
@@ -645,7 +755,7 @@ def main() -> None:
             align-items: center;
             padding: 0.7rem 0.85rem;
             margin: 0.75rem 0 1.3rem 0;
-            background: #FFFFFF;
+            background: var(--panel);
             border: 1px solid var(--line);
             border-radius: 8px;
             box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
@@ -656,8 +766,8 @@ def main() -> None:
             gap: 0.35rem;
             padding: 0.28rem 0.52rem;
             border-radius: 999px;
-            background: #F1F5F9;
-            color: #334155;
+            background: var(--panel-soft);
+            color: var(--ink);
             font-size: 0.86rem;
             line-height: 1.2;
             white-space: nowrap;
@@ -675,7 +785,7 @@ def main() -> None:
             margin-bottom: 0.25rem;
             font-size: 0.78rem;
             font-weight: 800;
-            color: #475569;
+            color: var(--muted);
             text-transform: uppercase;
             letter-spacing: 0;
         }
@@ -685,7 +795,7 @@ def main() -> None:
             gap: 0.42rem;
             margin: 0.65rem 0 0.95rem 0;
             padding: 0.7rem 0.75rem;
-            background: #F8FAFC;
+            background: var(--panel-soft);
             border: 1px solid var(--line);
             border-radius: 8px;
         }
@@ -693,7 +803,7 @@ def main() -> None:
             display: flex;
             align-items: center;
             gap: 0.48rem;
-            color: #334155;
+            color: var(--ink);
             font-weight: 700;
             line-height: 1.25;
         }
@@ -711,7 +821,7 @@ def main() -> None:
             border-top: 4px solid var(--player-color);
             border-radius: 8px;
             padding: 1rem;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+            box-shadow: var(--card-shadow);
             margin-bottom: 0.75rem;
         }
         .player-card-title {
@@ -747,17 +857,17 @@ def main() -> None:
         .stat-tile {
             min-width: 0;
             padding: 0.66rem 0.72rem;
-            background: #F8FAFC;
-            border: 1px solid #E5E7EB;
+            background: var(--panel-soft);
+            border: 1px solid var(--line);
             border-radius: 8px;
         }
         .stat-model {
-            background: #F1F8F7;
-            border-color: #CFE8E6;
+            background: {"#122B28" if ui_theme == "Dark" else "#F1F8F7"};
+            border-color: {"#1F5E58" if ui_theme == "Dark" else "#CFE8E6"};
         }
         .stat-rate {
-            background: #FFF7ED;
-            border-color: #FED7AA;
+            background: {"#2B2116" if ui_theme == "Dark" else "#FFF7ED"};
+            border-color: {"#7C4A18" if ui_theme == "Dark" else "#FED7AA"};
         }
         .stat-label {
             display: block;
@@ -791,9 +901,9 @@ def main() -> None:
             min-height: 1.25rem;
             padding: 0.12rem 0.5rem;
             border-radius: 999px;
-            background: #EFF6FF;
-            color: #1D4ED8;
-            border: 1px solid #BFDBFE;
+            background: var(--badge-bg);
+            color: var(--badge-ink);
+            border: 1px solid var(--badge-border);
             font-size: 0.72rem;
             font-weight: 800;
             line-height: 1.1;
@@ -801,11 +911,11 @@ def main() -> None:
         .chart-note {
             margin: 0.3rem 0 1.25rem 0;
             padding: 0.8rem 1rem;
-            border: 1px solid #D7E4E2;
+            border: 1px solid var(--note-border);
             border-left: 4px solid var(--accent);
             border-radius: 8px;
-            background: #F6FBFA;
-            color: #334155;
+            background: var(--note-bg);
+            color: var(--ink);
             font-size: 0.94rem;
             line-height: 1.45;
         }
@@ -819,9 +929,31 @@ def main() -> None:
             }
         }
         </style>
-        """,
-        unsafe_allow_html=True,
-    )
+        """
+    replacements = {
+        '{palette["ink"]}': palette["ink"],
+        '{palette["muted"]}': palette["muted"],
+        '{palette["panel"]}': palette["panel"],
+        '{palette["panel_soft"]}': palette["panel_soft"],
+        '{palette["line"]}': palette["line"],
+        '{palette["app_bg"]}': palette["app_bg"],
+        '{palette["select_bg"]}': palette["select_bg"],
+        '{palette["select_ink"]}': palette["select_ink"],
+        '{palette["note_bg"]}': palette["note_bg"],
+        '{palette["note_border"]}': palette["note_border"],
+        '{palette["badge_bg"]}': palette["badge_bg"],
+        '{palette["badge_ink"]}': palette["badge_ink"],
+        '{palette["badge_border"]}': palette["badge_border"],
+        '{palette["shadow"]}': palette["shadow"],
+        '{palette["header_bg"]}': palette["header_bg"],
+        '{"#122B28" if ui_theme == "Dark" else "#F1F8F7"}': "#122B28" if ui_theme == "Dark" else "#F1F8F7",
+        '{"#1F5E58" if ui_theme == "Dark" else "#CFE8E6"}': "#1F5E58" if ui_theme == "Dark" else "#CFE8E6",
+        '{"#2B2116" if ui_theme == "Dark" else "#FFF7ED"}': "#2B2116" if ui_theme == "Dark" else "#FFF7ED",
+        '{"#7C4A18" if ui_theme == "Dark" else "#FED7AA"}': "#7C4A18" if ui_theme == "Dark" else "#FED7AA",
+    }
+    for token, value in replacements.items():
+        css = css.replace(token, value)
+    st.markdown(css, unsafe_allow_html=True)
     generated = metadata.get("generated_at_utc")
     latest_match = {
         "date": metadata.get("latest_match_date"),
@@ -840,31 +972,6 @@ def main() -> None:
     if generated:
         indicator_parts.append(("Last refreshed", generated))
     status_bar(indicator_parts)
-
-    with st.sidebar:
-        st.header("Compare")
-        st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
-        player_a = st.selectbox("Batter A", players, index=players.index(default_a))
-        player_b_options = [player for player in players if player != player_a]
-        player_b_default = default_b if default_b in player_b_options else player_b_options[0]
-        player_b = st.selectbox("Batter B", player_b_options, index=player_b_options.index(player_b_default))
-        player_pair_legend([player_a, player_b])
-
-        st.markdown("<div class='sidebar-section'>View</div>", unsafe_allow_html=True)
-        min_balls = st.slider("Minimum balls", min_value=0, max_value=100, value=6, step=1)
-        metric_choice = st.selectbox(
-            "Own 15-ball chart metric",
-            [
-                "Runs Above Expected",
-                "Runs Above Expected per 100",
-                "Strike rate",
-                "SR points vs match",
-                "SR points vs teammates",
-                "SR points vs league phase",
-                "Difficulty-adjusted strike rate",
-            ],
-        )
-        show_adjusted = st.toggle("Adjusted views", value=True)
 
     selected = [player_a, player_b]
     selected_season = selected_players_frame(season, player_a, player_b)
@@ -940,7 +1047,7 @@ def main() -> None:
         chart_header(f"{y_title} by Own 15-Ball Phase", metric_badge)
         player_pair_legend(selected)
         st.plotly_chart(
-            line_metric_chart(chart_df, y_col, "", y_title),
+            line_metric_chart(chart_df, y_col, "", y_title, palette),
             use_container_width=True,
         )
         explain(
@@ -1009,7 +1116,7 @@ def main() -> None:
             title=None,
         )
         fig.update_layout(xaxis_title="Own-ball phase within innings", yaxis_title="Strike rate", legend_title=None)
-        chart_theme(fig, height=520)
+        chart_theme(fig, palette, height=520)
         fig.update_xaxes(
             tickmode="array",
             tickvals=OWN_PHASE_ORDER,
@@ -1034,7 +1141,7 @@ def main() -> None:
             ]
             for metric_col, title in metrics:
                 chart_header(title, "Model-free")
-                st.plotly_chart(line_metric_chart(context_summary, metric_col, "", title), use_container_width=True)
+                st.plotly_chart(line_metric_chart(context_summary, metric_col, "", title, palette), use_container_width=True)
                 if metric_col == "sr_points_vs_match":
                     explain(
                         "Model-free metric: batter phase strike rate minus the match scoring rate. Example: `+15` means the batter's phase SR was "
@@ -1065,7 +1172,7 @@ def main() -> None:
         pd_filtered = pd_summary[pd_summary["balls"].ge(min_balls)].copy()
         pd_filtered = add_live_quartiles(pd_filtered)
         chart_header("Balls Faced vs SR Points Above Leave-One-Out League Phase Rate", "Model-free")
-        st.plotly_chart(powerplay_death_chart(pd_filtered, selected), use_container_width=True)
+        st.plotly_chart(powerplay_death_chart(pd_filtered, selected, palette), use_container_width=True)
         explain(
             "**Powerplay and death metrics are model-free.** **Leave-one-out league phase rate** is the league scoring rate for that phase "
             "after removing the batter's own balls, so he is not partly compared against himself. "
@@ -1119,8 +1226,8 @@ def main() -> None:
                     x=group["own_phase_ball_no"],
                     y=group["cum_runs_above_league_phase_rate"],
                     mode="lines",
-                    line={"color": BACKGROUND_COLOR, "width": 1},
-                    opacity=0.35,
+                    line={"color": palette["background_worm"], "width": 1.15},
+                    opacity=0.42,
                     hoverinfo="skip",
                     showlegend=False,
                 )
@@ -1155,7 +1262,7 @@ def main() -> None:
             xaxis_title="Season-cumulative balls faced in selected phase",
             yaxis_title="Cumulative runs above league phase rate",
         )
-        chart_theme(fig, height=540)
+        chart_theme(fig, palette, height=540)
         st.plotly_chart(fig, use_container_width=True)
         explain(
             "**Worm chart** is model-free: it shows cumulative runs gained or lost versus the league phase rate, not xR. "
