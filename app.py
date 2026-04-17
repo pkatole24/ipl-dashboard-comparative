@@ -544,9 +544,13 @@ def main() -> None:
         phase_coverage_note(selected_phase, chart_df, min_balls, selected)
         if metric_choice == "Runs Above Expected":
             explain(
-                "**Runs Above Expected** is actual runs minus model expected runs for that phase. "
-                "Example: if a batter scores 24 from balls 16-30 and the model expected 18.5, "
-                "that phase is `+5.5` Runs Above Expected."
+                "**Runs Above Expected** compares what a batter actually scored with what the model expected an average IPL batter "
+                "to score from the same balls. The model looks only at the situation before each ball: balls already faced by the batter, "
+                "balls left in the innings, wickets in hand, current scoring rate, and whether the innings is in the powerplay, middle overs, "
+                "or death overs. It does not use the batter's name, team, venue, or reputation. "
+                "Example: if a batter scores 24 from balls `16-30`, and the model says those balls were worth 18.5 expected runs, "
+                "that phase is `+5.5` Runs Above Expected. Positive means the batter scored more than expected for the situations he faced; "
+                "negative means he scored less. This is designed to ask: given the same context, did this batter add runs above what would normally be expected?"
             )
         elif metric_choice == "Runs Above Expected per 100":
             explain(
