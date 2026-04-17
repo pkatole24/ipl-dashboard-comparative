@@ -337,7 +337,7 @@ def metric_cards(player_row: pd.Series, label: str) -> None:
 
 
 def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.Figure:
-    hover_candidates = ["runs", "balls", "strike_rate", "expected_runs", "runs_above_expected"]
+    hover_candidates = ["phase_label", "runs", "balls", "strike_rate", "expected_runs", "runs_above_expected"]
     hover_data = []
     for column in hover_candidates:
         if column in df.columns and column != y and column not in hover_data:
@@ -545,9 +545,9 @@ def main() -> None:
             use_container_width=True,
         )
         explain(
-            "Each point is summed across innings. Phase `1-15` means the batter's first 15 balls in each innings, "
-            "not his first 15 balls of the season. So `49` balls in phase `1-15` means 49 total balls across all innings "
-            "where those balls were within balls `1-15` of that innings."
+            "**How to read the phase totals:** each point is summed across innings. Phase `1-15` means the batter's first "
+            "15 balls in each innings, not his first 15 balls of the season. So `49` balls in phase `1-15` means 49 total "
+            "balls across all innings where those balls were within balls `1-15` of that innings."
         )
         phase_coverage_note(selected_phase, chart_df, min_balls, selected)
         if metric_choice == "Runs Above Expected":
@@ -715,7 +715,7 @@ def main() -> None:
                         marker={"size": 5},
                         name=player,
                         hovertext=(
-                            "Season phase ball number: "
+                            "Season-cumulative phase ball number: "
                             + group["own_phase_ball_no"].astype(str)
                             + "<br>Date: "
                             + group["start_date"].astype(str)
@@ -731,13 +731,13 @@ def main() -> None:
                 )
         fig.update_layout(
             title=f"{worm_phase} Worm: Cumulative Runs Above League Phase Rate",
-            xaxis_title="Cumulative balls faced in phase this season",
+            xaxis_title="Season-cumulative balls faced in selected phase",
             yaxis_title="Cumulative runs above league phase rate",
         )
         st.plotly_chart(fig, use_container_width=True)
         explain(
-            "**Worm chart** is season-cumulative within the selected phase. The x-axis does not reset each match. "
-            "If a batter faces one powerplay ball in match 1 and another in match 2, the second point is `x = 2`. "
+            "**Worm chart** is season-cumulative within the selected phase. The x-axis is not the match number and it does not reset each match. "
+            "If a batter faces one powerplay ball in one match and another powerplay ball in a later match, the later ball is `x = 2`. "
             "A value like `(1, -1.6)` means that after one ball in that phase, the batter was 1.6 runs below the league phase rate. "
             "A rising line means he is adding runs faster than the phase baseline; a falling line means he is losing ground."
         )
