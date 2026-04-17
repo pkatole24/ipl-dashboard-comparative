@@ -88,7 +88,6 @@ def chart_theme(fig: go.Figure, height: int | None = None) -> go.Figure:
         "paper_bgcolor": PAPER_BG,
         "plot_bgcolor": PLOT_BG,
         "font": {"family": "Inter, Segoe UI, sans-serif", "color": "#172033"},
-        "title_text": "",
         "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1},
         "margin": {"l": 50, "r": 28, "t": 34, "b": 56},
     }
@@ -343,7 +342,6 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
             )
 
     fig.update_layout(
-        title="",
         height=520,
     )
     chart_theme(fig, height=520)
@@ -462,7 +460,7 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.
         color="player",
         markers=True,
         color_discrete_sequence=PLAYER_COLORS,
-        title=title,
+        title=None,
         hover_data=hover_data,
     )
     fig.update_layout(xaxis_title="Own-ball phase across innings", yaxis_title=y_title, legend_title=None)
@@ -544,6 +542,29 @@ def main() -> None:
             background: #F6F8FB;
             color: var(--ink);
         }
+        html,
+        body,
+        [data-testid="stAppViewContainer"],
+        [data-testid="stMain"],
+        .main {
+            background: #F6F8FB !important;
+            color: var(--ink) !important;
+        }
+        header[data-testid="stHeader"] {
+            background: #F6F8FB !important;
+            border-bottom: 1px solid var(--line) !important;
+            box-shadow: none !important;
+        }
+        header[data-testid="stHeader"] *,
+        [data-testid="stToolbar"] *,
+        [data-testid="stStatusWidget"] * {
+            color: #334155 !important;
+            fill: #334155 !important;
+            opacity: 1 !important;
+        }
+        [data-testid="stDecoration"] {
+            display: none !important;
+        }
         section[data-testid="stSidebar"] {
             background: #FFFFFF;
             border-right: 1px solid var(--line);
@@ -584,6 +605,27 @@ def main() -> None:
         div[data-testid="stMarkdownContainer"] p,
         div[data-testid="stMarkdownContainer"] span {
             opacity: 1;
+        }
+        div[data-testid="stTabs"] button[role="tab"],
+        div[data-testid="stTabs"] button[role="tab"] p,
+        div[data-testid="stTabs"] button[data-baseweb="tab"],
+        div[data-testid="stTabs"] button[data-baseweb="tab"] p {
+            color: #334155 !important;
+            opacity: 1 !important;
+            font-weight: 700 !important;
+        }
+        div[data-testid="stTabs"] button[role="tab"][aria-selected="true"],
+        div[data-testid="stTabs"] button[role="tab"][aria-selected="true"] p {
+            color: #EF4444 !important;
+        }
+        div[data-testid="stTabs"] [data-baseweb="tab-highlight"] {
+            background-color: #EF4444 !important;
+        }
+        div[data-testid="stTabs"] [data-baseweb="tab-border"] {
+            background-color: #E2E8F0 !important;
+        }
+        div[data-testid="stTabs"] {
+            color: #334155 !important;
         }
         .block-container {
             padding-top: 2rem;
@@ -964,7 +1006,7 @@ def main() -> None:
             size="balls",
             color_discrete_sequence=PLAYER_COLORS,
             hover_data=["phase_label", "start_date", "opposition", "venue", "runs", "balls", "expected_runs", "runs_above_expected"],
-            title="",
+            title=None,
         )
         fig.update_layout(xaxis_title="Own-ball phase within innings", yaxis_title="Strike rate", legend_title=None)
         chart_theme(fig, height=520)
@@ -1110,7 +1152,6 @@ def main() -> None:
                     )
                 )
         fig.update_layout(
-            title="",
             xaxis_title="Season-cumulative balls faced in selected phase",
             yaxis_title="Cumulative runs above league phase rate",
         )
