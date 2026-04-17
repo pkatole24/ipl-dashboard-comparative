@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 from pathlib import Path
 
@@ -15,6 +16,9 @@ DATA_DIR = APP_DIR / "data" / "current"
 
 PLAYER_COLORS = ["#0B6E69", "#C2410C"]
 BACKGROUND_COLOR = "#D8DEE9"
+GRID_COLOR = "#E5E7EB"
+PAPER_BG = "#FFFFFF"
+PLOT_BG = "#FBFCFE"
 PHASE_ORDER = ["Powerplay", "Death last 5"]
 OWN_PHASE_ORDER = list(range(1, 7))
 OWN_PHASE_LABELS = [f"{(phase - 1) * 15 + 1}-{phase * 15}" for phase in OWN_PHASE_ORDER]
@@ -64,6 +68,82 @@ def format_number(value: float | int | None, digits: int = 2) -> str:
     if pd.isna(value):
         return "-"
     return f"{float(value):,.{digits}f}"
+
+
+def safe_text(value: object) -> str:
+    return html.escape("" if value is None else str(value))
+
+
+def stat_tile(label: str, value: object, tone: str = "neutral") -> str:
+    return (
+        f"<div class='stat-tile stat-{tone}'>"
+        f"<span class='stat-label'>{safe_text(label)}</span>"
+        f"<span class='stat-value'>{safe_text(value)}</span>"
+        f"</div>"
+    )
+
+
+def chart_theme(fig: go.Figure, height: int | None = None) -> go.Figure:
+    layout_updates = {
+        "paper_bgcolor": PAPER_BG,
+        "plot_bgcolor": PLOT_BG,
+        "font": {"family": "Inter, Segoe UI, sans-serif", "color": "#172033"},
+        "title": {"font": {"size": 20, "color": "#0F172A"}},
+        "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1},
+        "margin": {"l": 50, "r": 28, "t": 72, "b": 56},
+    }
+    if height is not None:
+        layout_updates["height"] = height
+    fig.update_layout(**layout_updates)
+    fig.update_xaxes(
+        showgrid=True,
+        gridcolor=GRID_COLOR,
+        zeroline=False,
+        linecolor="#CBD5E1",
+        tickfont={"color": "#475569"},
+        title_font={"color": "#334155"},
+    )
+    fig.update_yaxes(
+        showgrid=True,
+        gridcolor=GRID_COLOR,
+        zeroline=True,
+        zerolinecolor="#CBD5E1",
+        linecolor="#CBD5E1",
+        tickfont={"color": "#475569"},
+        title_font={"color": "#334155"},
+    )
+    return fig
+
+
+def chart_header(title: str, badge: str | None = None) -> None:
+    badge_html = f"<span class='chart-badge'>{safe_text(badge)}</span>" if badge else ""
+    st.markdown(
+        f"<div class='chart-heading'><span>{safe_text(title)}</span>{badge_html}</div>",
+        unsafe_allow_html=True,
+    )
+
+
+def status_bar(parts: list[tuple[str, str | None]]) -> None:
+    chips = []
+    for label, value in parts:
+        if value:
+            chips.append(
+                f"<span class='status-chip'><span class='status-label'>{safe_text(label)}</span>"
+                f"<span class='status-value'>{safe_text(value)}</span></span>"
+            )
+    st.markdown(f"<div class='status-bar'>{''.join(chips)}</div>", unsafe_allow_html=True)
+
+
+def player_swatch(name: str, color: str) -> str:
+    return (
+        f"<span class='player-swatch-row'><span class='player-swatch' style='background:{safe_text(color)}'></span>"
+        f"<span>{safe_text(name)}</span></span>"
+    )
+
+
+def player_pair_legend(players: list[str]) -> None:
+    rows = "".join(player_swatch(player, color) for player, color in zip(players, PLAYER_COLORS))
+    st.markdown(f"<div class='player-legend'>{rows}</div>", unsafe_allow_html=True)
 
 
 def phase_label(phase: int) -> str:
@@ -263,9 +343,10 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
             )
 
     fig.update_layout(
-        title="Balls Faced vs SR Points Above Leave-One-Out League Phase Rate",
+        title="",
         height=520,
     )
+    chart_theme(fig, height=520)
     fig.update_xaxes(title_text="Balls faced in phase", row=1, col=1)
     fig.update_xaxes(title_text="Balls faced in phase", row=1, col=2)
     fig.update_yaxes(title_text="SR points above league phase", row=1, col=1)
@@ -322,18 +403,49 @@ def latest_match_from_matches(player_match: pd.DataFrame) -> dict[str, str | Non
     }
 
 
-def metric_cards(player_row: pd.Series, label: str) -> None:
-    st.markdown(f"#### {label}")
-    cols = st.columns(4)
-    cols[0].metric("Runs", format_number(player_row.get("actual_runs"), 0))
-    cols[1].metric("Balls", format_number(player_row.get("balls_faced"), 0))
-    cols[2].metric("Strike rate", format_number(player_row.get("strike_rate"), 2))
-    cols[3].metric("Expected runs", format_number(player_row.get("expected_runs"), 2))
-
-    cols = st.columns(3)
-    cols[0].metric("Runs Above Expected", format_number(player_row.get("runs_above_expected"), 2))
-    cols[1].metric("RAE per 30 balls", format_number(player_row.get("runs_above_expected_per_30_balls"), 2))
-    cols[2].metric("RAE per 100 balls", format_number(player_row.get("runs_above_expected_per_100_balls"), 2))
+def metric_cards(player_row: pd.Series, label: str, color: str) -> None:
+    volume_stats = "".join(
+        [
+            stat_tile("Runs", format_number(player_row.get("actual_runs"), 0)),
+            stat_tile("Balls", format_number(player_row.get("balls_faced"), 0)),
+            stat_tile("Strike rate", format_number(player_row.get("strike_rate"), 1)),
+        ]
+    )
+    model_stats = "".join(
+        [
+            stat_tile("Expected runs", format_number(player_row.get("expected_runs"), 2), "model"),
+            stat_tile("Runs Above Expected", format_number(player_row.get("runs_above_expected"), 2), "model"),
+        ]
+    )
+    rate_stats = "".join(
+        [
+            stat_tile("RAE per 30", format_number(player_row.get("runs_above_expected_per_30_balls"), 2), "rate"),
+            stat_tile("RAE per 100", format_number(player_row.get("runs_above_expected_per_100_balls"), 2), "rate"),
+        ]
+    )
+    st.markdown(
+        f"""
+        <section class='player-card' style='--player-color:{safe_text(color)}'>
+            <div class='player-card-title'>
+                <span class='player-swatch' style='background:{safe_text(color)}'></span>
+                <span>{safe_text(label)}</span>
+            </div>
+            <div class='metric-group'>
+                <div class='metric-group-label'>Volume</div>
+                <div class='stat-grid stat-grid-three'>{volume_stats}</div>
+            </div>
+            <div class='metric-group'>
+                <div class='metric-group-label'>Model</div>
+                <div class='stat-grid stat-grid-two'>{model_stats}</div>
+            </div>
+            <div class='metric-group'>
+                <div class='metric-group-label'>Rate</div>
+                <div class='stat-grid stat-grid-two'>{rate_stats}</div>
+            </div>
+        </section>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.Figure:
@@ -354,6 +466,7 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.
         hover_data=hover_data,
     )
     fig.update_layout(xaxis_title="Own-ball phase across innings", yaxis_title=y_title, legend_title=None)
+    chart_theme(fig)
     fig.update_xaxes(
         tickmode="array",
         tickvals=OWN_PHASE_ORDER,
@@ -418,14 +531,213 @@ def main() -> None:
     st.markdown(
         """
         <style>
-        .chart-note {
-            margin: -0.4rem 0 1.25rem 0;
-            padding: 0.8rem 1rem;
-            border-left: 4px solid #0B6E69;
+        :root {
+            --ink: #0F172A;
+            --muted: #64748B;
+            --panel: #FFFFFF;
+            --panel-soft: #F8FAFC;
+            --line: #E2E8F0;
+            --accent: #0B6E69;
+            --accent-two: #C2410C;
+        }
+        .stApp {
+            background: #F6F8FB;
+            color: var(--ink);
+        }
+        section[data-testid="stSidebar"] {
+            background: #FFFFFF;
+            border-right: 1px solid var(--line);
+        }
+        .block-container {
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+        h1 {
+            letter-spacing: 0;
+            color: var(--ink);
+        }
+        h2, h3 {
+            letter-spacing: 0;
+        }
+        .status-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            align-items: center;
+            padding: 0.7rem 0.85rem;
+            margin: 0.75rem 0 1.3rem 0;
+            background: #FFFFFF;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+        }
+        .status-chip {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.35rem;
+            padding: 0.28rem 0.52rem;
+            border-radius: 999px;
+            background: #F1F5F9;
+            color: #334155;
+            font-size: 0.86rem;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        .status-label {
+            color: var(--muted);
+            font-weight: 600;
+        }
+        .status-value {
+            color: var(--ink);
+            font-weight: 700;
+        }
+        .sidebar-section {
+            margin-top: 0.7rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.78rem;
+            font-weight: 800;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+        .player-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.42rem;
+            margin: 0.65rem 0 0.95rem 0;
+            padding: 0.7rem 0.75rem;
             background: #F8FAFC;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+        .player-swatch-row {
+            display: flex;
+            align-items: center;
+            gap: 0.48rem;
+            color: #334155;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+        .player-swatch {
+            width: 0.8rem;
+            height: 0.8rem;
+            display: inline-block;
+            border-radius: 50%;
+            flex: 0 0 auto;
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.9), 0 0 0 3px rgba(15, 23, 42, 0.09);
+        }
+        .player-card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-top: 4px solid var(--player-color);
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+            margin-bottom: 0.75rem;
+        }
+        .player-card-title {
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+            font-size: 1.08rem;
+            font-weight: 800;
+            color: var(--ink);
+            margin-bottom: 0.9rem;
+        }
+        .metric-group {
+            margin-top: 0.7rem;
+        }
+        .metric-group-label {
+            color: var(--muted);
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            margin-bottom: 0.35rem;
+        }
+        .stat-grid {
+            display: grid;
+            gap: 0.55rem;
+        }
+        .stat-grid-three {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .stat-grid-two {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .stat-tile {
+            min-width: 0;
+            padding: 0.66rem 0.72rem;
+            background: #F8FAFC;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+        }
+        .stat-model {
+            background: #F1F8F7;
+            border-color: #CFE8E6;
+        }
+        .stat-rate {
+            background: #FFF7ED;
+            border-color: #FED7AA;
+        }
+        .stat-label {
+            display: block;
+            color: var(--muted);
+            font-size: 0.74rem;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+        .stat-value {
+            display: block;
+            color: var(--ink);
+            font-size: 1.18rem;
+            font-weight: 850;
+            line-height: 1.2;
+            margin-top: 0.18rem;
+            overflow-wrap: anywhere;
+        }
+        .chart-heading {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.55rem;
+            margin: 1rem 0 0.15rem 0;
+            color: var(--ink);
+            font-size: 1.05rem;
+            font-weight: 850;
+        }
+        .chart-badge {
+            display: inline-flex;
+            align-items: center;
+            min-height: 1.25rem;
+            padding: 0.12rem 0.5rem;
+            border-radius: 999px;
+            background: #EFF6FF;
+            color: #1D4ED8;
+            border: 1px solid #BFDBFE;
+            font-size: 0.72rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+        .chart-note {
+            margin: 0.3rem 0 1.25rem 0;
+            padding: 0.8rem 1rem;
+            border: 1px solid #D7E4E2;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            background: #F6FBFA;
             color: #334155;
             font-size: 0.94rem;
             line-height: 1.45;
+        }
+        @media (max-width: 720px) {
+            .stat-grid-three,
+            .stat-grid-two {
+                grid-template-columns: 1fr;
+            }
+            .status-chip {
+                white-space: normal;
+            }
         }
         </style>
         """,
@@ -440,23 +752,26 @@ def main() -> None:
     if not latest_match["date"]:
         latest_match = latest_match_from_matches(player_match)
 
-    indicator_parts = [f"Current season: {metadata.get('season', 'unknown')}"]
+    indicator_parts = [("Season", f"IPL {metadata.get('season', 'unknown')}")]
     if latest_match["date"]:
         match_text = latest_match["date"]
         if latest_match["teams"]:
             match_text = f"{latest_match['teams']} ({match_text})"
-        indicator_parts.append(f"Data through: {match_text}")
+        indicator_parts.append(("Data through", match_text))
     if generated:
-        indicator_parts.append(f"Last refreshed: {generated}")
-    st.caption(" | ".join(indicator_parts))
+        indicator_parts.append(("Last refreshed", generated))
+    status_bar(indicator_parts)
 
     with st.sidebar:
         st.header("Compare")
+        st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
         player_a = st.selectbox("Batter A", players, index=players.index(default_a))
         player_b_options = [player for player in players if player != player_a]
         player_b_default = default_b if default_b in player_b_options else player_b_options[0]
         player_b = st.selectbox("Batter B", player_b_options, index=player_b_options.index(player_b_default))
+        player_pair_legend([player_a, player_b])
 
+        st.markdown("<div class='sidebar-section'>View</div>", unsafe_allow_html=True)
         min_balls = st.slider("Minimum balls", min_value=0, max_value=100, value=6, step=1)
         metric_choice = st.selectbox(
             "Own 15-ball chart metric",
@@ -479,22 +794,22 @@ def main() -> None:
 
     st.subheader("Season Snapshot")
     card_cols = st.columns(2)
-    for col, player in zip(card_cols, selected):
+    for col, player, color in zip(card_cols, selected, PLAYER_COLORS):
         row = selected_season[selected_season["player"].eq(player)]
         with col:
             if row.empty:
                 st.warning(f"No season row for {player}.")
             else:
-                metric_cards(row.iloc[0], player)
+                metric_cards(row.iloc[0], player, color)
 
     st.divider()
     tab_phase, tab_adjusted, tab_power, tab_worm, tab_table = st.tabs(
         [
-            "Own 15-Ball Phases",
-            "Context Adjustments",
-            "Powerplay and Death",
-            "Worm Chart",
-            "Match Details",
+            "15-Ball Phases",
+            "Adjusted SR",
+            "Powerplay / Death",
+            "Worm",
+            "Match Table",
         ]
     )
 
@@ -540,8 +855,13 @@ def main() -> None:
             ),
         }
         chart_df, y_col, y_title = phase_metric_options[metric_choice]
+        metric_badge = "Model-based" if metric_choice.startswith("Runs Above Expected") else "Model-free"
+        if metric_choice == "Strike rate":
+            metric_badge = "Raw metric"
+        chart_header(f"{y_title} by Own 15-Ball Phase", metric_badge)
+        player_pair_legend(selected)
         st.plotly_chart(
-            line_metric_chart(chart_df, y_col, f"{y_title} by Own 15-Ball Phase", y_title),
+            line_metric_chart(chart_df, y_col, "", y_title),
             use_container_width=True,
         )
         explain(
@@ -598,6 +918,7 @@ def main() -> None:
 
         scatter_df = selected_phase[selected_phase["balls"].ge(max(1, min_balls))].copy()
         scatter_df = scatter_df[scatter_df["own_15_ball_phase"].isin(OWN_PHASE_ORDER)]
+        chart_header("Individual Innings Phase Dots", "Raw metric")
         fig = px.scatter(
             scatter_df,
             x="own_15_ball_phase",
@@ -606,9 +927,10 @@ def main() -> None:
             size="balls",
             color_discrete_sequence=PLAYER_COLORS,
             hover_data=["phase_label", "start_date", "opposition", "venue", "runs", "balls", "expected_runs", "runs_above_expected"],
-            title="Individual Innings Phase Dots",
+            title="",
         )
         fig.update_layout(xaxis_title="Own-ball phase within innings", yaxis_title="Strike rate", legend_title=None)
+        chart_theme(fig, height=520)
         fig.update_xaxes(
             tickmode="array",
             tickvals=OWN_PHASE_ORDER,
@@ -632,7 +954,8 @@ def main() -> None:
                 ("difficulty_adjusted_sr", "Difficulty-Adjusted Strike Rate"),
             ]
             for metric_col, title in metrics:
-                st.plotly_chart(line_metric_chart(context_summary, metric_col, title, title), use_container_width=True)
+                chart_header(title, "Model-free")
+                st.plotly_chart(line_metric_chart(context_summary, metric_col, "", title), use_container_width=True)
                 if metric_col == "sr_points_vs_match":
                     explain(
                         "Model-free metric: batter phase strike rate minus the match scoring rate. Example: `+15` means the batter's phase SR was "
@@ -662,6 +985,7 @@ def main() -> None:
     with tab_power:
         pd_filtered = pd_summary[pd_summary["balls"].ge(min_balls)].copy()
         pd_filtered = add_live_quartiles(pd_filtered)
+        chart_header("Balls Faced vs SR Points Above Leave-One-Out League Phase Rate", "Model-free")
         st.plotly_chart(powerplay_death_chart(pd_filtered, selected), use_container_width=True)
         explain(
             "**Powerplay and death metrics are model-free.** **Leave-one-out league phase rate** is the league scoring rate for that phase "
@@ -674,26 +998,37 @@ def main() -> None:
         )
 
         q_selected = pd_filtered[pd_filtered["batter"].isin(selected)].copy()
+        q_display_columns = [
+            "phase_group",
+            "batter",
+            "runs",
+            "balls",
+            "raw_sr",
+            "leave_one_out_league_sr",
+            "sr_points_above_league_phase",
+            "runs_above_league_phase_rate",
+            "quartile",
+        ]
         st.dataframe(
-            q_selected[
-                [
-                    "phase_group",
-                    "batter",
-                    "runs",
-                    "balls",
-                    "raw_sr",
-                    "leave_one_out_league_sr",
-                    "sr_points_above_league_phase",
-                    "runs_above_league_phase_rate",
-                    "quartile",
-                ]
-            ],
+            q_selected[q_display_columns],
             use_container_width=True,
             hide_index=True,
+            column_config={
+                "phase_group": st.column_config.TextColumn("Phase"),
+                "batter": st.column_config.TextColumn("Batter"),
+                "runs": st.column_config.NumberColumn("Runs", format="%d"),
+                "balls": st.column_config.NumberColumn("Balls", format="%d"),
+                "raw_sr": st.column_config.NumberColumn("Raw SR", format="%.1f"),
+                "leave_one_out_league_sr": st.column_config.NumberColumn("Leave-one-out SR", format="%.1f"),
+                "sr_points_above_league_phase": st.column_config.NumberColumn("SR points", format="%.1f"),
+                "runs_above_league_phase_rate": st.column_config.NumberColumn("Runs above phase rate", format="%.2f"),
+                "quartile": st.column_config.TextColumn("Quartile"),
+            },
         )
 
     with tab_worm:
         worm_phase = st.radio("Worm phase", ["Powerplay", "Death last 5"], horizontal=True)
+        chart_header(f"{worm_phase} Worm: Cumulative Runs Above League Phase Rate", "Model-free")
 
         phase_worms = worms[worms["phase_group"].eq(worm_phase)].copy()
         qualified = phase_worms[phase_worms["quartile"].notna()]
@@ -738,10 +1073,11 @@ def main() -> None:
                     )
                 )
         fig.update_layout(
-            title=f"{worm_phase} Worm: Cumulative Runs Above League Phase Rate",
+            title="",
             xaxis_title="Season-cumulative balls faced in selected phase",
             yaxis_title="Cumulative runs above league phase rate",
         )
+        chart_theme(fig, height=540)
         st.plotly_chart(fig, use_container_width=True)
         explain(
             "**Worm chart** is model-free: it shows cumulative runs gained or lost versus the league phase rate, not xR. "
@@ -755,25 +1091,38 @@ def main() -> None:
         table = selected_phase[selected_phase["balls"].ge(max(1, min_balls))].copy()
         table = table[table["own_15_ball_phase"].isin(OWN_PHASE_ORDER)]
         table = table.sort_values(["start_date", "player", "match_id", "innings", "own_15_ball_phase"])
+        table_display_columns = [
+            "start_date",
+            "player",
+            "batting_team",
+            "opposition",
+            "venue",
+            "innings",
+            "phase_label",
+            "runs",
+            "balls",
+            "strike_rate",
+            "expected_runs",
+            "runs_above_expected",
+        ]
         st.dataframe(
-            table[
-                [
-                    "start_date",
-                    "player",
-                    "batting_team",
-                    "opposition",
-                    "venue",
-                    "innings",
-                    "phase_label",
-                    "runs",
-                    "balls",
-                    "strike_rate",
-                    "expected_runs",
-                    "runs_above_expected",
-                ]
-            ],
+            table[table_display_columns],
             use_container_width=True,
             hide_index=True,
+            column_config={
+                "start_date": st.column_config.DateColumn("Date", format="YYYY-MM-DD"),
+                "player": st.column_config.TextColumn("Batter"),
+                "batting_team": st.column_config.TextColumn("Team"),
+                "opposition": st.column_config.TextColumn("Opposition"),
+                "venue": st.column_config.TextColumn("Venue"),
+                "innings": st.column_config.NumberColumn("Innings", format="%d"),
+                "phase_label": st.column_config.TextColumn("Own phase"),
+                "runs": st.column_config.NumberColumn("Runs", format="%d"),
+                "balls": st.column_config.NumberColumn("Balls", format="%d"),
+                "strike_rate": st.column_config.NumberColumn("SR", format="%.1f"),
+                "expected_runs": st.column_config.NumberColumn("Expected runs", format="%.2f"),
+                "runs_above_expected": st.column_config.NumberColumn("Runs Above Expected", format="%.2f"),
+            },
         )
 
         st.download_button(
