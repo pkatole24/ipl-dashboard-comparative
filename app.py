@@ -595,7 +595,7 @@ def main() -> None:
     with st.sidebar:
         st.header("Compare")
         st.markdown("<div class='sidebar-section'>Appearance</div>", unsafe_allow_html=True)
-        ui_theme = st.radio("Theme", ["Light", "Dark"], horizontal=True, index=0)
+        ui_theme = st.radio("Theme", ["Dark", "Light"], horizontal=True, index=0)
         st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
         player_a = st.selectbox("Batter A", players, index=players.index(default_a))
         player_b_options = [player for player in players if player != player_a]
