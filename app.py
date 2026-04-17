@@ -301,6 +301,27 @@ def add_live_quartiles(summary: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
+def latest_match_from_matches(player_match: pd.DataFrame) -> dict[str, str | None]:
+    if player_match.empty:
+        return {"date": None, "teams": None, "match_id": None}
+
+    matches = player_match.copy()
+    matches["start_date"] = pd.to_datetime(matches["start_date"], errors="coerce")
+    matches["match_id_sort"] = pd.to_numeric(matches["match_id"], errors="coerce")
+    latest = matches.sort_values(["start_date", "match_id_sort"], kind="stable").iloc[-1]
+    latest_rows = matches[matches["match_id"].astype("string").eq(str(latest["match_id"]))]
+    teams = latest_rows.sort_values("innings", kind="stable")["batting_team"].dropna().astype(str).drop_duplicates().tolist()
+    if len(teams) < 2 and "opposition" in latest_rows.columns:
+        teams.extend(latest_rows["opposition"].dropna().astype(str).drop_duplicates().tolist())
+        teams = list(dict.fromkeys(teams))
+
+    return {
+        "date": latest["start_date"].date().isoformat(),
+        "teams": " vs ".join(teams[:2]) if teams else None,
+        "match_id": str(latest["match_id"]),
+    }
+
+
 def metric_cards(player_row: pd.Series, label: str) -> None:
     st.markdown(f"#### {label}")
     cols = st.columns(4)
@@ -408,8 +429,23 @@ def main() -> None:
         unsafe_allow_html=True,
     )
     generated = metadata.get("generated_at_utc")
+    latest_match = {
+        "date": metadata.get("latest_match_date"),
+        "teams": metadata.get("latest_match_teams"),
+        "match_id": metadata.get("latest_match_id"),
+    }
+    if not latest_match["date"]:
+        latest_match = latest_match_from_matches(player_match)
+
+    indicator_parts = [f"Current season: {metadata.get('season', 'unknown')}"]
+    if latest_match["date"]:
+        match_text = latest_match["date"]
+        if latest_match["teams"]:
+            match_text = f"{latest_match['teams']} ({match_text})"
+        indicator_parts.append(f"Data through: {match_text}")
     if generated:
-        st.caption(f"Current season: {metadata.get('season', 'unknown')} | Last updated: {generated}")
+        indicator_parts.append(f"Last refreshed: {generated}")
+    st.caption(" | ".join(indicator_parts))
 
     with st.sidebar:
         st.header("Compare")
