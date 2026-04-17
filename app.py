@@ -88,9 +88,9 @@ def chart_theme(fig: go.Figure, height: int | None = None) -> go.Figure:
         "paper_bgcolor": PAPER_BG,
         "plot_bgcolor": PLOT_BG,
         "font": {"family": "Inter, Segoe UI, sans-serif", "color": "#172033"},
-        "title": {"font": {"size": 20, "color": "#0F172A"}},
+        "title_text": "",
         "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02, "xanchor": "right", "x": 1},
-        "margin": {"l": 50, "r": 28, "t": 72, "b": 56},
+        "margin": {"l": 50, "r": 28, "t": 34, "b": 56},
     }
     if height is not None:
         layout_updates["height"] = height
@@ -547,6 +547,43 @@ def main() -> None:
         section[data-testid="stSidebar"] {
             background: #FFFFFF;
             border-right: 1px solid var(--line);
+        }
+        section[data-testid="stSidebar"],
+        section[data-testid="stSidebar"] p,
+        section[data-testid="stSidebar"] span,
+        section[data-testid="stSidebar"] label,
+        section[data-testid="stSidebar"] h1,
+        section[data-testid="stSidebar"] h2,
+        section[data-testid="stSidebar"] h3 {
+            color: #334155 !important;
+            opacity: 1 !important;
+        }
+        section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p,
+        section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] label,
+        section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+            color: #334155 !important;
+            opacity: 1 !important;
+        }
+        section[data-testid="stSidebar"] [data-baseweb="select"] span,
+        section[data-testid="stSidebar"] [data-baseweb="select"] div,
+        section[data-testid="stSidebar"] [data-baseweb="select"] svg {
+            color: #F8FAFC !important;
+            fill: #F8FAFC !important;
+        }
+        section[data-testid="stSidebar"] [data-baseweb="select"] > div {
+            background-color: #0B1018 !important;
+            border-color: #1E293B !important;
+        }
+        section[data-testid="stSidebar"] [role="slider"] {
+            background-color: #EF4444 !important;
+        }
+        section[data-testid="stSidebar"] button[role="switch"] {
+            color: #F8FAFC !important;
+        }
+        div[data-testid="stMarkdownContainer"],
+        div[data-testid="stMarkdownContainer"] p,
+        div[data-testid="stMarkdownContainer"] span {
+            opacity: 1;
         }
         .block-container {
             padding-top: 2rem;
