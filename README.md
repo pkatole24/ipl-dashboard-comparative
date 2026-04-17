@@ -2,14 +2,14 @@
 
 A public Streamlit dashboard for comparing two IPL batters across current-season batting phases, model-based Runs Above Expected views, and model-free strike-rate context views.
 
-The app is designed for quick cricket analysis rather than model development. It reads prepared dashboard CSV files from `data/current/` and renders the comparison UI in `app.py`.
+The app is designed for quick cricket analysis for the IPL 2026 season. It reads prepared dashboard CSV files from `data/current/` and renders the comparison UI in `app.py`.
 
 ## What The Dashboard Shows
 
 - Side-by-side season snapshots for any two batters.
 - Own 15-ball phase comparisons through `76-90` balls.
 - Runs Above Expected and Runs Above Expected rate views.
-- Model-free strike-rate context views:
+- Strike-rate context views:
   - SR points vs match
   - SR points vs teammates
   - SR points vs league phase
@@ -74,10 +74,8 @@ This repository is intentionally dashboard-only.
 It does not include:
 
 - training code
-- xR model artifacts
-- private notebooks
-- raw Cricsheet ZIP processing scripts
-- model dependencies such as TensorFlow
+- model artifacts
+- raw data processing scripts
 - the source analytics/model project
 
 The Streamlit app does not train, load, or modify the xR model. It only reads prepared public dashboard CSVs.
@@ -110,24 +108,6 @@ Recommended settings:
 
 When new dashboard CSVs are pushed to this repository, Streamlit Cloud should pick up the new commit and refresh/redeploy the public app.
 
-## Data Refresh Workflow
-
-The public dashboard repo should only receive prepared dashboard files.
-
-The intended refresh flow is:
-
-1. A private/local analytics pipeline downloads the latest IPL ball-by-ball data.
-2. The private pipeline scores and aggregates the current season.
-3. Only the dashboard-safe outputs are copied into this repo:
-   - `app.py` when UI changes are made
-   - `requirements.txt` when dashboard dependencies change
-   - `data/current/*.csv`
-   - `data/current/last_updated.json`
-4. The public repo is committed and pushed.
-5. Streamlit Cloud refreshes the public app from the new commit.
-
-This keeps the public dashboard lightweight while keeping model code and model artifacts separate.
-
 ## Current Season
 
 The dashboard is currently built for the IPL 2026 season.
@@ -149,11 +129,3 @@ The dashboard is currently built for the IPL 2026 season.
 │       └── powerplay_death_worms.csv
 └── README.md
 ```
-
-## Notes For Future Changes
-
-- Keep this repository dashboard-only.
-- Do not add model artifacts or training dependencies here.
-- Keep model-based metrics labelled as Runs Above Expected in user-facing text.
-- Keep model-free strike-rate context metrics clearly described as model-free.
-- If the data schema changes, update the README and app explanations together.
