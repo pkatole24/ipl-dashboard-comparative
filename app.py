@@ -658,6 +658,13 @@ def main() -> None:
             border-bottom: 1px solid var(--line) !important;
             box-shadow: none !important;
         }
+        [data-testid="stToolbar"],
+        [data-testid="stStatusWidget"],
+        [data-testid="stMainMenu"] {
+            display: none !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+        }
         header[data-testid="stHeader"] *,
         [data-testid="stToolbar"] *,
         [data-testid="stStatusWidget"] * {
