@@ -42,7 +42,7 @@ def load_metadata() -> dict:
     path = DATA_DIR / "last_updated.json"
     if not path.exists():
         return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
 def default_player(players: list[str], preferred: list[str], fallback_contains: str, fallback_index: int) -> str:
