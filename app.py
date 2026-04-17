@@ -337,8 +337,12 @@ def metric_cards(player_row: pd.Series, label: str) -> None:
 
 
 def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.Figure:
+    hover_candidates = ["runs", "balls", "strike_rate", "expected_runs", "runs_above_expected"]
+    hover_data = []
+    for column in hover_candidates:
+        if column in df.columns and column != y and column not in hover_data:
+            hover_data.append(column)
     plot_df = df[df["own_15_ball_phase"].isin(OWN_PHASE_ORDER)].copy()
-    plot_df["own_innings_phase"] = plot_df["phase_label"]
     fig = px.line(
         plot_df.sort_values(["player", "own_15_ball_phase"]),
         x="own_15_ball_phase",
@@ -347,26 +351,7 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str) -> go.
         markers=True,
         color_discrete_sequence=PLAYER_COLORS,
         title=title,
-        custom_data=[
-            "own_innings_phase",
-            "balls",
-            "runs",
-            "strike_rate" if "strike_rate" in plot_df.columns else "balls",
-            "expected_runs" if "expected_runs" in plot_df.columns else "balls",
-            "runs_above_expected" if "runs_above_expected" in plot_df.columns else "balls",
-        ],
-    )
-    fig.update_traces(
-        hovertemplate=(
-            "<b>%{fullData.name}</b><br>"
-            "Own innings phase: %{customdata[0]}<br>"
-            "Total balls in this phase: %{customdata[1]}<br>"
-            "Runs: %{customdata[2]}<br>"
-            "Strike rate: %{customdata[3]:.2f}<br>"
-            "Expected runs: %{customdata[4]:.2f}<br>"
-            "Runs Above Expected: %{customdata[5]:.2f}<br>"
-            f"{y_title}: " + "%{y:.2f}<extra></extra>"
-        )
+        hover_data=hover_data,
     )
     fig.update_layout(xaxis_title="Own-ball phase across innings", yaxis_title=y_title, legend_title=None)
     fig.update_xaxes(
@@ -612,7 +597,6 @@ def main() -> None:
 
         scatter_df = selected_phase[selected_phase["balls"].ge(max(1, min_balls))].copy()
         scatter_df = scatter_df[scatter_df["own_15_ball_phase"].isin(OWN_PHASE_ORDER)]
-        scatter_df["own_innings_phase"] = scatter_df["phase_label"]
         fig = px.scatter(
             scatter_df,
             x="own_15_ball_phase",
@@ -620,31 +604,8 @@ def main() -> None:
             color="player",
             size="balls",
             color_discrete_sequence=PLAYER_COLORS,
-            custom_data=[
-                "own_innings_phase",
-                "balls",
-                "runs",
-                "expected_runs",
-                "runs_above_expected",
-                "start_date",
-                "opposition",
-                "venue",
-            ],
+            hover_data=["phase_label", "start_date", "opposition", "venue", "runs", "balls", "expected_runs", "runs_above_expected"],
             title="Individual Innings Phase Dots",
-        )
-        fig.update_traces(
-            hovertemplate=(
-                "<b>%{fullData.name}</b><br>"
-                "Own innings phase: %{customdata[0]}<br>"
-                "Balls in this innings phase: %{customdata[1]}<br>"
-                "Runs: %{customdata[2]}<br>"
-                "Strike rate: %{y:.2f}<br>"
-                "Expected runs: %{customdata[3]:.2f}<br>"
-                "Runs Above Expected: %{customdata[4]:.2f}<br>"
-                "Date: %{customdata[5]}<br>"
-                "Opposition: %{customdata[6]}<br>"
-                "Venue: %{customdata[7]}<extra></extra>"
-            )
         )
         fig.update_layout(xaxis_title="Own-ball phase within innings", yaxis_title="Strike rate", legend_title=None)
         fig.update_xaxes(
@@ -738,15 +699,7 @@ def main() -> None:
                     mode="lines",
                     line={"color": BACKGROUND_COLOR, "width": 1},
                     opacity=0.35,
-                    customdata=group[["start_date", "runs_off_bat"]],
-                    hovertemplate=(
-                        "<b>%{fullData.name}</b><br>"
-                        "Season phase ball number: %{x}<br>"
-                        "Date: %{customdata[0]}<br>"
-                        "Runs on ball: %{customdata[1]}<br>"
-                        "Cumulative runs above phase rate: %{y:.2f}<extra></extra>"
-                    ),
-                    name=batter,
+                    hoverinfo="skip",
                     showlegend=False,
                 )
             )
@@ -761,26 +714,19 @@ def main() -> None:
                         line={"color": color, "width": 3},
                         marker={"size": 5},
                         name=player,
-                        customdata=group[
-                            [
-                                "start_date",
-                                "batting_team",
-                                "bowling_team",
-                                "runs_off_bat",
-                                "cum_runs",
-                                "leave_one_out_league_sr",
-                            ]
-                        ],
-                        hovertemplate=(
-                            "<b>%{fullData.name}</b><br>"
-                            "Season phase ball number: %{x}<br>"
-                            "Date: %{customdata[0]}<br>"
-                            "Match: %{customdata[1]} vs %{customdata[2]}<br>"
-                            "Runs on ball: %{customdata[3]}<br>"
-                            "Cumulative runs: %{customdata[4]}<br>"
-                            "League phase SR: %{customdata[5]:.2f}<br>"
-                            "Cumulative runs above phase rate: %{y:.2f}<extra></extra>"
+                        hovertext=(
+                            "Season phase ball number: "
+                            + group["own_phase_ball_no"].astype(str)
+                            + "<br>Date: "
+                            + group["start_date"].astype(str)
+                            + "<br>Match: "
+                            + group["batting_team"].astype(str)
+                            + " vs "
+                            + group["bowling_team"].astype(str)
+                            + "<br>Runs on ball: "
+                            + group["runs_off_bat"].astype(str)
                         ),
+                        hovertemplate="%{hovertext}<br>Cumulative runs above phase rate: %{y:.2f}<extra></extra>",
                     )
                 )
         fig.update_layout(
