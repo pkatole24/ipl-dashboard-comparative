@@ -542,7 +542,8 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str, palett
 
 
 def explain(text: str) -> None:
-    st.markdown(f"<div class='chart-note'>{text}</div>", unsafe_allow_html=True)
+    clean_text = safe_text(text).replace("**", "").replace("`", "")
+    st.markdown(f"<div class='chart-note'>{clean_text}</div>", unsafe_allow_html=True)
 
 
 def phase_coverage_note(source_df: pd.DataFrame, filtered_df: pd.DataFrame, min_balls: int, players: list[str]) -> None:
@@ -925,6 +926,22 @@ def main() -> None:
             color: var(--ink);
             font-size: 0.94rem;
             line-height: 1.45;
+        }
+        div[data-testid="stDownloadButton"] button,
+        div[data-testid="stDownloadButton"] button p,
+        div[data-testid="stDownloadButton"] button span {
+            color: var(--select-ink) !important;
+            opacity: 1 !important;
+        }
+        div[data-testid="stDownloadButton"] button {
+            background: var(--select-bg) !important;
+            border: 1px solid var(--line) !important;
+            border-radius: 8px !important;
+            font-weight: 750 !important;
+        }
+        div[data-testid="stDownloadButton"] button:hover {
+            border-color: #EF4444 !important;
+            filter: brightness(1.08);
         }
         @media (max-width: 720px) {
             .stat-grid-three,
