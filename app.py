@@ -224,7 +224,7 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
                     "SR points vs phase: %{y:.2f}<br>"
                     "Runs: %{customdata[0]}<br>"
                     "Raw SR: %{customdata[1]:.2f}<br>"
-                    "League phase SR: %{customdata[2]:.2f}<br>"
+                    "Leave-one-out league phase SR: %{customdata[2]:.2f}<br>"
                     "Runs above phase rate: %{customdata[3]:.2f}<extra></extra>"
                 ),
                 showlegend=False,
@@ -252,7 +252,7 @@ def powerplay_death_chart(pd_filtered: pd.DataFrame, selected: list[str]) -> go.
                         "SR points vs phase: %{y:.2f}<br>"
                         "Runs: %{customdata[0]}<br>"
                         "Raw SR: %{customdata[1]:.2f}<br>"
-                        "League phase SR: %{customdata[2]:.2f}<br>"
+                        "Leave-one-out league phase SR: %{customdata[2]:.2f}<br>"
                         "Runs above phase rate: %{customdata[3]:.2f}<extra></extra>"
                     ),
                     name=f"{player} - {phase_name}",
@@ -574,24 +574,25 @@ def main() -> None:
             )
         elif metric_choice == "SR points vs match":
             explain(
-                "**SR points vs match** compares the batter's phase strike rate with the overall match scoring rate. "
+                "**SR points vs match** is model-free: batter phase strike rate minus the overall match scoring rate. "
                 "Example: a 150 phase SR in a match where everyone scored at 130 is `+20`; "
                 "the same 150 in a 180-SR match is `-30`."
             )
         elif metric_choice == "SR points vs teammates":
             explain(
-                "**SR points vs teammates** compares the batter's phase strike rate with his teammates in the same innings, "
+                "**SR points vs teammates** is model-free: batter phase strike rate minus his teammates' scoring rate in the same innings, "
                 "excluding that batter. Example: if the batter's phase SR is 170 and the rest of the team scored at 145, "
                 "the phase is `+25`."
             )
         elif metric_choice == "SR points vs league phase":
             explain(
-                "**SR points vs league phase** compares a batter with the league average for the same own-ball phase. "
+                "**SR points vs league phase** is model-free: batter phase strike rate minus the league average for the same own-ball phase. "
                 "Example: balls 31-45 are compared with other batters' balls 31-45, not with powerplay or death-over balls."
             )
         elif metric_choice == "Difficulty-adjusted strike rate":
             explain(
-                "**Difficulty-adjusted strike rate** gives extra credit for scoring in slower matches and reduces credit in very fast-scoring matches. "
+                "**Difficulty-adjusted strike rate** is model-free: it adjusts strike rate using the match/phase scoring environment, not xR predictions. "
+                "It gives extra credit for scoring in slower matches and reduces credit in very fast-scoring matches. "
                 "Example: 150 SR in a low-scoring match can adjust upward, while 150 in a run-fest can adjust downward."
             )
 
@@ -634,22 +635,25 @@ def main() -> None:
                 st.plotly_chart(line_metric_chart(context_summary, metric_col, title, title), use_container_width=True)
                 if metric_col == "sr_points_vs_match":
                     explain(
-                        "This adjusts for match scoring environment. Example: `+15` means the batter's phase SR was "
+                        "Model-free metric: batter phase strike rate minus the match scoring rate. Example: `+15` means the batter's phase SR was "
                         "15 points faster than the match as a whole."
                     )
                 elif metric_col == "sr_points_vs_teammates":
                     explain(
-                        "This adjusts for team innings context. Example: `-10` means the batter's phase SR was "
+                        "Model-free metric: batter phase strike rate minus teammates' scoring rate in the same innings, excluding that batter. "
+                        "Example: `-10` means the batter's phase SR was "
                         "10 points slower than teammates in the same innings after removing his own balls."
                     )
                 elif metric_col == "sr_points_vs_league_phase":
                     explain(
-                        "This adjusts for where the batter was in his innings. Example: balls `46-60` are compared with "
+                        "Model-free metric: batter phase strike rate minus the league average strike rate for the same own-ball phase. "
+                        "Example: balls `46-60` are compared with "
                         "the league's balls `46-60`, so finishers and openers are judged against the right phase."
                     )
                 elif metric_col == "difficulty_adjusted_sr":
                     explain(
-                        "This converts raw scoring through a match-difficulty index. Example: a phase in a slow match "
+                        "Model-free metric: strike rate adjusted using match/phase scoring environment, not xR predictions. "
+                        "Example: a phase in a slow match "
                         "gets boosted relative to the same raw SR in a high-scoring match."
                     )
         else:
@@ -660,9 +664,13 @@ def main() -> None:
         pd_filtered = add_live_quartiles(pd_filtered)
         st.plotly_chart(powerplay_death_chart(pd_filtered, selected), use_container_width=True)
         explain(
-            "**SR points above leave-one-out league phase rate** compares each batter with everyone else in that phase. "
-            "The batter's own balls are removed from the league baseline. Example: if the rest of the league scores at 140 "
-            "in the powerplay and the batter scores at 165, he is `+25`."
+            "**Powerplay and death metrics are model-free.** **Leave-one-out league phase rate** is the league scoring rate for that phase "
+            "after removing the batter's own balls, so he is not partly compared against himself. "
+            "**SR points above leave-one-out league phase rate** is batter SR minus that baseline. Example: if the rest of the league "
+            "scores at 140 in the powerplay and the batter scores at 165, he is `+25`. "
+            "**Runs above league phase rate** is actual runs minus a simple league-rate baseline, not xR. "
+            "Example: if the phase baseline expects 14 runs from 10 balls and the batter scores 18, he is `+4`. "
+            "**Quartile** is the batter's ranking bucket within the same phase after the minimum-balls filter."
         )
 
         q_selected = pd_filtered[pd_filtered["batter"].isin(selected)].copy()
@@ -736,7 +744,8 @@ def main() -> None:
         )
         st.plotly_chart(fig, use_container_width=True)
         explain(
-            "**Worm chart** is season-cumulative within the selected phase. The x-axis is not the match number and it does not reset each match. "
+            "**Worm chart** is model-free: it shows cumulative runs gained or lost versus the league phase rate, not xR. "
+            "It is season-cumulative within the selected phase. The x-axis is not the match number and it does not reset each match. "
             "If a batter faces one powerplay ball in one match and another powerplay ball in a later match, the later ball is `x = 2`. "
             "A value like `(1, -1.6)` means that after one ball in that phase, the batter was 1.6 runs below the league phase rate. "
             "A rising line means he is adding runs faster than the phase baseline; a falling line means he is losing ground."
