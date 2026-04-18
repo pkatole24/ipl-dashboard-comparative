@@ -1,0 +1,1158 @@
+player,shot,runs,balls,known_control_balls,controlled_balls,uncontrolled_balls,boundaries,dots,dismissals,strike_rate,control_pct,false_shot_pct,boundary_pct,dot_pct
+Abdul Samad,On Drive,16,13,13,11,2,2,3,2,123.08,84.62,15.38,15.38,23.08
+Abdul Samad,Flick,12,13,13,9,4,0,4,0,92.31,69.23,30.77,0.0,30.77
+Abdul Samad,Pull,11,6,6,4,2,2,1,1,183.33,66.67,33.33,33.33,16.67
+Abdul Samad,Cut Shot,8,6,6,6,0,1,2,0,133.33,100.0,0.0,16.67,33.33
+Abdul Samad,Cover Drive,7,7,7,6,1,0,3,0,100.0,85.71,14.29,0.0,42.86
+Abdul Samad,Slog Shot,6,2,2,1,1,1,1,1,300.0,50.0,50.0,50.0,50.0
+Abdul Samad,Steered,5,3,3,3,0,1,1,0,166.67,100.0,0.0,33.33,33.33
+Abdul Samad,Push,4,5,5,1,4,1,4,0,80.0,20.0,80.0,20.0,80.0
+Abdul Samad,Square Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Abdul Samad,Straight Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Abdul Samad,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Abdul Samad,Unknown,0,2,0,0,0,0,2,1,0.0,,,0.0,100.0
+Abdul Samad,Dab,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Abdul Samad,Late Cut,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Abdul Samad,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Abhishek Sharma,Unknown,74,29,0,0,0,13,10,2,255.17,,,44.83,34.48
+Abhishek Sharma,Pull,12,6,6,2,4,2,4,2,200.0,33.33,66.67,33.33,66.67
+Abhishek Sharma,Slog Shot,12,2,2,2,0,2,0,0,600.0,100.0,0.0,100.0,0.0
+Abhishek Sharma,Cut Shot,10,3,3,3,0,2,0,0,333.33,100.0,0.0,66.67,0.0
+Abhishek Sharma,Cover Drive,9,5,5,5,0,2,2,0,180.0,100.0,0.0,40.0,40.0
+Abhishek Sharma,Square Drive,7,4,4,4,0,1,2,0,175.0,100.0,0.0,25.0,50.0
+Abhishek Sharma,Flick,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Abhishek Sharma,Push,2,4,4,3,1,0,2,0,50.0,75.0,25.0,0.0,50.0
+Abhishek Sharma,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Abhishek Sharma,On Drive,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
+Aiden Markram,Flick,39,21,21,16,5,7,7,0,185.71,76.19,23.81,33.33,33.33
+Aiden Markram,On Drive,35,19,19,17,2,5,3,1,184.21,89.47,10.53,26.32,15.79
+Aiden Markram,Cover Drive,16,8,8,7,1,4,4,0,200.0,87.5,12.5,50.0,50.0
+Aiden Markram,Pull,13,8,8,3,5,2,5,2,162.5,37.5,62.5,25.0,62.5
+Aiden Markram,Unknown,12,8,0,0,0,1,1,1,150.0,,,12.5,12.5
+Aiden Markram,Straight Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Aiden Markram,Square Drive,1,3,3,3,0,0,2,0,33.33,100.0,0.0,0.0,66.67
+Aiden Markram,Defended,0,4,4,4,0,0,4,0,0.0,100.0,0.0,0.0,100.0
+Aiden Markram,Push,0,4,4,4,0,0,4,0,0.0,100.0,0.0,0.0,100.0
+Aiden Markram,Cut Shot,0,2,2,1,1,0,2,1,0.0,50.0,50.0,0.0,100.0
+Aiden Markram,Slog Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Ajinkya Rahane,Flick,43,29,29,25,4,4,7,0,148.28,86.21,13.79,13.79,24.14
+Ajinkya Rahane,On Drive,25,17,17,13,4,4,6,2,147.06,76.47,23.53,23.53,35.29
+Ajinkya Rahane,Pull,19,13,13,9,4,2,4,2,146.15,69.23,30.77,15.38,30.77
+Ajinkya Rahane,Square Drive,16,10,10,10,0,2,2,0,160.0,100.0,0.0,20.0,20.0
+Ajinkya Rahane,Cover Drive,13,7,7,6,1,2,3,1,185.71,85.71,14.29,28.57,42.86
+Ajinkya Rahane,Slog Shot,10,5,5,2,3,1,0,0,200.0,40.0,60.0,20.0,0.0
+Ajinkya Rahane,Cut Shot,6,5,5,4,1,0,0,0,120.0,80.0,20.0,0.0,0.0
+Ajinkya Rahane,Steered,6,3,3,2,1,1,0,0,200.0,66.67,33.33,33.33,0.0
+Ajinkya Rahane,Unknown,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Ajinkya Rahane,Straight Drive,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ajinkya Rahane,Push,2,4,4,4,0,0,2,0,50.0,100.0,0.0,0.0,50.0
+Ajinkya Rahane,Dab,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Ajinkya Rahane,Leg Glance,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ajinkya Rahane,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Ajinkya Rahane,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Angkrish Raghuvanshi,Cover Drive,35,22,22,19,3,5,10,0,159.09,86.36,13.64,22.73,45.45
+Angkrish Raghuvanshi,Cut Shot,28,13,13,11,2,6,3,0,215.38,84.62,15.38,46.15,23.08
+Angkrish Raghuvanshi,Flick,26,11,11,9,2,3,1,0,236.36,81.82,18.18,27.27,9.09
+Angkrish Raghuvanshi,Pull,17,9,9,6,3,2,1,1,188.89,66.67,33.33,22.22,11.11
+Angkrish Raghuvanshi,Sweep Shot,16,9,9,5,4,3,4,0,177.78,55.56,44.44,33.33,44.44
+Angkrish Raghuvanshi,Slog Shot,16,4,4,3,1,3,1,1,400.0,75.0,25.0,75.0,25.0
+Angkrish Raghuvanshi,On Drive,12,16,16,13,3,1,7,2,75.0,81.25,18.75,6.25,43.75
+Angkrish Raghuvanshi,Steered,11,5,5,5,0,2,1,0,220.0,100.0,0.0,40.0,20.0
+Angkrish Raghuvanshi,Square Drive,10,8,8,7,1,1,2,0,125.0,87.5,12.5,12.5,25.0
+Angkrish Raghuvanshi,Upper Cut,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
+Angkrish Raghuvanshi,Push,4,6,6,6,0,0,2,0,66.67,100.0,0.0,0.0,33.33
+Angkrish Raghuvanshi,Unknown,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Angkrish Raghuvanshi,Dab,2,3,3,2,1,0,1,1,66.67,66.67,33.33,0.0,33.33
+Angkrish Raghuvanshi,Late Cut,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Angkrish Raghuvanshi,Defended,0,3,3,3,0,0,3,0,0.0,100.0,0.0,0.0,100.0
+Angkrish Raghuvanshi,Left Alone,0,3,3,3,0,0,3,0,0.0,100.0,0.0,0.0,100.0
+Angkrish Raghuvanshi,Reverse Sweep,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Angkrish Raghuvanshi,Slog Sweep,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Angkrish Raghuvanshi,Straight Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Aniket Verma,Unknown,24,14,0,0,0,3,2,1,171.43,,,21.43,14.29
+Aniket Verma,Pull,15,6,6,5,1,2,1,0,250.0,83.33,16.67,33.33,16.67
+Aniket Verma,Slog Shot,13,3,3,2,1,2,0,0,433.33,66.67,33.33,66.67,0.0
+Aniket Verma,Upper Cut,8,3,3,2,1,2,1,1,266.67,66.67,33.33,66.67,33.33
+Aniket Verma,Square Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Aniket Verma,Flick,2,4,4,2,2,0,2,0,50.0,50.0,50.0,0.0,50.0
+Aniket Verma,On Drive,2,4,4,2,2,0,2,2,50.0,50.0,50.0,0.0,50.0
+Aniket Verma,Cover Drive,2,2,2,2,0,0,1,0,100.0,100.0,0.0,0.0,50.0
+Aniket Verma,Cut Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Aniket Verma,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Aniket Verma,Reverse Scoop,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Aniket Verma,Steered,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Anrich Nortje,On Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Anshul Kamboj,Pull,15,4,4,2,2,3,0,0,375.0,50.0,50.0,75.0,0.0
+Anshul Kamboj,Flick,4,7,7,5,2,0,3,0,57.14,71.43,28.57,0.0,42.86
+Anshul Kamboj,On Drive,3,3,3,2,1,0,0,0,100.0,66.67,33.33,0.0,0.0
+Anshul Kamboj,Push,2,2,2,0,2,0,0,0,100.0,0.0,100.0,0.0,0.0
+Anshul Kamboj,Slog Shot,2,2,2,0,2,0,0,0,100.0,0.0,100.0,0.0,0.0
+Anshul Kamboj,Leg Glance,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Anshul Kamboj,Cover Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Anshul Kamboj,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Anukul Roy,Cover Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Anukul Roy,Cut Shot,2,2,2,1,1,0,1,0,100.0,50.0,50.0,0.0,50.0
+Anukul Roy,On Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Anukul Roy,Push,1,3,3,2,1,0,2,1,33.33,66.67,33.33,0.0,66.67
+Anukul Roy,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Anukul Roy,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Ashok Sharma,Slog Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Ashutosh Sharma,Unknown,19,10,0,0,0,3,4,1,190.0,,,30.0,40.0
+Auqib Nabi,Unknown,4,2,0,0,0,1,1,1,200.0,,,50.0,50.0
+Avesh Khan,Slog Shot,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Avesh Khan,Unknown,1,2,0,0,0,0,1,1,50.0,,,0.0,50.0
+Avesh Khan,Flick,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Avesh Khan,Pull,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Axar Patel,Flick,5,7,7,5,2,0,2,1,71.43,71.43,28.57,0.0,28.57
+Axar Patel,Cut Shot,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Axar Patel,Steered,4,2,2,0,2,1,1,0,200.0,0.0,100.0,50.0,50.0
+Axar Patel,Upper Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Axar Patel,On Drive,3,3,3,2,1,0,1,0,100.0,66.67,33.33,0.0,33.33
+Axar Patel,Square Drive,3,2,2,2,0,0,0,0,150.0,100.0,0.0,0.0,0.0
+Axar Patel,Unknown,2,3,1,1,0,0,1,1,66.67,100.0,0.0,0.0,33.33
+Axar Patel,Push,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Axar Patel,Cover Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Axar Patel,Paddle Sweep,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Axar Patel,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Ayush Badoni,Unknown,38,24,0,0,0,5,6,1,158.33,,,20.83,25.0
+Ayush Badoni,Cover Drive,14,8,8,5,3,3,4,1,175.0,62.5,37.5,37.5,50.0
+Ayush Badoni,Square Drive,14,5,5,5,0,3,0,0,280.0,100.0,0.0,60.0,0.0
+Ayush Badoni,Pull,9,5,5,3,2,1,1,1,180.0,60.0,40.0,20.0,20.0
+Ayush Badoni,Flick,8,10,10,8,2,0,2,0,80.0,80.0,20.0,0.0,20.0
+Ayush Badoni,Cut Shot,8,5,5,4,1,1,1,0,160.0,80.0,20.0,20.0,20.0
+Ayush Badoni,Sweep Shot,7,4,4,4,0,1,0,0,175.0,100.0,0.0,25.0,0.0
+Ayush Badoni,Slog Shot,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Ayush Badoni,On Drive,4,7,7,5,2,0,3,2,57.14,71.43,28.57,0.0,42.86
+Ayush Badoni,Upper Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Ayush Badoni,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ayush Badoni,Defended,0,5,5,4,1,0,5,0,0.0,80.0,20.0,0.0,100.0
+Ayush Badoni,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Ayush Badoni,Push,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Ayush Badoni,Steered,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Ayush Mhatre,Unknown,59,36,0,0,0,7,6,0,163.89,,,19.44,16.67
+Ayush Mhatre,Pull,34,12,12,7,5,5,3,1,283.33,58.33,41.67,41.67,25.0
+Ayush Mhatre,On Drive,24,10,10,8,2,5,3,0,240.0,80.0,20.0,50.0,30.0
+Ayush Mhatre,Cover Drive,15,9,9,7,2,2,2,0,166.67,77.78,22.22,22.22,22.22
+Ayush Mhatre,Slog Shot,11,6,6,3,3,2,3,1,183.33,50.0,50.0,33.33,50.0
+Ayush Mhatre,Flick,10,7,7,4,3,2,3,0,142.86,57.14,42.86,28.57,42.86
+Ayush Mhatre,Straight Drive,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Ayush Mhatre,Steered,5,4,4,2,2,1,2,0,125.0,50.0,50.0,25.0,50.0
+Ayush Mhatre,Square Drive,5,3,3,2,1,1,1,1,166.67,66.67,33.33,33.33,33.33
+Ayush Mhatre,Push,1,4,4,4,0,0,3,0,25.0,100.0,0.0,0.0,75.0
+Ayush Mhatre,Slog Sweep,1,2,2,0,2,0,1,0,50.0,0.0,100.0,0.0,50.0
+Ayush Mhatre,Defended,0,4,4,3,1,0,4,0,0.0,75.0,25.0,0.0,100.0
+Ayush Mhatre,Hook,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
+Bhuvneshwar Kumar,On Drive,6,4,4,4,0,0,0,0,150.0,100.0,0.0,0.0,0.0
+Bhuvneshwar Kumar,Slog Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Bhuvneshwar Kumar,Flick,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Bhuvneshwar Kumar,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Bhuvneshwar Kumar,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Cameron Green,On Drive,29,19,19,18,1,2,1,0,152.63,94.74,5.26,10.53,5.26
+Cameron Green,Slog Shot,24,6,6,3,3,5,1,0,400.0,50.0,50.0,83.33,16.67
+Cameron Green,Flick,19,15,15,10,5,1,3,0,126.67,66.67,33.33,6.67,20.0
+Cameron Green,Pull,19,8,8,4,4,4,3,0,237.5,50.0,50.0,50.0,37.5
+Cameron Green,Slog Sweep,11,5,5,3,2,2,2,0,220.0,60.0,40.0,40.0,40.0
+Cameron Green,Steered,8,5,5,3,2,1,1,1,160.0,60.0,40.0,20.0,20.0
+Cameron Green,Cover Drive,7,10,10,3,7,0,4,1,70.0,30.0,70.0,0.0,40.0
+Cameron Green,Square Drive,5,2,2,1,1,1,0,0,250.0,50.0,50.0,50.0,0.0
+Cameron Green,Upper Cut,4,2,2,1,1,1,1,1,200.0,50.0,50.0,50.0,50.0
+Cameron Green,Sweep Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Cameron Green,Push,2,4,4,3,1,0,2,0,50.0,75.0,25.0,0.0,50.0
+Cameron Green,Leg Glance,2,3,3,2,1,0,1,0,66.67,66.67,33.33,0.0,33.33
+Cameron Green,Dab,1,3,3,3,0,0,2,0,33.33,100.0,0.0,0.0,66.67
+Cameron Green,Defended,0,5,5,5,0,0,5,0,0.0,100.0,0.0,0.0,100.0
+Cameron Green,Cut Shot,0,3,3,0,3,0,3,1,0.0,0.0,100.0,0.0,100.0
+Cameron Green,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Cameron Green,Reverse Sweep,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Cameron Green,Unknown,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Cooper Connolly,Unknown,32,26,2,1,1,5,13,2,123.08,50.0,50.0,19.23,50.0
+Cooper Connolly,On Drive,29,18,18,16,2,4,4,1,161.11,88.89,11.11,22.22,22.22
+Cooper Connolly,Cut Shot,25,11,11,8,3,5,3,0,227.27,72.73,27.27,45.45,27.27
+Cooper Connolly,Pull,18,6,6,5,1,3,1,0,300.0,83.33,16.67,50.0,16.67
+Cooper Connolly,Cover Drive,13,9,9,8,1,2,2,0,144.44,88.89,11.11,22.22,22.22
+Cooper Connolly,Slog Shot,9,4,4,1,3,1,1,0,225.0,25.0,75.0,25.0,25.0
+Cooper Connolly,Flick,4,7,7,3,4,0,3,0,57.14,42.86,57.14,0.0,42.86
+Cooper Connolly,Square Drive,3,2,2,2,0,0,0,0,150.0,100.0,0.0,0.0,0.0
+Cooper Connolly,Slog Sweep,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Cooper Connolly,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Cooper Connolly,Straight Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Cooper Connolly,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Cooper Connolly,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Cooper Connolly,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Cooper Connolly,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Corbin Bosch,Unknown,11,4,0,0,0,2,0,0,275.0,,,50.0,0.0
+David Miller,Unknown,38,32,0,0,0,6,14,1,118.75,,,18.75,43.75
+David Miller,On Drive,17,7,7,7,0,2,0,0,242.86,100.0,0.0,28.57,0.0
+David Miller,Pull,14,10,10,6,4,2,4,1,140.0,60.0,40.0,20.0,40.0
+David Miller,Cover Drive,11,3,3,3,0,2,0,0,366.67,100.0,0.0,66.67,0.0
+David Miller,Flick,10,6,6,4,2,1,1,0,166.67,66.67,33.33,16.67,16.67
+David Miller,Slog Shot,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+David Miller,Cut Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+David Miller,Left Alone,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+David Payne,On Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+David Payne,Cover Drive,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+David Payne,Square Drive,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+David Payne,Flick,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Deepak Chahar,Cut Shot,5,2,2,1,1,1,0,0,250.0,50.0,50.0,50.0,0.0
+Deepak Chahar,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Deepak Chahar,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Deepak Chahar,Pull,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Devdutt Padikkal,Flick,21,12,12,7,5,3,4,1,175.0,58.33,41.67,25.0,33.33
+Devdutt Padikkal,Cut Shot,21,11,11,8,3,4,2,0,190.91,72.73,27.27,36.36,18.18
+Devdutt Padikkal,Cover Drive,21,10,10,6,4,3,2,0,210.0,60.0,40.0,30.0,20.0
+Devdutt Padikkal,On Drive,15,9,9,7,2,2,2,1,166.67,77.78,22.22,22.22,22.22
+Devdutt Padikkal,Unknown,10,12,1,0,1,1,5,2,83.33,0.0,100.0,8.33,41.67
+Devdutt Padikkal,Pull,10,7,7,6,1,1,1,0,142.86,85.71,14.29,14.29,14.29
+Devdutt Padikkal,Slog Sweep,10,2,2,2,0,2,0,0,500.0,100.0,0.0,100.0,0.0
+Devdutt Padikkal,Straight Drive,9,3,3,3,0,2,0,0,300.0,100.0,0.0,66.67,0.0
+Devdutt Padikkal,Steered,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+Devdutt Padikkal,Slog Shot,6,2,1,1,0,1,1,1,300.0,100.0,0.0,50.0,50.0
+Devdutt Padikkal,Square Drive,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Devdutt Padikkal,Upper Cut,4,3,3,1,2,1,2,0,133.33,33.33,66.67,33.33,66.67
+Devdutt Padikkal,Late Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Devdutt Padikkal,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Devdutt Padikkal,Push,2,3,3,2,1,0,1,0,66.67,66.67,33.33,0.0,33.33
+Devdutt Padikkal,Dab,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Devdutt Padikkal,Sweep Shot,2,1,1,0,1,0,0,0,200.0,0.0,100.0,0.0,0.0
+Devdutt Padikkal,Defended,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Devdutt Padikkal,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Dewald Brevis,Cut Shot,15,6,6,6,0,3,0,0,250.0,100.0,0.0,50.0,0.0
+Dewald Brevis,On Drive,11,7,7,6,1,1,2,0,157.14,85.71,14.29,14.29,28.57
+Dewald Brevis,Pull,7,2,2,0,2,1,0,0,350.0,0.0,100.0,50.0,0.0
+Dewald Brevis,Slog Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Dewald Brevis,Cover Drive,2,6,6,3,3,0,4,1,33.33,50.0,50.0,0.0,66.67
+Dewald Brevis,Flick,2,3,3,1,2,0,1,0,66.67,33.33,66.67,0.0,33.33
+Dewald Brevis,Defended,0,3,3,2,1,0,3,0,0.0,66.67,33.33,0.0,100.0
+Dewald Brevis,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Dhruv Jurel,Flick,61,28,28,26,2,8,5,1,217.86,92.86,7.14,28.57,17.86
+Dhruv Jurel,Pull,40,19,19,15,4,7,2,0,210.53,78.95,21.05,36.84,10.53
+Dhruv Jurel,On Drive,26,15,15,14,1,2,1,0,173.33,93.33,6.67,13.33,6.67
+Dhruv Jurel,Cover Drive,15,6,6,4,2,3,1,0,250.0,66.67,33.33,50.0,16.67
+Dhruv Jurel,Cut Shot,11,7,7,5,2,2,2,0,157.14,71.43,28.57,28.57,28.57
+Dhruv Jurel,Slog Shot,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Dhruv Jurel,Steered,4,5,5,4,1,0,1,0,80.0,80.0,20.0,0.0,20.0
+Dhruv Jurel,Late Cut,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50.0
+Dhruv Jurel,Square Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Dhruv Jurel,Push,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Dhruv Jurel,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Dhruv Jurel,Straight Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Dhruv Jurel,Unknown,0,3,1,0,1,0,3,2,0.0,0.0,100.0,0.0,100.0
+Dhruv Jurel,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Dhruv Jurel,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Dhruv Jurel,Reverse Sweep,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Dhruv Jurel,Sweep Shot,0,1,0,0,0,0,1,0,0.0,,,0.0,100.0
+Dhruv Jurel,Upper Cut,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Digvesh Rathi,Unknown,0,3,0,0,0,0,3,0,0.0,,,0.0,100.0
+Donovan Ferreira,Unknown,69,44,0,0,0,11,17,1,156.82,,,25.0,38.64
+Donovan Ferreira,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Donovan Ferreira,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Donovan Ferreira,Pull,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Finn Allen,Pull,34,8,8,7,1,7,1,1,425.0,87.5,12.5,87.5,12.5
+Finn Allen,Slog Shot,18,10,10,1,9,4,6,2,180.0,10.0,90.0,40.0,60.0
+Finn Allen,Cover Drive,8,4,4,3,1,2,2,0,200.0,75.0,25.0,50.0,50.0
+Finn Allen,On Drive,6,8,8,6,2,1,5,2,75.0,75.0,25.0,12.5,62.5
+Finn Allen,Unknown,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Finn Allen,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Finn Allen,Straight Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Finn Allen,Flick,1,3,3,2,1,0,2,0,33.33,66.67,33.33,0.0,66.67
+Finn Allen,Square Drive,1,2,2,0,2,0,1,0,50.0,0.0,100.0,0.0,50.0
+Finn Allen,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Finn Allen,Cut Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Finn Allen,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+George Linde,Flick,8,5,5,3,2,2,3,1,160.0,60.0,40.0,40.0,60.0
+George Linde,Unknown,7,7,0,0,0,1,4,1,100.0,,,14.29,57.14
+George Linde,Pull,4,4,4,1,3,0,1,0,100.0,25.0,75.0,0.0,25.0
+George Linde,Ramp,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Glenn Phillips,Flick,11,7,7,7,0,1,1,0,157.14,100.0,0.0,14.29,14.29
+Glenn Phillips,On Drive,10,11,11,9,2,0,2,1,90.91,81.82,18.18,0.0,18.18
+Glenn Phillips,Cut Shot,9,4,4,4,0,1,0,0,225.0,100.0,0.0,25.0,0.0
+Glenn Phillips,Cover Drive,8,6,6,5,1,1,1,0,133.33,83.33,16.67,16.67,16.67
+Glenn Phillips,Straight Drive,7,4,4,4,0,1,1,0,175.0,100.0,0.0,25.0,25.0
+Glenn Phillips,Slog Shot,6,3,3,1,2,1,2,1,200.0,33.33,66.67,33.33,66.67
+Glenn Phillips,Hook,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Glenn Phillips,Leg Glance,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Glenn Phillips,Pull,1,2,2,1,1,0,1,1,50.0,50.0,50.0,0.0,50.0
+Glenn Phillips,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Glenn Phillips,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Glenn Phillips,Square Drive,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Glenn Phillips,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Glenn Phillips,Reverse Scoop,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Hardik Pandya,On Drive,19,11,11,7,4,3,3,2,172.73,63.64,36.36,27.27,27.27
+Hardik Pandya,Unknown,14,12,0,0,0,1,3,1,116.67,,,8.33,25.0
+Hardik Pandya,Cut Shot,14,8,8,5,3,3,3,0,175.0,62.5,37.5,37.5,37.5
+Hardik Pandya,Cover Drive,11,5,5,5,0,2,1,0,220.0,100.0,0.0,40.0,20.0
+Hardik Pandya,Slog Shot,7,5,5,0,5,1,1,0,140.0,0.0,100.0,20.0,20.0
+Hardik Pandya,Pull,6,3,3,2,1,1,0,0,200.0,66.67,33.33,33.33,0.0
+Hardik Pandya,Flick,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Hardik Pandya,Steered,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Hardik Pandya,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Hardik Pandya,Square Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Harsh Dubey,Flick,5,3,3,2,1,1,1,1,166.67,66.67,33.33,33.33,33.33
+Harsh Dubey,Unknown,5,3,1,1,0,1,1,0,166.67,100.0,0.0,33.33,33.33
+Harsh Dubey,Pull,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Harsh Dubey,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Harsh Dubey,Cover Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Harshal Patel,On Drive,4,2,2,1,1,1,1,1,200.0,50.0,50.0,50.0,50.0
+Harshal Patel,Cover Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Harshal Patel,Pull,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Heinrich Klaasen,Unknown,79,59,0,0,0,6,13,2,133.9,,,10.17,22.03
+Heinrich Klaasen,Cover Drive,33,17,17,17,0,4,1,0,194.12,100.0,0.0,23.53,5.88
+Heinrich Klaasen,On Drive,27,17,17,16,1,3,2,0,158.82,94.12,5.88,17.65,11.76
+Heinrich Klaasen,Pull,27,17,17,15,2,2,0,0,158.82,88.24,11.76,11.76,0.0
+Heinrich Klaasen,Slog Shot,16,7,7,4,3,3,2,2,228.57,57.14,42.86,42.86,28.57
+Heinrich Klaasen,Flick,11,10,10,9,1,1,3,0,110.0,90.0,10.0,10.0,30.0
+Heinrich Klaasen,Cut Shot,8,6,6,4,2,0,1,0,133.33,66.67,33.33,0.0,16.67
+Heinrich Klaasen,Reverse Scoop,6,3,3,1,2,1,2,1,200.0,33.33,66.67,33.33,66.67
+Heinrich Klaasen,Sweep Shot,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Heinrich Klaasen,Straight Drive,4,2,2,1,1,0,0,0,200.0,50.0,50.0,0.0,0.0
+Heinrich Klaasen,Push,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Heinrich Klaasen,Late Cut,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Heinrich Klaasen,Dab,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Heinrich Klaasen,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Heinrich Klaasen,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Heinrich Klaasen,Left Alone,0,5,5,5,0,0,5,0,0.0,100.0,0.0,0.0,100.0
+Heinrich Klaasen,Defended,0,3,3,2,1,0,3,0,0.0,66.67,33.33,0.0,100.0
+Ishan Kishan,Unknown,118,61,0,0,0,18,16,2,193.44,,,29.51,26.23
+Ishan Kishan,Pull,26,11,11,6,5,5,3,0,236.36,54.55,45.45,45.45,27.27
+Ishan Kishan,Cover Drive,14,6,6,6,0,3,1,0,233.33,100.0,0.0,50.0,16.67
+Ishan Kishan,Square Drive,13,7,7,5,2,2,2,1,185.71,71.43,28.57,28.57,28.57
+Ishan Kishan,Cut Shot,6,8,8,5,3,1,5,1,75.0,62.5,37.5,12.5,62.5
+Ishan Kishan,On Drive,6,4,4,3,1,1,1,1,150.0,75.0,25.0,25.0,25.0
+Ishan Kishan,Slog Shot,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Ishan Kishan,Slog Sweep,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Ishan Kishan,Upper Cut,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Ishan Kishan,Straight Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Ishan Kishan,Push,3,4,4,3,1,0,1,0,75.0,75.0,25.0,0.0,25.0
+Ishan Kishan,Flick,3,3,3,3,0,0,1,0,100.0,100.0,0.0,0.0,33.33
+Ishan Kishan,Steered,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Ishan Kishan,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Jamie Overton,Pull,23,11,11,5,6,4,4,1,209.09,45.45,54.55,36.36,36.36
+Jamie Overton,Flick,15,11,11,9,2,1,1,0,136.36,81.82,18.18,9.09,9.09
+Jamie Overton,On Drive,14,9,9,9,0,1,0,0,155.56,100.0,0.0,11.11,0.0
+Jamie Overton,Cover Drive,13,5,5,5,0,2,0,0,260.0,100.0,0.0,40.0,0.0
+Jamie Overton,Straight Drive,7,2,2,2,0,1,0,0,350.0,100.0,0.0,50.0,0.0
+Jamie Overton,Cut Shot,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+Jamie Overton,Slog Shot,5,6,6,0,6,1,4,1,83.33,0.0,100.0,16.67,66.67
+Jamie Overton,Push,2,5,5,4,1,0,3,0,40.0,80.0,20.0,0.0,60.0
+Jamie Overton,Defended,1,3,3,1,2,0,2,0,33.33,33.33,66.67,0.0,66.67
+Jamie Overton,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Jamie Overton,Steered,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Jamie Overton,Unknown,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Jasprit Bumrah,Ramp,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Jasprit Bumrah,Pull,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Jaydev Unadkat,On Drive,4,3,3,3,0,0,1,0,133.33,100.0,0.0,0.0,33.33
+Jitesh Sharma,Unknown,23,9,0,0,0,4,3,1,255.56,,,44.44,33.33
+Jitesh Sharma,On Drive,8,9,9,8,1,0,2,1,88.89,88.89,11.11,0.0,22.22
+Jitesh Sharma,Pull,6,7,7,4,3,0,2,1,85.71,57.14,42.86,0.0,28.57
+Jitesh Sharma,Flick,5,8,8,5,3,0,3,2,62.5,62.5,37.5,0.0,37.5
+Jitesh Sharma,Cover Drive,5,4,4,3,1,1,2,0,125.0,75.0,25.0,25.0,50.0
+Jitesh Sharma,Cut Shot,5,2,2,0,2,1,0,0,250.0,0.0,100.0,50.0,0.0
+Jitesh Sharma,Defended,0,4,4,4,0,0,4,0,0.0,100.0,0.0,0.0,100.0
+Jitesh Sharma,Push,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Jitesh Sharma,Square Drive,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Jofra Archer,Unknown,2,5,0,0,0,0,3,1,40.0,,,0.0,60.0
+Jofra Archer,Flick,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Jofra Archer,Cut Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Jos Buttler,Cover Drive,50,17,17,17,0,11,3,0,294.12,100.0,0.0,64.71,17.65
+Jos Buttler,Cut Shot,25,13,13,10,3,5,3,0,192.31,76.92,23.08,38.46,23.08
+Jos Buttler,Slog Shot,22,7,7,3,4,4,3,2,314.29,42.86,57.14,57.14,42.86
+Jos Buttler,Pull,21,13,13,7,6,4,6,2,161.54,53.85,46.15,30.77,46.15
+Jos Buttler,On Drive,18,25,25,21,4,0,7,1,72.0,84.0,16.0,0.0,28.0
+Jos Buttler,Flick,18,17,17,16,1,1,4,0,105.88,94.12,5.88,5.88,23.53
+Jos Buttler,Straight Drive,18,3,3,3,0,3,0,0,600.0,100.0,0.0,100.0,0.0
+Jos Buttler,Ramp,12,3,3,3,0,3,0,0,400.0,100.0,0.0,100.0,0.0
+Jos Buttler,Unknown,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Jos Buttler,Reverse Sweep,5,3,3,3,0,1,1,0,166.67,100.0,0.0,33.33,33.33
+Jos Buttler,Steered,2,4,4,4,0,0,2,0,50.0,100.0,0.0,0.0,50.0
+Jos Buttler,Square Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Jos Buttler,Push,1,8,8,7,1,0,7,0,12.5,87.5,12.5,0.0,87.5
+Jos Buttler,Leg Glance,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Jos Buttler,Defended,0,7,7,5,2,0,7,0,0.0,71.43,28.57,0.0,100.0
+Jos Buttler,Reverse Scoop,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+KL Rahul,On Drive,36,17,17,15,2,6,3,1,211.76,88.24,11.76,35.29,17.65
+KL Rahul,Flick,21,18,18,16,2,2,7,0,116.67,88.89,11.11,11.11,38.89
+KL Rahul,Pull,20,12,12,10,2,3,2,1,166.67,83.33,16.67,25.0,16.67
+KL Rahul,Cover Drive,20,11,11,9,2,3,4,1,181.82,81.82,18.18,27.27,36.36
+KL Rahul,Unknown,19,13,0,0,0,3,5,2,146.15,,,23.08,38.46
+KL Rahul,Slog Shot,14,3,3,3,0,3,0,0,466.67,100.0,0.0,100.0,0.0
+KL Rahul,Cut Shot,13,8,8,6,2,2,1,1,162.5,75.0,25.0,25.0,12.5
+KL Rahul,Straight Drive,7,3,3,3,0,1,0,0,233.33,100.0,0.0,33.33,0.0
+KL Rahul,Square Drive,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+KL Rahul,Sweep Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+KL Rahul,Upper Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+KL Rahul,Push,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+KL Rahul,Slog Sweep,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+KL Rahul,Defended,0,4,4,3,1,0,4,0,0.0,75.0,25.0,0.0,100.0
+KL Rahul,Ramp,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Kagiso Rabada,Straight Drive,7,3,3,2,1,1,1,0,233.33,66.67,33.33,33.33,33.33
+Kagiso Rabada,Cover Drive,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+Kagiso Rabada,On Drive,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Kagiso Rabada,Pull,1,3,3,1,2,0,2,0,33.33,33.33,66.67,0.0,66.67
+Kagiso Rabada,Push,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Kagiso Rabada,Cut Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kagiso Rabada,Flick,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kagiso Rabada,Defended,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Kartik Sharma,Flick,9,4,4,3,1,1,1,1,225.0,75.0,25.0,25.0,25.0
+Kartik Sharma,Pull,8,2,2,2,0,1,0,0,400.0,100.0,0.0,50.0,0.0
+Kartik Sharma,Steered,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kartik Sharma,Cover Drive,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Kartik Sharma,Cut Shot,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Kartik Sharma,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kartik Sharma,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kartik Sharma,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kartik Sharma,Defended,0,3,3,2,1,0,3,0,0.0,66.67,33.33,0.0,100.0
+Kartik Sharma,Slog Sweep,0,2,2,0,2,0,2,2,0.0,0.0,100.0,0.0,100.0
+Kartik Sharma,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Kartik Sharma,Straight Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Kartik Tyagi,Hook,6,1,1,0,1,1,0,0,600.0,0.0,100.0,100.0,0.0
+Kartik Tyagi,Flick,4,2,2,1,1,1,1,1,200.0,50.0,50.0,50.0,50.0
+Kartik Tyagi,Pull,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Kartik Tyagi,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Kartik Tyagi,On Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Kartik Tyagi,Push,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Kartik Tyagi,Straight Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Karun Nair,Square Drive,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Karun Nair,Cut Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Karun Nair,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Karun Nair,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Krunal Pandya,On Drive,8,4,4,3,1,1,1,1,200.0,75.0,25.0,25.0,25.0
+Krunal Pandya,Cover Drive,2,2,2,1,1,0,0,0,100.0,50.0,50.0,0.0,0.0
+Krunal Pandya,Cut Shot,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Krunal Pandya,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Krunal Pandya,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Krunal Pandya,Defended,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Krunal Pandya,Hook,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Krunal Pandya,Pull,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Krunal Pandya,Square Drive,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Krunal Pandya,Upper Cut,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Kuldeep Yadav,Unknown,4,7,0,0,0,0,3,1,57.14,,,0.0,42.86
+Kuldeep Yadav,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Kumar Kushagra,Cover Drive,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Kumar Kushagra,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Kumar Kushagra,Straight Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Kumar Kushagra,On Drive,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Kumar Kushagra,Pull,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Kumar Kushagra,Steered,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Kumar Kushagra,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Kumar Kushagra,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Kumar Kushagra,Slog Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Kumar Kushagra,Slog Sweep,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Lhuan-dre Pretorius,Unknown,0,2,0,0,0,0,2,1,0.0,,,0.0,100.0
+Liam Livingstone,On Drive,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Liam Livingstone,Flick,3,3,3,2,1,0,1,0,100.0,66.67,33.33,0.0,33.33
+Liam Livingstone,Dab,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Liam Livingstone,Cover Drive,2,2,2,1,1,0,1,0,100.0,50.0,50.0,0.0,50.0
+Liam Livingstone,Pull,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Liam Livingstone,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Liam Livingstone,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Liam Livingstone,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Liam Livingstone,Square Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Liam Livingstone,Steered,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Liam Livingstone,Unknown,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Lungi Ngidi,Unknown,3,5,0,0,0,0,3,1,60.0,,,0.0,60.0
+M Shahrukh Khan,Pull,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+M Shahrukh Khan,Upper Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+M Shahrukh Khan,On Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+M Shahrukh Khan,Push,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+M Shahrukh Khan,Cut Shot,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+M Shahrukh Khan,Flick,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+M Shahrukh Khan,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+M Shahrukh Khan,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+M Shahrukh Khan,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+M Shahrukh Khan,Straight Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Marco Jansen,Pull,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Marco Jansen,Cut Shot,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Marco Jansen,On Drive,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Marco Jansen,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Marco Jansen,Cover Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Marco Jansen,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Marco Jansen,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Marco Jansen,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Marcus Stoinis,Unknown,10,5,0,0,0,2,1,0,200.0,,,40.0,20.0
+Marcus Stoinis,Cover Drive,4,1,1,0,1,1,0,0,400.0,0.0,100.0,100.0,0.0
+Marcus Stoinis,Straight Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Marcus Stoinis,Slog Shot,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Marcus Stoinis,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Marcus Stoinis,Ramp,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Matt Henry,Pull,4,3,3,0,3,1,2,1,133.33,0.0,100.0,33.33,66.67
+Matt Henry,Slog Shot,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Matt Henry,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Matt Henry,Cover Drive,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Matt Henry,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Matt Henry,Flick,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Matt Henry,Push,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Matthew Short,Flick,1,2,2,1,1,0,1,1,50.0,50.0,50.0,0.0,50.0
+Matthew Short,Pull,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Matthew Short,Cover Drive,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Matthew Short,Cut Shot,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Matthew Short,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Mitchell Marsh,Unknown,40,32,0,0,0,5,12,1,125.0,,,15.62,37.5
+Mitchell Marsh,On Drive,20,11,11,7,4,3,4,1,181.82,63.64,36.36,27.27,36.36
+Mitchell Marsh,Cut Shot,15,7,7,5,2,3,1,0,214.29,71.43,28.57,42.86,14.29
+Mitchell Marsh,Slog Sweep,12,3,3,2,1,2,1,0,400.0,66.67,33.33,66.67,33.33
+Mitchell Marsh,Cover Drive,8,5,5,5,0,1,0,0,160.0,100.0,0.0,20.0,0.0
+Mitchell Marsh,Straight Drive,6,3,3,1,2,1,2,2,200.0,33.33,66.67,33.33,66.67
+Mitchell Marsh,Defended,5,6,6,4,2,1,4,0,83.33,66.67,33.33,16.67,66.67
+Mitchell Marsh,Flick,4,5,5,5,0,0,1,0,80.0,100.0,0.0,0.0,20.0
+Mitchell Marsh,Push,3,7,7,6,1,0,4,0,42.86,85.71,14.29,0.0,57.14
+Mitchell Marsh,Pull,1,4,4,1,3,0,3,1,25.0,25.0,75.0,0.0,75.0
+Mitchell Marsh,Sweep Shot,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Mitchell Marsh,Hook,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Mitchell Marsh,Steered,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Mitchell Santner,Unknown,18,13,0,0,0,2,2,0,138.46,,,15.38,15.38
+Mitchell Santner,Upper Cut,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Mitchell Santner,On Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Mitchell Santner,Pull,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Mitchell Santner,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Mohammed Shami,Flick,9,4,4,3,1,1,0,0,225.0,75.0,25.0,25.0,0.0
+Mohammed Shami,Steered,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Mohammed Shami,Upper Cut,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Mohammed Shami,Cover Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Mohammed Shami,Pull,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Mohammed Shami,Push,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Mohammed Shami,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Mohammed Shami,Unknown,0,1,0,0,0,0,1,1,0.0,,,0.0,100.0
+Mohsin Khan,Cover Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Mukul Choudhary,Pull,41,18,18,11,7,7,7,1,227.78,61.11,38.89,38.89,38.89
+Mukul Choudhary,Unknown,39,30,2,0,2,5,12,1,130.0,0.0,100.0,16.67,40.0
+Mukul Choudhary,Slog Shot,18,6,6,3,3,3,3,0,300.0,50.0,50.0,50.0,50.0
+Mukul Choudhary,Cover Drive,6,3,3,2,1,1,2,0,200.0,66.67,33.33,33.33,66.67
+Mukul Choudhary,On Drive,5,6,6,6,0,0,1,0,83.33,100.0,0.0,0.0,16.67
+Mukul Choudhary,Sweep Shot,5,3,3,1,2,1,1,0,166.67,33.33,66.67,33.33,33.33
+Mukul Choudhary,Paddle Sweep,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Mukul Choudhary,Push,3,6,6,6,0,0,3,0,50.0,100.0,0.0,0.0,50.0
+Mukul Choudhary,Flick,2,5,5,1,4,0,3,1,40.0,20.0,80.0,0.0,60.0
+Mukul Choudhary,Steered,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Mukul Choudhary,Dab,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Mukul Choudhary,Cut Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Mukul Choudhary,Defended,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Mukul Choudhary,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Naman Dhir,Unknown,78,52,0,0,0,9,12,2,150.0,,,17.31,23.08
+Naman Dhir,On Drive,8,5,5,4,1,1,1,1,160.0,80.0,20.0,20.0,20.0
+Naman Dhir,Cut Shot,6,3,3,2,1,1,0,0,200.0,66.67,33.33,33.33,0.0
+Naman Dhir,Pull,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Naman Dhir,Slog Shot,4,3,3,0,3,1,2,1,133.33,0.0,100.0,33.33,66.67
+Naman Dhir,Ramp,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Naman Dhir,Straight Drive,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Naman Dhir,Push,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Naman Dhir,Cover Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nandre Burger,Unknown,3,5,0,0,0,0,2,0,60.0,,,0.0,40.0
+Nehal Wadhera,Unknown,14,14,0,0,0,1,5,1,100.0,,,7.14,35.71
+Nehal Wadhera,On Drive,8,3,3,3,0,1,0,0,266.67,100.0,0.0,33.33,0.0
+Nehal Wadhera,Cover Drive,2,4,4,0,4,0,2,2,50.0,0.0,100.0,0.0,50.0
+Nehal Wadhera,Cut Shot,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Nehal Wadhera,Steered,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Nehal Wadhera,Dab,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nehal Wadhera,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nehal Wadhera,Flick,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nehal Wadhera,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nehal Wadhera,Slog Sweep,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Nicholas Pooran,On Drive,17,6,6,6,0,2,0,0,283.33,100.0,0.0,33.33,0.0
+Nicholas Pooran,Pull,7,7,7,1,6,1,5,1,100.0,14.29,85.71,14.29,71.43
+Nicholas Pooran,Sweep Shot,6,5,5,3,2,1,2,1,120.0,60.0,40.0,20.0,40.0
+Nicholas Pooran,Flick,4,5,5,4,1,0,1,0,80.0,80.0,20.0,0.0,20.0
+Nicholas Pooran,Cover Drive,4,4,4,4,0,0,1,0,100.0,100.0,0.0,0.0,25.0
+Nicholas Pooran,Unknown,1,7,0,0,0,0,6,1,14.29,,,0.0,85.71
+Nicholas Pooran,Push,1,6,6,5,1,0,5,1,16.67,83.33,16.67,0.0,83.33
+Nicholas Pooran,Dab,1,3,3,3,0,0,2,0,33.33,100.0,0.0,0.0,66.67
+Nicholas Pooran,Cut Shot,1,2,2,0,2,0,1,0,50.0,0.0,100.0,0.0,50.0
+Nicholas Pooran,Defended,0,5,5,3,2,0,5,0,0.0,60.0,40.0,0.0,100.0
+Nicholas Pooran,Left Alone,0,3,3,3,0,0,3,0,0.0,100.0,0.0,0.0,100.0
+Nicholas Pooran,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Nicholas Pooran,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Nitish Kumar Reddy,On Drive,30,14,14,12,2,4,2,0,214.29,85.71,14.29,28.57,14.29
+Nitish Kumar Reddy,Unknown,28,14,0,0,0,4,6,1,200.0,,,28.57,42.86
+Nitish Kumar Reddy,Cover Drive,18,11,11,10,1,3,4,1,163.64,90.91,9.09,27.27,36.36
+Nitish Kumar Reddy,Slog Shot,13,4,4,3,1,2,1,1,325.0,75.0,25.0,50.0,25.0
+Nitish Kumar Reddy,Flick,12,10,10,9,1,1,2,0,120.0,90.0,10.0,10.0,20.0
+Nitish Kumar Reddy,Cut Shot,12,6,6,6,0,2,1,0,200.0,100.0,0.0,33.33,16.67
+Nitish Kumar Reddy,Pull,9,7,7,5,2,1,1,0,128.57,71.43,28.57,14.29,14.29
+Nitish Kumar Reddy,Square Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Nitish Kumar Reddy,Defended,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Nitish Kumar Reddy,Push,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Nitish Kumar Reddy,Dab,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nitish Kumar Reddy,Ramp,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Nitish Kumar Reddy,Reverse Sweep,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Nitish Kumar Reddy,Steered,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nitish Kumar Reddy,Upper Cut,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Nitish Rana,Pull,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
+Nitish Rana,Hook,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Nitish Rana,Cut Shot,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Nitish Rana,Push,1,5,5,2,3,0,4,0,20.0,40.0,60.0,0.0,80.0
+Nitish Rana,Slog Shot,1,2,2,0,2,0,1,1,50.0,0.0,100.0,0.0,50.0
+Nitish Rana,Left Alone,0,4,4,3,1,0,4,0,0.0,75.0,25.0,0.0,100.0
+Nitish Rana,Unknown,0,3,0,0,0,0,3,1,0.0,,,0.0,100.0
+Nitish Rana,Flick,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Nitish Rana,Leg Glance,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Nitish Rana,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Nitish Rana,Reverse Sweep,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Nitish Rana,Steered,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Noor Ahmad,Slog Shot,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Noor Ahmad,On Drive,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Noor Ahmad,Cut Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Noor Ahmad,Pull,0,3,3,0,3,0,3,1,0.0,0.0,100.0,0.0,100.0
+Noor Ahmad,Push,0,3,3,2,1,0,3,0,0.0,66.67,33.33,0.0,100.0
+Noor Ahmad,Hook,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Noor Ahmad,Cover Drive,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Noor Ahmad,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Noor Ahmad,Flick,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Pathum Nissanka,Unknown,85,54,0,0,0,14,19,2,157.41,,,25.93,35.19
+Pathum Nissanka,On Drive,15,6,6,5,1,3,2,1,250.0,83.33,16.67,50.0,33.33
+Pathum Nissanka,Cover Drive,10,7,7,5,2,2,3,0,142.86,71.43,28.57,28.57,42.86
+Pathum Nissanka,Flick,4,7,7,3,4,0,4,1,57.14,42.86,57.14,0.0,57.14
+Pathum Nissanka,Slog Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Pathum Nissanka,Steered,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Pathum Nissanka,Cut Shot,2,4,4,2,2,0,2,0,50.0,50.0,50.0,0.0,50.0
+Pathum Nissanka,Pull,2,2,2,1,1,0,0,0,100.0,50.0,50.0,0.0,0.0
+Pathum Nissanka,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Pathum Nissanka,Sweep Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Pathum Nissanka,Left Alone,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Phil Salt,Pull,59,18,18,12,6,10,5,1,327.78,66.67,33.33,55.56,27.78
+Phil Salt,On Drive,29,23,23,18,5,3,7,1,126.09,78.26,21.74,13.04,30.43
+Phil Salt,Cover Drive,28,20,20,15,5,4,7,2,140.0,75.0,25.0,20.0,35.0
+Phil Salt,Cut Shot,23,17,17,13,4,3,5,0,135.29,76.47,23.53,17.65,29.41
+Phil Salt,Flick,17,14,14,10,4,0,2,0,121.43,71.43,28.57,0.0,14.29
+Phil Salt,Square Drive,11,3,3,3,0,2,0,0,366.67,100.0,0.0,66.67,0.0
+Phil Salt,Slog Sweep,10,2,2,2,0,2,0,0,500.0,100.0,0.0,100.0,0.0
+Phil Salt,Unknown,7,8,0,0,0,1,5,1,87.5,,,12.5,62.5
+Phil Salt,Steered,6,5,5,5,0,0,1,0,120.0,100.0,0.0,0.0,20.0
+Phil Salt,Slog Shot,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Phil Salt,Late Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Phil Salt,Push,1,3,3,2,1,0,2,0,33.33,66.67,33.33,0.0,66.67
+Phil Salt,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Phil Salt,Defended,0,2,2,1,1,0,2,1,0.0,50.0,50.0,0.0,100.0
+Phil Salt,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Phil Salt,Paddle Sweep,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Prabhsimran Singh,Unknown,135,66,2,1,1,22,12,1,204.55,50.0,50.0,33.33,18.18
+Prabhsimran Singh,Slog Sweep,12,3,3,2,1,2,1,0,400.0,66.67,33.33,66.67,33.33
+Prabhsimran Singh,Pull,10,3,3,2,1,2,1,0,333.33,66.67,33.33,66.67,33.33
+Prabhsimran Singh,Square Drive,9,5,5,5,0,2,2,0,180.0,100.0,0.0,40.0,40.0
+Prabhsimran Singh,Straight Drive,9,3,3,3,0,2,0,0,300.0,100.0,0.0,66.67,0.0
+Prabhsimran Singh,Cover Drive,8,9,9,6,3,1,4,0,88.89,66.67,33.33,11.11,44.44
+Prabhsimran Singh,Cut Shot,6,8,8,5,3,0,4,0,75.0,62.5,37.5,0.0,50.0
+Prabhsimran Singh,Slog Shot,6,5,5,1,4,1,4,1,120.0,20.0,80.0,20.0,80.0
+Prabhsimran Singh,Upper Cut,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Prabhsimran Singh,Flick,4,6,6,6,0,0,2,1,66.67,100.0,0.0,0.0,33.33
+Prabhsimran Singh,On Drive,4,6,6,6,0,0,2,0,66.67,100.0,0.0,0.0,33.33
+Prabhsimran Singh,Push,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Prabhsimran Singh,Steered,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Prabhsimran Singh,Defended,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Prabhsimran Singh,Late Cut,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Prabhsimran Singh,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Prashant Veer,Slog Shot,11,3,3,2,1,2,0,0,366.67,66.67,33.33,66.67,0.0
+Prashant Veer,Cut Shot,8,2,2,1,1,2,0,0,400.0,50.0,50.0,100.0,0.0
+Prashant Veer,Cover Drive,6,4,4,3,1,1,1,1,150.0,75.0,25.0,25.0,25.0
+Prashant Veer,Pull,5,3,3,2,1,1,1,0,166.67,66.67,33.33,33.33,33.33
+Prashant Veer,Flick,4,4,4,4,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Prashant Veer,Unknown,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Prashant Veer,Straight Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Prashant Veer,Steered,3,6,6,3,3,0,3,0,50.0,50.0,50.0,0.0,50.0
+Prashant Veer,On Drive,3,3,3,2,1,0,0,0,100.0,66.67,33.33,0.0,0.0
+Prashant Veer,Hook,1,2,2,0,2,0,1,0,50.0,0.0,100.0,0.0,50.0
+Prashant Veer,Push,0,3,3,3,0,0,3,0,0.0,100.0,0.0,0.0,100.0
+Prashant Veer,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Prashant Veer,Ramp,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Prashant Veer,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Priyansh Arya,Unknown,72,29,0,0,0,13,10,2,248.28,,,44.83,34.48
+Priyansh Arya,Pull,12,3,3,2,1,2,1,1,400.0,66.67,33.33,66.67,33.33
+Priyansh Arya,Cover Drive,10,3,3,3,0,2,1,0,333.33,100.0,0.0,66.67,33.33
+Priyansh Arya,Straight Drive,10,2,2,2,0,2,0,0,500.0,100.0,0.0,100.0,0.0
+Priyansh Arya,Flick,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Priyansh Arya,Cut Shot,4,1,1,0,1,1,0,0,400.0,0.0,100.0,100.0,0.0
+Priyansh Arya,Push,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Priyansh Arya,Slog Shot,1,2,2,0,2,0,1,1,50.0,0.0,100.0,0.0,50.0
+Priyansh Arya,Defended,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Priyansh Arya,On Drive,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Quinton de Kock,Unknown,112,60,0,0,0,15,12,0,186.67,,,25.0,20.0
+Rahul Tewatia,Flick,6,4,4,2,2,1,1,0,150.0,50.0,50.0,25.0,25.0
+Rahul Tewatia,On Drive,6,3,3,2,1,1,0,0,200.0,66.67,33.33,33.33,0.0
+Rahul Tewatia,Reverse Sweep,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Rahul Tewatia,Ramp,5,2,2,1,1,1,0,0,250.0,50.0,50.0,50.0,0.0
+Rahul Tewatia,Cut Shot,4,6,6,4,2,0,2,1,66.67,66.67,33.33,0.0,33.33
+Rahul Tewatia,Pull,3,3,3,1,2,0,1,0,100.0,33.33,66.67,0.0,33.33
+Rahul Tewatia,Cover Drive,3,2,2,1,1,0,0,0,150.0,50.0,50.0,0.0,0.0
+Rahul Tewatia,Leg Glance,3,2,2,2,0,0,0,0,150.0,100.0,0.0,0.0,0.0
+Rahul Tewatia,Push,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rahul Tewatia,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rahul Tewatia,Paddle Sweep,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Rahul Tewatia,Sweep Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rahul Tewatia,Left Alone,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Rahul Tewatia,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Rajat Patidar,On Drive,53,31,31,24,7,7,7,3,170.97,77.42,22.58,22.58,22.58
+Rajat Patidar,Cover Drive,31,14,14,13,1,5,3,1,221.43,92.86,7.14,35.71,21.43
+Rajat Patidar,Pull,30,8,8,5,3,5,1,0,375.0,62.5,37.5,62.5,12.5
+Rajat Patidar,Slog Shot,30,7,7,5,2,5,2,0,428.57,71.43,28.57,71.43,28.57
+Rajat Patidar,Unknown,27,13,0,0,0,4,4,1,207.69,,,30.77,30.77
+Rajat Patidar,Square Drive,17,7,7,7,0,2,0,0,242.86,100.0,0.0,28.57,0.0
+Rajat Patidar,Cut Shot,12,3,3,2,1,3,0,0,400.0,66.67,33.33,100.0,0.0
+Rajat Patidar,Flick,10,11,11,9,2,0,1,0,90.91,81.82,18.18,0.0,9.09
+Rajat Patidar,Slog Sweep,7,3,3,2,1,1,1,0,233.33,66.67,33.33,33.33,33.33
+Rajat Patidar,Reverse Sweep,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Rajat Patidar,Straight Drive,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50.0
+Rajat Patidar,Push,3,4,4,3,1,0,1,0,75.0,75.0,25.0,0.0,25.0
+Rajat Patidar,Defended,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Rajat Patidar,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Rajat Patidar,Reverse Pull,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Rajat Patidar,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Ramandeep Singh,Pull,23,11,11,4,7,3,2,0,209.09,36.36,63.64,27.27,18.18
+Ramandeep Singh,Cut Shot,12,7,7,6,1,2,1,1,171.43,85.71,14.29,28.57,14.29
+Ramandeep Singh,Upper Cut,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
+Ramandeep Singh,Flick,6,5,5,3,2,0,1,0,120.0,60.0,40.0,0.0,20.0
+Ramandeep Singh,Square Drive,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Ramandeep Singh,Reverse Sweep,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Ramandeep Singh,Push,1,3,3,2,1,0,2,0,33.33,66.67,33.33,0.0,66.67
+Ramandeep Singh,Cover Drive,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Ramandeep Singh,Dab,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Ramandeep Singh,Steered,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Ramandeep Singh,Late Cut,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ramandeep Singh,Leg Glance,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ramandeep Singh,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ramandeep Singh,Slog Shot,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Ramandeep Singh,Reverse Scoop,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Ramandeep Singh,Slog Sweep,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Ramandeep Singh,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Rashid Khan,Steered,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+Rashid Khan,Cover Drive,4,4,4,2,2,0,1,2,100.0,50.0,50.0,0.0,25.0
+Rashid Khan,Cut Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Rashid Khan,Defended,4,1,1,0,1,1,0,0,400.0,0.0,100.0,100.0,0.0
+Rashid Khan,Flick,3,4,4,2,2,0,2,0,75.0,50.0,50.0,0.0,50.0
+Rashid Khan,Push,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rashid Khan,Unknown,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Ravi Bishnoi,Unknown,0,1,0,0,0,0,1,1,0.0,,,0.0,100.0
+Ravindra Jadeja,Unknown,45,33,1,0,1,5,8,1,136.36,0.0,100.0,15.15,24.24
+Ravindra Jadeja,Flick,10,10,10,8,2,0,2,0,100.0,80.0,20.0,0.0,20.0
+Ravindra Jadeja,Pull,5,2,2,1,1,1,0,0,250.0,50.0,50.0,50.0,0.0
+Ravindra Jadeja,Dab,4,4,4,4,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ravindra Jadeja,Defended,4,1,1,0,1,1,0,0,400.0,0.0,100.0,100.0,0.0
+Ravindra Jadeja,On Drive,2,4,4,3,1,0,2,0,50.0,75.0,25.0,0.0,50.0
+Ravindra Jadeja,Cut Shot,2,3,3,2,1,0,1,0,66.67,66.67,33.33,0.0,33.33
+Ravindra Jadeja,Paddle Sweep,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Ravindra Jadeja,Cover Drive,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Ravindra Jadeja,Ramp,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ravindra Jadeja,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Ravindra Jadeja,Push,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Rinku Singh,Cover Drive,25,15,15,11,4,4,5,0,166.67,73.33,26.67,26.67,33.33
+Rinku Singh,Cut Shot,17,13,13,12,1,3,5,2,130.77,92.31,7.69,23.08,38.46
+Rinku Singh,Flick,8,9,9,7,2,0,2,0,88.89,77.78,22.22,0.0,22.22
+Rinku Singh,Pull,8,6,6,4,2,1,2,0,133.33,66.67,33.33,16.67,33.33
+Rinku Singh,Square Drive,8,5,5,5,0,1,0,0,160.0,100.0,0.0,20.0,0.0
+Rinku Singh,On Drive,7,8,8,6,2,0,1,1,87.5,75.0,25.0,0.0,12.5
+Rinku Singh,Slog Sweep,2,1,1,0,1,0,0,0,200.0,0.0,100.0,0.0,0.0
+Rinku Singh,Steered,1,3,3,1,2,0,2,1,33.33,33.33,66.67,0.0,66.67
+Rinku Singh,Push,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Rinku Singh,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rinku Singh,Sweep Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rinku Singh,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Rinku Singh,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Rinku Singh,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Rishabh Pant,Pull,25,15,15,9,6,3,3,1,166.67,60.0,40.0,20.0,20.0
+Rishabh Pant,On Drive,20,11,11,9,2,4,4,0,181.82,81.82,18.18,36.36,36.36
+Rishabh Pant,Cover Drive,19,11,11,10,1,3,3,1,172.73,90.91,9.09,27.27,27.27
+Rishabh Pant,Flick,15,15,15,11,4,1,3,0,100.0,73.33,26.67,6.67,20.0
+Rishabh Pant,Straight Drive,8,3,3,3,0,2,1,0,266.67,100.0,0.0,66.67,33.33
+Rishabh Pant,Cut Shot,7,11,11,9,2,0,5,0,63.64,81.82,18.18,0.0,45.45
+Rishabh Pant,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Rishabh Pant,Steered,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rishabh Pant,Unknown,1,7,1,0,1,0,6,1,14.29,0.0,100.0,0.0,85.71
+Rishabh Pant,Slog Shot,1,2,2,0,2,0,1,0,50.0,0.0,100.0,0.0,50.0
+Rishabh Pant,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Rishabh Pant,Defended,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Rishabh Pant,Push,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Rishabh Pant,Ramp,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Riyan Parag,Slog Shot,12,5,5,2,3,2,3,2,240.0,40.0,60.0,40.0,60.0
+Riyan Parag,Flick,8,4,4,3,1,1,1,0,200.0,75.0,25.0,25.0,25.0
+Riyan Parag,Steered,7,3,3,3,0,1,0,0,233.33,100.0,0.0,33.33,0.0
+Riyan Parag,On Drive,6,7,7,7,0,0,1,0,85.71,100.0,0.0,0.0,14.29
+Riyan Parag,Reverse Sweep,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Riyan Parag,Unknown,4,6,0,0,0,1,5,1,66.67,,,16.67,83.33
+Riyan Parag,Cover Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Riyan Parag,Defended,1,3,3,2,1,0,2,0,33.33,66.67,33.33,0.0,66.67
+Riyan Parag,Pull,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Riyan Parag,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Riyan Parag,Square Drive,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
+Rohit Sharma,Unknown,35,26,0,0,0,6,11,1,134.62,,,23.08,42.31
+Rohit Sharma,Cover Drive,24,7,7,6,1,4,1,0,342.86,85.71,14.29,57.14,14.29
+Rohit Sharma,Slog Shot,19,6,6,3,3,3,1,1,316.67,50.0,50.0,50.0,16.67
+Rohit Sharma,On Drive,15,7,7,6,1,2,0,0,214.29,85.71,14.29,28.57,0.0
+Rohit Sharma,Pull,12,5,5,3,2,2,1,0,240.0,60.0,40.0,40.0,20.0
+Rohit Sharma,Flick,10,13,13,12,1,0,4,0,76.92,92.31,7.69,0.0,30.77
+Rohit Sharma,Square Drive,10,2,2,2,0,2,0,0,500.0,100.0,0.0,100.0,0.0
+Rohit Sharma,Steered,5,3,3,3,0,1,1,0,166.67,100.0,0.0,33.33,33.33
+Rohit Sharma,Sweep Shot,4,2,2,1,1,1,1,1,200.0,50.0,50.0,50.0,50.0
+Rohit Sharma,Cut Shot,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Rohit Sharma,Push,0,4,4,4,0,0,4,0,0.0,100.0,0.0,0.0,100.0
+Rohit Sharma,Defended,0,3,3,3,0,0,3,0,0.0,100.0,0.0,0.0,100.0
+Rohit Sharma,Dab,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Romario Shepherd,Unknown,14,8,0,0,0,2,2,0,175.0,,,25.0,25.0
+Romario Shepherd,On Drive,8,3,3,3,0,1,0,0,266.67,100.0,0.0,33.33,0.0
+Romario Shepherd,Cut Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Romario Shepherd,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Romario Shepherd,Push,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Romario Shepherd,Flick,2,3,3,2,1,0,1,1,66.67,66.67,33.33,0.0,33.33
+Romario Shepherd,Sweep Shot,2,2,2,0,2,0,1,1,100.0,0.0,100.0,0.0,50.0
+Romario Shepherd,Cover Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Romario Shepherd,Hook,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Romario Shepherd,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Rovman Powell,Slog Shot,17,7,7,3,4,3,3,0,242.86,42.86,57.14,42.86,42.86
+Rovman Powell,Pull,16,11,11,3,8,2,5,0,145.45,27.27,72.73,18.18,45.45
+Rovman Powell,Flick,14,12,12,7,5,1,4,0,116.67,58.33,41.67,8.33,33.33
+Rovman Powell,On Drive,14,9,9,6,3,1,1,0,155.56,66.67,33.33,11.11,11.11
+Rovman Powell,Cover Drive,12,6,6,4,2,2,2,0,200.0,66.67,33.33,33.33,33.33
+Rovman Powell,Paddle Sweep,9,3,3,3,0,2,0,0,300.0,100.0,0.0,66.67,0.0
+Rovman Powell,Straight Drive,5,3,3,2,1,1,1,0,166.67,66.67,33.33,33.33,33.33
+Rovman Powell,Cut Shot,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Rovman Powell,Dab,2,4,4,4,0,0,2,0,50.0,100.0,0.0,0.0,50.0
+Rovman Powell,Push,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Rovman Powell,Steered,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Rovman Powell,Defended,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Rovman Powell,Slog Sweep,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Ruturaj Gaikwad,Unknown,15,18,0,0,0,1,8,1,83.33,,,5.56,44.44
+Ruturaj Gaikwad,Flick,10,8,8,8,0,0,1,0,125.0,100.0,0.0,0.0,12.5
+Ruturaj Gaikwad,Pull,9,4,4,4,0,1,0,0,225.0,100.0,0.0,25.0,0.0
+Ruturaj Gaikwad,Cover Drive,8,4,4,3,1,2,2,0,200.0,75.0,25.0,50.0,50.0
+Ruturaj Gaikwad,Square Drive,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+Ruturaj Gaikwad,Cut Shot,4,4,4,2,2,1,3,1,100.0,50.0,50.0,25.0,75.0
+Ruturaj Gaikwad,On Drive,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Ruturaj Gaikwad,Steered,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ruturaj Gaikwad,Push,1,5,5,0,5,0,4,1,20.0,0.0,100.0,0.0,80.0
+Ruturaj Gaikwad,Leg Glance,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Ruturaj Gaikwad,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ruturaj Gaikwad,Defended,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Ruturaj Gaikwad,Sweep Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ruturaj Gaikwad,Slog Sweep,0,2,2,0,2,0,2,2,0.0,0.0,100.0,0.0,100.0
+Ryan Rickelton,Pull,29,11,10,7,3,4,2,1,263.64,70.0,30.0,36.36,18.18
+Ryan Rickelton,On Drive,24,11,11,10,1,3,0,1,218.18,90.91,9.09,27.27,0.0
+Ryan Rickelton,Slog Sweep,24,4,4,4,0,4,0,0,600.0,100.0,0.0,100.0,0.0
+Ryan Rickelton,Cover Drive,16,16,16,12,4,3,11,0,100.0,75.0,25.0,18.75,68.75
+Ryan Rickelton,Unknown,11,19,0,0,0,2,14,2,57.89,,,10.53,73.68
+Ryan Rickelton,Slog Shot,11,4,4,1,3,2,1,0,275.0,25.0,75.0,50.0,25.0
+Ryan Rickelton,Flick,10,5,5,5,0,1,0,0,200.0,100.0,0.0,20.0,0.0
+Ryan Rickelton,Cut Shot,5,5,5,3,2,1,3,0,100.0,60.0,40.0,20.0,60.0
+Ryan Rickelton,Square Drive,4,3,3,2,1,1,2,0,133.33,66.67,33.33,33.33,66.67
+Ryan Rickelton,Push,1,3,3,2,1,0,2,0,33.33,66.67,33.33,0.0,66.67
+Ryan Rickelton,Steered,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Ryan Rickelton,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Ryan Rickelton,Defended,0,3,3,2,1,0,3,0,0.0,66.67,33.33,0.0,100.0
+Ryan Rickelton,Sweep Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Sai Sudharsan,Flick,34,21,21,20,1,4,4,0,161.9,95.24,4.76,19.05,19.05
+Sai Sudharsan,Cover Drive,21,11,11,10,1,5,5,0,190.91,90.91,9.09,45.45,45.45
+Sai Sudharsan,Pull,14,12,12,7,5,2,6,2,116.67,58.33,41.67,16.67,50.0
+Sai Sudharsan,Steered,13,6,6,5,1,3,2,0,216.67,83.33,16.67,50.0,33.33
+Sai Sudharsan,On Drive,8,6,6,4,2,1,3,1,133.33,66.67,33.33,16.67,50.0
+Sai Sudharsan,Cut Shot,7,9,9,6,3,1,5,1,77.78,66.67,33.33,11.11,55.56
+Sai Sudharsan,Square Drive,7,6,6,6,0,1,3,0,116.67,100.0,0.0,16.67,50.0
+Sai Sudharsan,Sweep Shot,6,3,3,1,2,1,2,1,200.0,33.33,66.67,33.33,66.67
+Sai Sudharsan,Ramp,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Sai Sudharsan,Slog Sweep,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Sai Sudharsan,Push,5,5,5,4,1,1,3,0,100.0,80.0,20.0,20.0,60.0
+Sai Sudharsan,Upper Cut,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Sai Sudharsan,Dab,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sai Sudharsan,Leg Glance,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Sai Sudharsan,Slog Shot,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Sai Sudharsan,Defended,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Sai Sudharsan,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Sai Sudharsan,Straight Drive,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Salil Arora,Unknown,33,21,0,0,0,5,9,1,157.14,,,23.81,42.86
+Salil Arora,Pull,7,3,3,2,1,1,1,1,233.33,66.67,33.33,33.33,33.33
+Salil Arora,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Salil Arora,Slog Shot,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Salil Arora,Flick,0,2,2,1,1,0,2,1,0.0,50.0,50.0,0.0,100.0
+Sameer Rizvi,Unknown,96,60,0,0,0,15,25,2,160.0,,,25.0,41.67
+Sameer Rizvi,Pull,20,7,7,4,3,3,1,0,285.71,57.14,42.86,42.86,14.29
+Sameer Rizvi,Flick,12,8,8,6,2,1,3,0,150.0,75.0,25.0,12.5,37.5
+Sameer Rizvi,Ramp,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Sameer Rizvi,Square Drive,4,3,3,1,2,0,1,0,133.33,33.33,66.67,0.0,33.33
+Sameer Rizvi,Hook,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Sameer Rizvi,Late Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Sameer Rizvi,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Sameer Rizvi,Sweep Shot,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Sameer Rizvi,Cover Drive,3,6,6,4,2,0,4,1,50.0,66.67,33.33,0.0,66.67
+Sameer Rizvi,Cut Shot,3,4,4,3,1,0,2,0,75.0,75.0,25.0,0.0,50.0
+Sameer Rizvi,Steered,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Sameer Rizvi,On Drive,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sameer Rizvi,Dab,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sameer Rizvi,Slog Shot,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Sameer Rizvi,Defended,0,5,5,4,1,0,5,1,0.0,80.0,20.0,0.0,100.0
+Sameer Rizvi,Push,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
+Sameer Rizvi,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Sanju Samson,Unknown,115,56,0,0,0,19,10,1,205.36,,,33.93,17.86
+Sanju Samson,Cut Shot,20,8,8,5,3,4,2,1,250.0,62.5,37.5,50.0,25.0
+Sanju Samson,On Drive,9,7,7,5,2,1,1,0,128.57,71.43,28.57,14.29,14.29
+Sanju Samson,Pull,9,5,5,2,3,1,1,0,180.0,40.0,60.0,20.0,20.0
+Sanju Samson,Slog Shot,6,3,3,1,2,1,2,2,200.0,33.33,66.67,33.33,66.67
+Sanju Samson,Square Drive,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
+Sanju Samson,Straight Drive,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Sanju Samson,Flick,5,6,6,6,0,0,3,0,83.33,100.0,0.0,0.0,50.0
+Sanju Samson,Cover Drive,4,6,6,1,5,1,5,1,66.67,16.67,83.33,16.67,83.33
+Sanju Samson,Push,2,4,4,4,0,0,2,0,50.0,100.0,0.0,0.0,50.0
+Sanju Samson,Leg Glance,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Sanju Samson,Slog Sweep,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Sanju Samson,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sanju Samson,Defended,0,3,3,2,1,0,3,0,0.0,66.67,33.33,0.0,100.0
+Sanju Samson,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Sarfaraz Khan,Pull,39,12,12,9,3,7,1,0,325.0,75.0,25.0,58.33,8.33
+Sarfaraz Khan,Flick,25,11,11,7,4,5,5,0,227.27,63.64,36.36,45.45,45.45
+Sarfaraz Khan,Steered,16,4,4,4,0,4,0,0,400.0,100.0,0.0,100.0,0.0
+Sarfaraz Khan,Cut Shot,11,6,6,5,1,2,2,0,183.33,83.33,16.67,33.33,33.33
+Sarfaraz Khan,Slog Shot,10,6,6,1,5,2,4,2,166.67,16.67,83.33,33.33,66.67
+Sarfaraz Khan,Cover Drive,6,4,4,2,2,1,1,0,150.0,50.0,50.0,25.0,25.0
+Sarfaraz Khan,On Drive,6,4,4,2,2,1,1,1,150.0,50.0,50.0,25.0,25.0
+Sarfaraz Khan,Ramp,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50.0
+Sarfaraz Khan,Sweep Shot,2,4,4,1,3,0,2,0,50.0,25.0,75.0,0.0,50.0
+Sarfaraz Khan,Push,1,6,6,3,3,0,5,0,16.67,50.0,50.0,0.0,83.33
+Sarfaraz Khan,Slog Sweep,1,2,2,1,1,0,1,1,50.0,50.0,50.0,0.0,50.0
+Sarfaraz Khan,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sarfaraz Khan,Dab,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Sarfaraz Khan,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Sarfaraz Khan,Late Cut,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Shahbaz Ahmed,Cut Shot,5,3,3,2,1,1,1,0,166.67,66.67,33.33,33.33,33.33
+Shahbaz Ahmed,Flick,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shahbaz Ahmed,Push,2,3,3,1,2,0,1,0,66.67,33.33,66.67,0.0,33.33
+Shahbaz Ahmed,On Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shahbaz Ahmed,Pull,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shahbaz Ahmed,Cover Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shahbaz Ahmed,Steered,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Shardul Thakur,Unknown,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Shardul Thakur,Straight Drive,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Shardul Thakur,Slog Shot,1,3,3,0,3,0,2,0,33.33,0.0,100.0,0.0,66.67
+Shardul Thakur,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shardul Thakur,Pull,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Shashank Singh,Unknown,16,9,0,0,0,2,1,0,177.78,,,22.22,11.11
+Shashank Singh,Cover Drive,7,3,3,1,2,1,0,0,233.33,33.33,66.67,33.33,0.0
+Shashank Singh,Steered,4,2,2,1,1,1,1,1,200.0,50.0,50.0,50.0,50.0
+Shashank Singh,Flick,2,2,2,1,1,0,1,0,100.0,50.0,50.0,0.0,50.0
+Shashank Singh,On Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shashank Singh,Leg Glance,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Shashank Singh,Sweep Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sherfane Rutherford,Pull,24,5,5,4,1,4,1,0,480.0,80.0,20.0,80.0,20.0
+Sherfane Rutherford,On Drive,20,9,9,8,1,2,0,0,222.22,88.89,11.11,22.22,0.0
+Sherfane Rutherford,Cover Drive,16,5,5,4,1,3,2,0,320.0,80.0,20.0,60.0,40.0
+Sherfane Rutherford,Slog Shot,15,5,5,2,3,2,1,0,300.0,40.0,60.0,40.0,20.0
+Sherfane Rutherford,Flick,8,6,6,3,3,1,1,0,133.33,50.0,50.0,16.67,16.67
+Sherfane Rutherford,Unknown,6,12,0,0,0,1,9,2,50.0,,,8.33,75.0
+Sherfane Rutherford,Sweep Shot,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Sherfane Rutherford,Cut Shot,5,6,6,2,4,1,4,1,83.33,33.33,66.67,16.67,66.67
+Sherfane Rutherford,Push,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Shimron Hetmyer,Pull,7,3,3,1,2,1,1,0,233.33,33.33,66.67,33.33,33.33
+Shimron Hetmyer,Hook,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Shimron Hetmyer,Flick,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Shimron Hetmyer,Slog Shot,3,3,3,0,3,0,1,1,100.0,0.0,100.0,0.0,33.33
+Shimron Hetmyer,Defended,1,3,3,3,0,0,2,0,33.33,100.0,0.0,0.0,66.67
+Shimron Hetmyer,Cut Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shimron Hetmyer,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shimron Hetmyer,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Shimron Hetmyer,Steered,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Shivam Dube,On Drive,23,13,13,11,2,3,2,1,176.92,84.62,15.38,23.08,15.38
+Shivam Dube,Unknown,20,10,0,0,0,3,2,0,200.0,,,30.0,20.0
+Shivam Dube,Pull,18,7,7,4,3,3,1,0,257.14,57.14,42.86,42.86,14.29
+Shivam Dube,Flick,14,8,8,8,0,1,0,0,175.0,100.0,0.0,12.5,0.0
+Shivam Dube,Slog Shot,11,6,6,2,4,2,1,1,183.33,33.33,66.67,33.33,16.67
+Shivam Dube,Cover Drive,6,4,4,3,1,1,1,0,150.0,75.0,25.0,25.0,25.0
+Shivam Dube,Slog Sweep,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Shivam Dube,Square Drive,2,2,2,1,1,0,1,0,100.0,50.0,50.0,0.0,50.0
+Shivam Dube,Steered,1,4,4,2,2,0,3,0,25.0,50.0,50.0,0.0,75.0
+Shivam Dube,Push,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Shivam Dube,Left Alone,0,4,4,4,0,0,4,0,0.0,100.0,0.0,0.0,100.0
+Shivam Dube,Straight Drive,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Shivam Dube,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Shivam Dube,Upper Cut,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Shivang Kumar,Ramp,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Shivang Kumar,Square Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Shivang Kumar,On Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shivang Kumar,Cut Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Shivang Kumar,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Shivang Kumar,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Shreyas Iyer,Unknown,135,68,0,0,0,19,11,1,198.53,,,27.94,16.18
+Shreyas Iyer,Pull,16,6,6,5,1,2,1,0,266.67,83.33,16.67,33.33,16.67
+Shreyas Iyer,Cover Drive,12,7,7,5,2,1,1,0,171.43,71.43,28.57,14.29,14.29
+Shreyas Iyer,Hook,12,2,2,2,0,2,0,0,600.0,100.0,0.0,100.0,0.0
+Shreyas Iyer,Cut Shot,7,8,8,4,4,1,5,1,87.5,50.0,50.0,12.5,62.5
+Shreyas Iyer,Flick,5,3,3,2,1,1,1,1,166.67,66.67,33.33,33.33,33.33
+Shreyas Iyer,Steered,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Shreyas Iyer,Upper Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Shreyas Iyer,Leg Glance,2,3,3,2,1,0,1,0,66.67,66.67,33.33,0.0,33.33
+Shreyas Iyer,On Drive,2,2,2,2,0,0,1,0,100.0,100.0,0.0,0.0,50.0
+Shreyas Iyer,Push,2,2,2,1,1,0,0,0,100.0,50.0,50.0,0.0,0.0
+Shreyas Iyer,Square Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shreyas Iyer,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Shubman Gill,On Drive,55,35,35,31,4,6,6,1,157.14,88.57,11.43,17.14,17.14
+Shubman Gill,Flick,40,26,26,25,1,3,1,0,153.85,96.15,3.85,11.54,3.85
+Shubman Gill,Cover Drive,40,21,21,17,4,8,7,0,190.48,80.95,19.05,38.1,33.33
+Shubman Gill,Pull,40,21,21,17,4,5,3,1,190.48,80.95,19.05,23.81,14.29
+Shubman Gill,Cut Shot,29,16,16,12,4,6,5,1,181.25,75.0,25.0,37.5,31.25
+Shubman Gill,Straight Drive,16,4,4,4,0,3,1,0,400.0,100.0,0.0,75.0,25.0
+Shubman Gill,Slog Sweep,14,5,5,3,2,2,2,1,280.0,60.0,40.0,40.0,40.0
+Shubman Gill,Leg Glance,8,5,5,5,0,1,0,0,160.0,100.0,0.0,20.0,0.0
+Shubman Gill,Push,6,7,7,6,1,0,1,0,85.71,85.71,14.29,0.0,14.29
+Shubman Gill,Steered,2,4,4,4,0,0,2,0,50.0,100.0,0.0,0.0,50.0
+Shubman Gill,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Shubman Gill,Defended,0,10,10,9,1,0,10,0,0.0,90.0,10.0,0.0,100.0
+Shubman Gill,Left Alone,0,5,5,4,1,0,5,0,0.0,80.0,20.0,0.0,100.0
+Shubman Gill,Slog Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Shubman Gill,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Sunil Narine,Pull,22,9,9,4,5,4,4,0,244.44,44.44,55.56,44.44,44.44
+Sunil Narine,On Drive,13,10,10,4,6,2,7,2,130.0,40.0,60.0,20.0,70.0
+Sunil Narine,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Sunil Narine,Cover Drive,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
+Sunil Narine,Cut Shot,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Sunil Narine,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Suryakumar Yadav,Unknown,55,38,1,1,0,6,9,2,144.74,100.0,0.0,15.79,23.68
+Suryakumar Yadav,Cut Shot,11,6,6,5,1,2,2,0,183.33,83.33,16.67,33.33,33.33
+Suryakumar Yadav,Flick,11,6,6,6,0,1,0,0,183.33,100.0,0.0,16.67,0.0
+Suryakumar Yadav,Slog Sweep,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Suryakumar Yadav,Sweep Shot,4,3,3,1,2,1,2,1,133.33,33.33,66.67,33.33,66.67
+Suryakumar Yadav,Straight Drive,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50.0
+Suryakumar Yadav,Ramp,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Suryakumar Yadav,Upper Cut,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Suryakumar Yadav,On Drive,3,5,5,5,0,0,2,0,60.0,100.0,0.0,0.0,40.0
+Suryakumar Yadav,Cover Drive,3,3,3,3,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Suryakumar Yadav,Pull,1,2,2,1,1,0,1,1,50.0,50.0,50.0,0.0,50.0
+Suryakumar Yadav,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Suryakumar Yadav,Steered,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+T Natarajan,Unknown,1,2,0,0,0,0,1,0,50.0,,,0.0,50.0
+Tilak Varma,Unknown,12,6,1,1,0,3,3,2,200.0,100.0,0.0,50.0,50.0
+Tilak Varma,Pull,10,6,6,2,4,2,2,0,166.67,33.33,66.67,33.33,33.33
+Tilak Varma,Cover Drive,6,3,3,1,2,1,1,0,200.0,33.33,66.67,33.33,33.33
+Tilak Varma,Flick,6,3,3,2,1,1,0,0,200.0,66.67,33.33,33.33,0.0
+Tilak Varma,Cut Shot,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Tilak Varma,On Drive,3,5,5,3,2,0,2,0,60.0,60.0,40.0,0.0,40.0
+Tilak Varma,Square Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Tilak Varma,Slog Shot,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
+Tilak Varma,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Tilak Varma,Push,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Tilak Varma,Slog Sweep,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Tilak Varma,Sweep Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Tim David,Flick,30,11,11,8,3,5,4,0,272.73,72.73,27.27,45.45,36.36
+Tim David,Cover Drive,29,14,14,12,2,4,2,0,207.14,85.71,14.29,28.57,14.29
+Tim David,Pull,28,13,13,10,3,4,1,0,215.38,76.92,23.08,30.77,7.69
+Tim David,Slog Shot,25,9,9,5,4,4,4,1,277.78,55.56,44.44,44.44,44.44
+Tim David,On Drive,17,14,14,12,2,1,2,1,121.43,85.71,14.29,7.14,14.29
+Tim David,Unknown,14,8,0,0,0,2,3,0,175.0,,,25.0,37.5
+Tim David,Cut Shot,13,5,5,4,1,3,1,0,260.0,80.0,20.0,60.0,20.0
+Tim David,Straight Drive,10,2,2,2,0,2,0,0,500.0,100.0,0.0,100.0,0.0
+Tim David,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Tim David,Square Drive,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Tim David,Push,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Tim David,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Tim David,Steered,0,2,2,0,2,0,2,0,0.0,0.0,100.0,0.0,100.0
+Tim Seifert,Cover Drive,9,3,3,3,0,2,0,0,300.0,100.0,0.0,66.67,0.0
+Tim Seifert,Pull,6,2,2,1,1,1,1,0,300.0,50.0,50.0,50.0,50.0
+Tim Seifert,On Drive,3,4,4,2,2,0,1,0,75.0,50.0,50.0,0.0,25.0
+Tim Seifert,Push,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Tim Seifert,Cut Shot,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
+Tim Seifert,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Travis Head,Unknown,56,41,0,0,0,9,17,2,136.59,,,21.95,41.46
+Travis Head,Cover Drive,22,8,8,8,0,5,3,0,275.0,100.0,0.0,62.5,37.5
+Travis Head,Pull,8,4,4,2,2,2,2,1,200.0,50.0,50.0,50.0,50.0
+Travis Head,Slog Shot,8,3,3,1,2,1,1,1,266.67,33.33,66.67,33.33,33.33
+Travis Head,Flick,7,6,6,3,3,1,4,0,116.67,50.0,50.0,16.67,66.67
+Travis Head,Cut Shot,5,3,3,1,2,1,1,0,166.67,33.33,66.67,33.33,33.33
+Travis Head,Square Drive,5,3,3,3,0,1,1,0,166.67,100.0,0.0,33.33,33.33
+Travis Head,On Drive,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
+Travis Head,Push,3,5,5,3,2,0,2,1,60.0,60.0,40.0,0.0,40.0
+Travis Head,Steered,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
+Travis Head,Left Alone,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Travis Head,Upper Cut,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Trent Boult,Slog Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Trent Boult,Push,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Tristan Stubbs,Unknown,63,42,0,0,0,7,11,1,150.0,,,16.67,26.19
+Tristan Stubbs,Pull,21,9,9,7,2,3,1,0,233.33,77.78,22.22,33.33,11.11
+Tristan Stubbs,Flick,19,16,16,14,2,1,2,0,118.75,87.5,12.5,6.25,12.5
+Tristan Stubbs,Cover Drive,17,11,11,9,2,2,3,0,154.55,81.82,18.18,18.18,27.27
+Tristan Stubbs,On Drive,16,18,18,17,1,0,2,0,88.89,94.44,5.56,0.0,11.11
+Tristan Stubbs,Push,13,10,10,10,0,0,2,0,130.0,100.0,0.0,0.0,20.0
+Tristan Stubbs,Straight Drive,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
+Tristan Stubbs,Defended,4,10,10,7,3,1,9,0,40.0,70.0,30.0,10.0,90.0
+Tristan Stubbs,Square Drive,2,3,3,3,0,0,1,0,66.67,100.0,0.0,0.0,33.33
+Tristan Stubbs,Cut Shot,2,2,2,1,1,0,1,0,100.0,50.0,50.0,0.0,50.0
+Tristan Stubbs,Leg Glance,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Tristan Stubbs,Dab,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Tristan Stubbs,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Tushar Deshpande,Unknown,25,11,0,0,0,3,3,1,227.27,,,27.27,27.27
+Vaibhav Arora,Defended,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Vaibhav Arora,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Vaibhav Arora,Push,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Vaibhav Sooryavanshi,Pull,51,12,12,9,3,9,1,0,425.0,75.0,25.0,75.0,8.33
+Vaibhav Sooryavanshi,On Drive,40,14,14,14,0,7,3,0,285.71,100.0,0.0,50.0,21.43
+Vaibhav Sooryavanshi,Cut Shot,24,9,9,7,2,4,1,1,266.67,77.78,22.22,44.44,11.11
+Vaibhav Sooryavanshi,Cover Drive,20,7,7,5,2,4,1,1,285.71,71.43,28.57,57.14,14.29
+Vaibhav Sooryavanshi,Flick,17,11,11,8,3,2,4,0,154.55,72.73,27.27,18.18,36.36
+Vaibhav Sooryavanshi,Slog Shot,17,9,9,2,7,3,5,2,188.89,22.22,77.78,33.33,55.56
+Vaibhav Sooryavanshi,Straight Drive,10,2,2,2,0,2,0,0,500.0,100.0,0.0,100.0,0.0
+Vaibhav Sooryavanshi,Square Drive,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
+Vaibhav Sooryavanshi,Dab,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50.0
+Vaibhav Sooryavanshi,Upper Cut,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Vaibhav Sooryavanshi,Leg Glance,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Vaibhav Sooryavanshi,Steered,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Vaibhav Sooryavanshi,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Vaibhav Sooryavanshi,Push,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Vaibhav Sooryavanshi,Unknown,0,1,0,0,0,0,1,1,0.0,,,0.0,100.0
+Varun Chakravarthy,Push,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Venkatesh Iyer,On Drive,8,3,3,3,0,1,0,0,266.67,100.0,0.0,33.33,0.0
+Venkatesh Iyer,Slog Shot,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
+Venkatesh Iyer,Cover Drive,4,3,3,2,1,0,0,0,133.33,66.67,33.33,0.0,0.0
+Venkatesh Iyer,Cut Shot,4,3,3,2,1,0,0,0,133.33,66.67,33.33,0.0,0.0
+Venkatesh Iyer,Reverse Scoop,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Venkatesh Iyer,Pull,3,2,2,1,1,0,0,0,150.0,50.0,50.0,0.0,0.0
+Venkatesh Iyer,Flick,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Venkatesh Iyer,Sweep Shot,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Vipraj Nigam,Ramp,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Vipraj Nigam,On Drive,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Vipraj Nigam,Cut Shot,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Vipraj Nigam,Flick,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Vipraj Nigam,Pull,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Vipraj Nigam,Slog Shot,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
+Virat Kohli,Unknown,49,34,0,0,0,7,9,1,144.12,,,20.59,26.47
+Virat Kohli,Cover Drive,36,21,21,13,8,7,6,1,171.43,61.9,38.1,33.33,28.57
+Virat Kohli,On Drive,30,21,21,16,5,4,5,1,142.86,76.19,23.81,19.05,23.81
+Virat Kohli,Flick,30,14,14,9,5,4,3,0,214.29,64.29,35.71,28.57,21.43
+Virat Kohli,Pull,21,16,16,10,6,2,3,1,131.25,62.5,37.5,12.5,18.75
+Virat Kohli,Slog Shot,20,8,8,4,4,3,2,0,250.0,50.0,50.0,37.5,25.0
+Virat Kohli,Straight Drive,16,5,5,5,0,3,1,0,320.0,100.0,0.0,60.0,20.0
+Virat Kohli,Slog Sweep,11,4,4,2,2,2,1,1,275.0,50.0,50.0,50.0,25.0
+Virat Kohli,Dab,9,7,7,7,0,1,1,0,128.57,100.0,0.0,14.29,14.29
+Virat Kohli,Square Drive,7,5,5,4,1,0,1,0,140.0,80.0,20.0,0.0,20.0
+Virat Kohli,Cut Shot,5,6,6,4,2,1,4,0,83.33,66.67,33.33,16.67,66.67
+Virat Kohli,Upper Cut,4,2,2,1,1,1,1,0,200.0,50.0,50.0,50.0,50.0
+Virat Kohli,Steered,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
+Virat Kohli,Push,3,4,4,4,0,0,1,0,75.0,100.0,0.0,0.0,25.0
+Virat Kohli,Leg Glance,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Virat Kohli,Sweep Shot,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Virat Kohli,Defended,0,5,5,3,2,0,5,0,0.0,60.0,40.0,0.0,100.0
+Virat Kohli,Left Alone,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Washington Sundar,Pull,33,9,9,7,2,7,1,1,366.67,77.78,22.22,77.78,11.11
+Washington Sundar,On Drive,24,18,18,17,1,2,0,0,133.33,94.44,5.56,11.11,0.0
+Washington Sundar,Flick,18,14,14,12,2,2,3,1,128.57,85.71,14.29,14.29,21.43
+Washington Sundar,Cut Shot,9,11,11,9,2,0,4,1,81.82,81.82,18.18,0.0,36.36
+Washington Sundar,Straight Drive,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
+Washington Sundar,Cover Drive,7,6,6,5,1,1,3,1,116.67,83.33,16.67,16.67,50.0
+Washington Sundar,Slog Shot,7,3,3,1,2,1,1,0,233.33,33.33,66.67,33.33,33.33
+Washington Sundar,Push,2,2,2,1,1,0,0,0,100.0,50.0,50.0,0.0,0.0
+Washington Sundar,Sweep Shot,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Washington Sundar,Steered,1,3,3,1,2,0,2,0,33.33,33.33,66.67,0.0,66.67
+Washington Sundar,Left Alone,0,3,3,3,0,0,3,0,0.0,100.0,0.0,0.0,100.0
+Washington Sundar,Defended,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Washington Sundar,Leg Glance,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Washington Sundar,Ramp,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
+Xavier Bartlett,Pull,7,2,2,2,0,1,0,0,350.0,100.0,0.0,50.0,0.0
+Xavier Bartlett,Push,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
+Xavier Bartlett,Cover Drive,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Xavier Bartlett,Flick,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Yashasvi Jaiswal,Cover Drive,30,13,13,10,3,6,5,1,230.77,76.92,23.08,46.15,38.46
+Yashasvi Jaiswal,Pull,30,12,12,8,4,4,2,0,250.0,66.67,33.33,33.33,16.67
+Yashasvi Jaiswal,Flick,19,14,14,12,2,2,3,0,135.71,85.71,14.29,14.29,21.43
+Yashasvi Jaiswal,Straight Drive,19,6,6,5,1,4,1,0,316.67,83.33,16.67,66.67,16.67
+Yashasvi Jaiswal,On Drive,16,11,11,11,0,2,3,0,145.45,100.0,0.0,18.18,27.27
+Yashasvi Jaiswal,Square Drive,16,5,5,5,0,3,0,0,320.0,100.0,0.0,60.0,0.0
+Yashasvi Jaiswal,Leg Glance,12,6,6,6,0,2,0,0,200.0,100.0,0.0,33.33,0.0
+Yashasvi Jaiswal,Slog Shot,11,6,6,3,3,1,1,0,183.33,50.0,50.0,16.67,16.67
+Yashasvi Jaiswal,Cut Shot,9,10,10,7,3,1,5,1,90.0,70.0,30.0,10.0,50.0
+Yashasvi Jaiswal,Ramp,8,4,4,2,2,2,2,0,200.0,50.0,50.0,50.0,50.0
+Yashasvi Jaiswal,Steered,6,9,9,5,4,1,6,0,66.67,55.56,44.44,11.11,66.67
+Yashasvi Jaiswal,Unknown,5,8,3,1,2,1,6,1,62.5,33.33,66.67,12.5,75.0
+Yashasvi Jaiswal,Dab,1,3,3,3,0,0,2,0,33.33,100.0,0.0,0.0,66.67
+Yashasvi Jaiswal,Left Alone,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Yashasvi Jaiswal,Slog Sweep,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Yashasvi Jaiswal,Push,0,4,4,3,1,0,4,0,0.0,75.0,25.0,0.0,100.0
+Yashasvi Jaiswal,Defended,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
+Yashasvi Jaiswal,Reverse Sweep,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0

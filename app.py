@@ -493,6 +493,7 @@ def metric_cards(player_row: pd.Series, label: str, color: str) -> None:
         [
             stat_tile("RAE per 30", format_number(player_row.get("runs_above_expected_per_30_balls"), 2), "rate"),
             stat_tile("RAE per 100", format_number(player_row.get("runs_above_expected_per_100_balls"), 2), "rate"),
+            stat_tile("Control %", format_number(player_row.get("control_pct"), 1), "rate"),
         ]
     )
     st.markdown(
@@ -512,7 +513,7 @@ def metric_cards(player_row: pd.Series, label: str, color: str) -> None:
             </div>
             <div class='metric-group'>
                 <div class='metric-group-label'>Rate</div>
-                <div class='stat-grid stat-grid-two'>{rate_stats}</div>
+                <div class='stat-grid stat-grid-three'>{rate_stats}</div>
             </div>
         </section>
         """,
@@ -521,7 +522,17 @@ def metric_cards(player_row: pd.Series, label: str, color: str) -> None:
 
 
 def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str, palette: dict[str, str]) -> go.Figure:
-    hover_candidates = ["phase_label", "runs", "balls", "strike_rate", "expected_runs", "runs_above_expected"]
+    hover_candidates = [
+        "phase_label",
+        "runs",
+        "balls",
+        "strike_rate",
+        "expected_runs",
+        "runs_above_expected",
+        "known_control_balls",
+        "control_pct",
+        "false_shot_pct",
+    ]
     hover_data = []
     for column in hover_candidates:
         if column in df.columns and column != y and column not in hover_data:
@@ -547,6 +558,140 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str, palett
     )
     fig.update_traces(connectgaps=False)
     return fig
+
+
+def productive_shot_cards(shot_profile: pd.DataFrame, selected: list[str], min_balls: int) -> None:
+    columns = st.columns(2)
+    for col, player, color in zip(columns, selected, PLAYER_COLORS):
+        player_shots = shot_profile[
+            shot_profile["player"].eq(player)
+            & ~shot_profile["shot"].eq("Unknown")
+            & shot_profile["balls"].ge(max(1, min_balls))
+        ].copy()
+        player_shots = player_shots.sort_values(
+            ["boundary_pct", "runs", "control_pct", "balls"],
+            ascending=[False, False, False, False],
+            na_position="last",
+            kind="stable",
+        ).head(5)
+
+        with col:
+            st.markdown(
+                (
+                    f"<section class='player-card shot-list-card' style='--player-color:{safe_text(color)}'>"
+                    "<div class='player-card-title'>"
+                    f"<span class='player-swatch' style='background:{safe_text(color)}'></span>"
+                    f"<span>{safe_text(player)}</span>"
+                    "</div>"
+                    "</section>"
+                ),
+                unsafe_allow_html=True,
+            )
+            if player_shots.empty:
+                st.info("No named shot types clear the current minimum-balls filter.")
+            else:
+                for _, row in player_shots.iterrows():
+                    with st.expander(str(row.get("shot")), expanded=False):
+                        primary_stats = "".join(
+                            [
+                                stat_tile("Raw SR", format_number(row.get("strike_rate"), 1), "rate"),
+                                stat_tile("Balls", format_number(row.get("balls"), 0)),
+                                stat_tile("Control %", format_number(row.get("control_pct"), 1), "rate"),
+                            ]
+                        )
+                        secondary_stats = "".join(
+                            [
+                                stat_tile("Boundary %", format_number(row.get("boundary_pct"), 1), "rate"),
+                                stat_tile("Dot %", format_number(row.get("dot_pct"), 1), "rate"),
+                            ]
+                        )
+                        st.markdown(
+                            (
+                                f"<div class='stat-grid stat-grid-three'>{primary_stats}</div>"
+                                f"<div class='stat-grid stat-grid-two shot-stat-follow'>{secondary_stats}</div>"
+                            ),
+                            unsafe_allow_html=True,
+                        )
+
+
+def line_length_heatmap(
+    line_length: pd.DataFrame,
+    player: str,
+    metric: str,
+    metric_label: str,
+    palette: dict[str, str],
+) -> go.Figure:
+    player_df = line_length[
+        line_length["player"].eq(player)
+        & ~line_length["line"].eq("Unknown")
+        & ~line_length["length"].eq("Unknown")
+    ].copy()
+    line_order = [
+        "Wide Down Leg",
+        "Down Leg",
+        "On The Stumps",
+        "Outside Offstump",
+        "Wide Outside Offstump",
+    ]
+    length_order = [
+        "Yorker",
+        "Full",
+        "Full Toss",
+        "Good Length",
+        "Short Of A Good Length",
+        "Short",
+    ]
+    available_lines = [line for line in line_order if line in set(player_df["line"])]
+    available_lengths = [length for length in length_order if length in set(player_df["length"])]
+    available_lines.extend(sorted(set(player_df["line"]) - set(available_lines)))
+    available_lengths.extend(sorted(set(player_df["length"]) - set(available_lengths)))
+
+    values = player_df.pivot_table(index="line", columns="length", values=metric, aggfunc="first")
+    balls = player_df.pivot_table(index="line", columns="length", values="balls", aggfunc="first")
+    values = values.reindex(index=available_lines, columns=available_lengths)
+    balls = balls.reindex(index=available_lines, columns=available_lengths)
+    hover_text = values.copy().astype("object")
+    for line in hover_text.index:
+        for length in hover_text.columns:
+            metric_value = values.loc[line, length]
+            balls_value = balls.loc[line, length]
+            metric_text = "-" if pd.isna(metric_value) else f"{float(metric_value):.1f}"
+            balls_text = "0" if pd.isna(balls_value) else f"{float(balls_value):.0f}"
+            hover_text.loc[line, length] = (
+                f"Line: {safe_text(line)}<br>"
+                f"Length: {safe_text(length)}<br>"
+                f"{safe_text(metric_label)}: {metric_text}<br>"
+                f"Balls: {balls_text}"
+            )
+    fig = go.Figure(
+        data=go.Heatmap(
+            z=values.to_numpy(),
+            x=values.columns.tolist(),
+            y=values.index.tolist(),
+            colorscale="Teal",
+            colorbar={"title": metric_label},
+            text=hover_text.to_numpy(),
+            hovertemplate="%{text}<extra></extra>",
+        )
+    )
+    fig.update_layout(xaxis_title="Length", yaxis_title="Line")
+    chart_theme(fig, palette, height=430)
+    return fig
+
+
+def unknown_line_length_note(line_length: pd.DataFrame, players: list[str]) -> str:
+    lines = []
+    for player in players:
+        player_df = line_length[line_length["player"].eq(player)]
+        total_balls = float(player_df["balls"].sum()) if not player_df.empty else 0.0
+        unknown_balls = float(
+            player_df[
+                player_df["line"].eq("Unknown") | player_df["length"].eq("Unknown")
+            ]["balls"].sum()
+        ) if not player_df.empty else 0.0
+        unknown_pct = (unknown_balls / total_balls * 100.0) if total_balls else 0.0
+        lines.append(f"{player}: {unknown_balls:,.0f} of {total_balls:,.0f} balls ({unknown_pct:.1f}%).")
+    return " Unknown line or length balls hidden from the heatmap: " + " ".join(lines)
 
 
 def explain(text: str) -> None:
@@ -599,6 +744,9 @@ def main() -> None:
         data_version=data_version,
     )
     worms = load_csv("powerplay_death_worms.csv", parse_dates=("start_date",), data_version=data_version)
+    control_profile = load_csv("control_profile.csv", data_version=data_version)
+    shot_profile = load_csv("shot_profile.csv", data_version=data_version)
+    line_length = load_csv("line_length_matchups.csv", data_version=data_version)
     metadata = load_metadata(data_version=data_version)
 
     players = sorted(season["player"].dropna().unique().tolist())
@@ -875,6 +1023,12 @@ def main() -> None:
         .stat-grid-two {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+        .shot-stat-follow {
+            margin-top: 0.55rem;
+        }
+        .shot-list-card {
+            margin-bottom: 0.45rem;
+        }
         .stat-tile {
             min-width: 0;
             padding: 0.66rem 0.72rem;
@@ -1014,6 +1168,7 @@ def main() -> None:
     selected_season = selected_players_frame(season, player_a, player_b)
     selected_phase = selected_players_frame(phase, player_a, player_b)
     selected_context = selected_players_frame(context, player_a, player_b)
+    selected_control = selected_players_frame(control_profile, player_a, player_b)
 
     st.subheader("Season Snapshot")
     card_cols = st.columns(2)
@@ -1026,12 +1181,13 @@ def main() -> None:
                 metric_cards(row.iloc[0], player, color)
 
     st.divider()
-    tab_phase, tab_adjusted, tab_power, tab_worm, tab_table = st.tabs(
+    tab_phase, tab_adjusted, tab_power, tab_worm, tab_shot_control, tab_table = st.tabs(
         [
             "15-Ball Phases",
             "Adjusted SR",
             "Powerplay / Death",
             "Worm",
+            "Shot / Control",
             "Match Table",
         ]
     )
@@ -1307,6 +1463,50 @@ def main() -> None:
             "If a batter faces one powerplay ball in one match and another powerplay ball in a later match, the later ball is `x = 2`. "
             "A value like `(1, -1.6)` means that after one ball in that phase, the batter was 1.6 runs below the league phase rate. "
             "A rising line means he is adding runs faster than the phase baseline; a falling line means he is losing ground."
+        )
+
+    with tab_shot_control:
+        chart_header("Control By Own 15-Ball Phase", "Model-free")
+        player_pair_legend(selected)
+        control_chart = selected_control[selected_control["balls"].ge(max(1, min_balls))].copy()
+        st.plotly_chart(
+            line_metric_chart(control_chart, "control_pct", "", "Control %", palette),
+            use_container_width=True,
+        )
+        explain(
+            "**Control %** is model-free: controlled balls divided by balls where the source has a known control value. "
+            "A false shot is the inverse: an uncontrolled shot where the batter did not have control. "
+            "Unknown control values are excluded from the denominator. Example: 18 controlled shots from 24 known-control balls is `75%`."
+        )
+
+        chart_header("Most Productive Shots", "Model-free")
+        productive_shot_cards(shot_profile, selected, min_balls)
+        explain(
+            "**Most productive shots** are model-free and descriptive. Each batter's top five named shots are ordered by Boundary %, with ties broken by runs. "
+            "Shot types can disappear when they are below the current minimum-balls filter. Unknown shot labels are excluded."
+        )
+
+        line_length_metric_options = {
+            "Strike rate": ("strike_rate", "Strike rate"),
+            "Control %": ("control_pct", "Control %"),
+            "Boundary %": ("boundary_pct", "Boundary %"),
+            "Dot %": ("dot_pct", "Dot %"),
+        }
+        matchup_label = st.radio("Line-length heatmap metric", list(line_length_metric_options), horizontal=True)
+        matchup_metric, matchup_title = line_length_metric_options[matchup_label]
+        chart_header(f"Line-Length Matchup Grid: {matchup_title}", "Model-free")
+        heat_cols = st.columns(2)
+        for col, player in zip(heat_cols, selected):
+            with col:
+                st.markdown(f"<div class='chart-heading'><span>{safe_text(player)}</span></div>", unsafe_allow_html=True)
+                st.plotly_chart(
+                    line_length_heatmap(line_length, player, matchup_metric, matchup_title, palette),
+                    use_container_width=True,
+                )
+        explain(
+            "**Line-length grids** show how each batter performs against the bowling plan: line on the y-axis and length on the x-axis. "
+            "Blank cells mean the batter has not faced that combination in the current dataset. These are model-free rates from observed balls. "
+            + unknown_line_length_note(line_length, selected)
         )
 
     with tab_table:
