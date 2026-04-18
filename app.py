@@ -31,7 +31,7 @@ st.set_page_config(
 
 
 @st.cache_data(show_spinner=False)
-def load_csv(name: str, parse_dates: tuple[str, ...] = ()) -> pd.DataFrame:
+def load_csv(name: str, parse_dates: tuple[str, ...] = (), data_version: str = "") -> pd.DataFrame:
     path = DATA_DIR / name
     df = pd.read_csv(path)
     for column in parse_dates:
@@ -41,11 +41,19 @@ def load_csv(name: str, parse_dates: tuple[str, ...] = ()) -> pd.DataFrame:
 
 
 @st.cache_data(show_spinner=False)
-def load_metadata() -> dict:
+def load_metadata(data_version: str = "") -> dict:
     path = DATA_DIR / "last_updated.json"
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+def current_data_version() -> str:
+    path = DATA_DIR / "last_updated.json"
+    if not path.exists():
+        return "missing"
+    stat = path.stat()
+    return f"{stat.st_mtime_ns}:{stat.st_size}"
 
 
 def default_player(players: list[str], preferred: list[str], fallback_contains: str, fallback_index: int) -> str:
@@ -580,13 +588,18 @@ def phase_coverage_note(source_df: pd.DataFrame, filtered_df: pd.DataFrame, min_
 
 
 def main() -> None:
-    season = load_csv("player_season.csv")
-    phase = load_csv("phase_15_ball.csv", parse_dates=("start_date",))
-    context = load_csv("context_15_ball.csv", parse_dates=("start_date",))
-    player_match = load_csv("player_match.csv", parse_dates=("start_date",))
-    pd_summary = load_csv("powerplay_death_summary.csv", parse_dates=("first_date", "last_date"))
-    worms = load_csv("powerplay_death_worms.csv", parse_dates=("start_date",))
-    metadata = load_metadata()
+    data_version = current_data_version()
+    season = load_csv("player_season.csv", data_version=data_version)
+    phase = load_csv("phase_15_ball.csv", parse_dates=("start_date",), data_version=data_version)
+    context = load_csv("context_15_ball.csv", parse_dates=("start_date",), data_version=data_version)
+    player_match = load_csv("player_match.csv", parse_dates=("start_date",), data_version=data_version)
+    pd_summary = load_csv(
+        "powerplay_death_summary.csv",
+        parse_dates=("first_date", "last_date"),
+        data_version=data_version,
+    )
+    worms = load_csv("powerplay_death_worms.csv", parse_dates=("start_date",), data_version=data_version)
+    metadata = load_metadata(data_version=data_version)
 
     players = sorted(season["player"].dropna().unique().tolist())
     default_a = default_player(players, ["V Kohli", "Virat Kohli"], "Kohli", 0)
