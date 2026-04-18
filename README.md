@@ -1,6 +1,6 @@
 # IPL Batsman Comparison Dashboard
 
-A public Streamlit dashboard for comparing two IPL batters across current-season batting phases, model-based Runs Above Expected views, and model-free strike-rate context views.
+A public Streamlit dashboard for comparing two IPL batters across current-season batting phases, model-based Runs Above Expected views, and model-free strike-rate context views. https://ipl-dashboard-comparative-ku4yz8ukhhqkhdsbtb66re.streamlit.app/
 
 The app is designed for quick cricket analysis for the IPL 2026 season. It reads prepared dashboard CSV files from `data/current/` and renders the comparison UI in `app.py`.
 
