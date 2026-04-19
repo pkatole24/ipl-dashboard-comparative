@@ -27,6 +27,7 @@ st.set_page_config(
     page_title="IPL Batsman Comparison",
     page_icon=None,
     layout="wide",
+    initial_sidebar_state="expanded",
 )
 
 
@@ -841,16 +842,19 @@ def main() -> None:
             color: var(--ink) !important;
         }
         header[data-testid="stHeader"] {
-            background: {palette["header_bg"]} !important;
-            border-bottom: 1px solid var(--line) !important;
+            background: transparent !important;
+            border-bottom: 0 !important;
             box-shadow: none !important;
         }
-        [data-testid="stToolbar"],
         [data-testid="stStatusWidget"],
         [data-testid="stMainMenu"] {
             display: none !important;
             visibility: hidden !important;
             pointer-events: none !important;
+        }
+        [data-testid="stToolbar"] {
+            background: transparent !important;
+            visibility: visible !important;
         }
         header[data-testid="stHeader"] *,
         [data-testid="stToolbar"] *,
