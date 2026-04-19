@@ -23,7 +23,7 @@ Abhishek Sharma,Outside Offstump,Full,4,2,2,1,1,1,1,1,200.0,50.0,50.0,50.0,50.0
 Abhishek Sharma,Outside Offstump,Full Toss,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
 Abhishek Sharma,Outside Offstump,Good Length,1,4,4,2,2,0,3,0,25.0,50.0,50.0,0.0,75.0
 Abhishek Sharma,Outside Offstump,Short Of A Good Length,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
-Abhishek Sharma,Unknown,Unknown,74,29,0,0,0,13,10,2,255.17,,,44.83,34.48
+Abhishek Sharma,Unknown,Unknown,133,51,0,0,0,23,13,3,260.78,,,45.1,25.49
 Abhishek Sharma,Wide Outside Offstump,Full,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
 Abhishek Sharma,Wide Outside Offstump,Short Of A Good Length,8,2,2,2,0,2,0,0,400.0,100.0,0.0,100.0,0.0
 Aiden Markram,Down Leg,Short Of A Good Length,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
@@ -82,7 +82,7 @@ Aniket Verma,Outside Offstump,Good Length,13,5,5,5,0,2,1,0,260.0,100.0,0.0,40.0,
 Aniket Verma,Outside Offstump,Short,8,3,3,2,1,2,1,1,266.67,66.67,33.33,66.67,33.33
 Aniket Verma,Outside Offstump,Short Of A Good Length,15,6,6,5,1,2,1,0,250.0,83.33,16.67,33.33,16.67
 Aniket Verma,Outside Offstump,Yorker,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
-Aniket Verma,Unknown,Unknown,24,14,0,0,0,3,2,1,171.43,,,21.43,14.29
+Aniket Verma,Unknown,Unknown,26,18,0,0,0,3,4,2,144.44,,,16.67,22.22
 Aniket Verma,Wide Outside Offstump,Good Length,0,2,2,0,2,0,2,1,0.0,0.0,100.0,0.0,100.0
 Anrich Nortje,Outside Offstump,Full,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Anshul Kamboj,Down Leg,Good Length,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
@@ -94,6 +94,7 @@ Anshul Kamboj,Outside Offstump,Full,2,2,2,1,1,0,0,0,100.0,50.0,50.0,0.0,0.0
 Anshul Kamboj,Outside Offstump,Good Length,4,7,7,5,2,0,3,0,57.14,71.43,28.57,0.0,42.86
 Anshul Kamboj,Outside Offstump,Short,7,2,2,1,1,1,0,0,350.0,50.0,50.0,50.0,0.0
 Anshul Kamboj,Outside Offstump,Short Of A Good Length,6,4,4,1,3,1,1,0,150.0,25.0,75.0,25.0,25.0
+Anshul Kamboj,Unknown,Unknown,13,8,0,0,0,1,1,0,162.5,,,12.5,12.5
 Anukul Roy,Down Leg,Short Of A Good Length,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Anukul Roy,On The Stumps,Short Of A Good Length,0,2,2,1,1,0,2,1,0.0,50.0,50.0,0.0,100.0
 Anukul Roy,Outside Offstump,Full,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
@@ -144,7 +145,7 @@ Ayush Mhatre,Outside Offstump,Good Length,23,11,11,9,2,4,3,0,209.09,81.82,18.18,
 Ayush Mhatre,Outside Offstump,Short,21,9,9,4,5,4,4,1,233.33,44.44,55.56,44.44,44.44
 Ayush Mhatre,Outside Offstump,Short Of A Good Length,9,8,8,4,4,1,4,1,112.5,50.0,50.0,12.5,50.0
 Ayush Mhatre,Outside Offstump,Yorker,2,3,3,2,1,0,1,0,66.67,66.67,33.33,0.0,33.33
-Ayush Mhatre,Unknown,Unknown,59,36,0,0,0,7,6,0,163.89,,,19.44,16.67
+Ayush Mhatre,Unknown,Unknown,89,49,0,0,0,13,11,1,181.63,,,26.53,22.45
 Ayush Mhatre,Wide Outside Offstump,Full,6,3,3,2,1,1,1,0,200.0,66.67,33.33,33.33,33.33
 Bhuvneshwar Kumar,On The Stumps,Full Toss,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
 Bhuvneshwar Kumar,On The Stumps,Good Length,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
@@ -232,6 +233,7 @@ Dewald Brevis,Outside Offstump,Full Toss,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50
 Dewald Brevis,Outside Offstump,Good Length,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
 Dewald Brevis,Outside Offstump,Short,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
 Dewald Brevis,Outside Offstump,Short Of A Good Length,6,4,4,3,1,1,1,0,150.0,75.0,25.0,25.0,25.0
+Dewald Brevis,Unknown,Unknown,0,4,0,0,0,0,4,1,0.0,,,0.0,100.0
 Dewald Brevis,Wide Outside Offstump,Full,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
 Dewald Brevis,Wide Outside Offstump,Good Length,1,2,2,0,2,0,1,1,50.0,0.0,100.0,0.0,50.0
 Dhruv Jurel,Down Leg,Full Toss,12,2,2,2,0,2,0,0,600.0,100.0,0.0,100.0,0.0
@@ -318,7 +320,7 @@ Heinrich Klaasen,Outside Offstump,Full Toss,11,5,5,4,1,1,1,0,220.0,80.0,20.0,20.
 Heinrich Klaasen,Outside Offstump,Good Length,29,23,23,21,2,1,6,1,126.09,91.3,8.7,4.35,26.09
 Heinrich Klaasen,Outside Offstump,Short,18,11,11,11,0,2,0,0,163.64,100.0,0.0,18.18,0.0
 Heinrich Klaasen,Outside Offstump,Short Of A Good Length,13,12,12,11,1,1,3,0,108.33,91.67,8.33,8.33,25.0
-Heinrich Klaasen,Unknown,Unknown,79,59,0,0,0,6,13,2,133.9,,,10.17,22.03
+Heinrich Klaasen,Unknown,Unknown,138,98,0,0,0,14,25,3,140.82,,,14.29,25.51
 Heinrich Klaasen,Wide Outside Offstump,Full,2,4,4,3,1,0,2,1,50.0,75.0,25.0,0.0,50.0
 Heinrich Klaasen,Wide Outside Offstump,Full Toss,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
 Heinrich Klaasen,Wide Outside Offstump,Good Length,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
@@ -338,7 +340,7 @@ Ishan Kishan,Outside Offstump,Good Length,3,6,6,6,0,0,3,0,50.0,100.0,0.0,0.0,50.
 Ishan Kishan,Outside Offstump,Short,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
 Ishan Kishan,Outside Offstump,Short Of A Good Length,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
 Ishan Kishan,Outside Offstump,Yorker,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
-Ishan Kishan,Unknown,Unknown,118,61,0,0,0,18,16,2,193.44,,,29.51,26.23
+Ishan Kishan,Unknown,Unknown,118,62,0,0,0,18,17,3,190.32,,,29.03,27.42
 Ishan Kishan,Wide Outside Offstump,Full,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Jamie Overton,On The Stumps,Full,7,4,4,4,0,1,0,0,175.0,100.0,0.0,25.0,0.0
 Jamie Overton,On The Stumps,Full Toss,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
@@ -351,6 +353,7 @@ Jamie Overton,Outside Offstump,Good Length,16,9,9,8,1,1,1,0,177.78,88.89,11.11,1
 Jamie Overton,Outside Offstump,Short,24,10,10,6,4,4,2,1,240.0,60.0,40.0,40.0,20.0
 Jamie Overton,Outside Offstump,Short Of A Good Length,16,10,10,5,5,3,5,1,160.0,50.0,50.0,30.0,50.0
 Jamie Overton,Outside Offstump,Yorker,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
+Jamie Overton,Unknown,Unknown,16,15,0,0,0,1,5,1,106.67,,,6.67,33.33
 Jamie Overton,Wide Outside Offstump,Full,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Jamie Overton,Wide Outside Offstump,Good Length,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
 Jamie Overton,Wide Outside Offstump,Yorker,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
@@ -452,6 +455,7 @@ Liam Livingstone,Outside Offstump,Full,2,1,1,0,1,0,0,0,200.0,0.0,100.0,0.0,0.0
 Liam Livingstone,Outside Offstump,Good Length,1,5,5,3,2,0,4,1,20.0,60.0,40.0,0.0,80.0
 Liam Livingstone,Outside Offstump,Short,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Liam Livingstone,Outside Offstump,Short Of A Good Length,1,6,6,5,1,0,5,0,16.67,83.33,16.67,0.0,83.33
+Liam Livingstone,Unknown,Unknown,1,5,0,0,0,0,4,1,20.0,,,0.0,80.0
 Lungi Ngidi,Unknown,Unknown,3,5,0,0,0,0,3,1,60.0,,,0.0,60.0
 M Shahrukh Khan,Down Leg,Good Length,1,2,2,1,1,0,1,1,50.0,50.0,50.0,0.0,50.0
 M Shahrukh Khan,Down Leg,Short Of A Good Length,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
@@ -481,6 +485,7 @@ Matthew Short,On The Stumps,Good Length,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Matthew Short,On The Stumps,Short,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Matthew Short,Outside Offstump,Good Length,0,2,2,1,1,0,2,0,0.0,50.0,50.0,0.0,100.0
 Matthew Short,Outside Offstump,Short Of A Good Length,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
+Matthew Short,Unknown,Unknown,34,30,0,0,0,3,8,1,113.33,,,10.0,26.67
 Matthew Short,Wide Outside Offstump,Short Of A Good Length,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
 Mitchell Marsh,On The Stumps,Full,2,4,4,3,1,0,2,1,50.0,75.0,25.0,0.0,50.0
 Mitchell Marsh,On The Stumps,Good Length,23,13,13,10,3,3,5,1,176.92,76.92,23.08,23.08,38.46
@@ -564,7 +569,7 @@ Nitish Kumar Reddy,Outside Offstump,Full Toss,6,3,3,2,1,1,0,0,200.0,66.67,33.33,
 Nitish Kumar Reddy,Outside Offstump,Good Length,14,15,15,12,3,1,6,0,93.33,80.0,20.0,6.67,40.0
 Nitish Kumar Reddy,Outside Offstump,Short,2,5,5,2,3,0,3,1,40.0,40.0,60.0,0.0,60.0
 Nitish Kumar Reddy,Outside Offstump,Short Of A Good Length,9,6,6,4,2,2,3,1,150.0,66.67,33.33,33.33,50.0
-Nitish Kumar Reddy,Unknown,Unknown,28,14,0,0,0,4,6,1,200.0,,,28.57,42.86
+Nitish Kumar Reddy,Unknown,Unknown,40,22,0,0,0,5,8,2,181.82,,,22.73,36.36
 Nitish Kumar Reddy,Wide Outside Offstump,Full,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Nitish Kumar Reddy,Wide Outside Offstump,Good Length,6,3,3,3,0,1,0,0,200.0,100.0,0.0,33.33,0.0
 Nitish Kumar Reddy,Wide Outside Offstump,Short Of A Good Length,2,1,1,1,0,0,0,0,200.0,100.0,0.0,0.0,0.0
@@ -585,6 +590,7 @@ Noor Ahmad,Outside Offstump,Full,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Noor Ahmad,Outside Offstump,Good Length,9,8,8,5,3,1,4,0,112.5,62.5,37.5,12.5,50.0
 Noor Ahmad,Outside Offstump,Short,0,4,4,0,4,0,4,1,0.0,0.0,100.0,0.0,100.0
 Noor Ahmad,Outside Offstump,Short Of A Good Length,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Noor Ahmad,Unknown,Unknown,1,1,0,0,0,0,0,0,100.0,,,0.0,0.0
 Pathum Nissanka,Down Leg,Good Length,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
 Pathum Nissanka,On The Stumps,Full Toss,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Pathum Nissanka,On The Stumps,Good Length,5,6,6,4,2,0,2,0,83.33,66.67,33.33,0.0,33.33
@@ -622,6 +628,7 @@ Prabhsimran Singh,Outside Offstump,Short Of A Good Length,5,8,8,5,3,0,5,0,62.5,6
 Prabhsimran Singh,Unknown,Unknown,131,64,0,0,0,21,11,1,204.69,,,32.81,17.19
 Prabhsimran Singh,Wide Outside Offstump,Full,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Prabhsimran Singh,Wide Outside Offstump,Good Length,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
+Praful Hinge,Unknown,Unknown,0,1,0,0,0,0,1,0,0.0,,,0.0,100.0
 Prashant Veer,Down Leg,Full,1,2,2,0,2,0,1,0,50.0,0.0,100.0,0.0,50.0
 Prashant Veer,Down Leg,Good Length,1,2,2,1,1,0,1,0,50.0,50.0,50.0,0.0,50.0
 Prashant Veer,Down Leg,Short,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
@@ -805,7 +812,7 @@ Ruturaj Gaikwad,Outside Offstump,Full,8,6,6,4,2,1,2,1,133.33,66.67,33.33,16.67,3
 Ruturaj Gaikwad,Outside Offstump,Good Length,2,5,5,2,3,0,3,0,40.0,40.0,60.0,0.0,60.0
 Ruturaj Gaikwad,Outside Offstump,Short,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
 Ruturaj Gaikwad,Outside Offstump,Short Of A Good Length,9,8,8,7,1,1,2,1,112.5,87.5,12.5,12.5,25.0
-Ruturaj Gaikwad,Unknown,Unknown,15,18,0,0,0,1,8,1,83.33,,,5.56,44.44
+Ruturaj Gaikwad,Unknown,Unknown,34,31,0,0,0,4,13,2,109.68,,,12.9,41.94
 Ruturaj Gaikwad,Wide Outside Offstump,Full,4,2,2,2,0,1,1,0,200.0,100.0,0.0,50.0,50.0
 Ruturaj Gaikwad,Wide Outside Offstump,Good Length,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Ryan Rickelton,Down Leg,Good Length,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
@@ -847,7 +854,7 @@ Salil Arora,Outside Offstump,Full,1,1,1,0,1,0,0,0,100.0,0.0,100.0,0.0,0.0
 Salil Arora,Outside Offstump,Good Length,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Salil Arora,Outside Offstump,Short,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
 Salil Arora,Outside Offstump,Short Of A Good Length,1,2,2,1,1,0,1,1,50.0,50.0,50.0,0.0,50.0
-Salil Arora,Unknown,Unknown,33,21,0,0,0,5,9,1,157.14,,,23.81,42.86
+Salil Arora,Unknown,Unknown,46,33,0,0,0,7,14,2,139.39,,,21.21,42.42
 Sameer Rizvi,Down Leg,Full,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
 Sameer Rizvi,Down Leg,Good Length,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
 Sameer Rizvi,Down Leg,Short,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
@@ -872,7 +879,7 @@ Sanju Samson,On The Stumps,Short Of A Good Length,8,5,5,2,3,1,2,0,160.0,40.0,60.
 Sanju Samson,Outside Offstump,Full,5,7,7,4,3,1,5,0,71.43,57.14,42.86,14.29,71.43
 Sanju Samson,Outside Offstump,Good Length,7,6,6,4,2,1,2,0,116.67,66.67,33.33,16.67,33.33
 Sanju Samson,Outside Offstump,Short Of A Good Length,2,3,3,1,2,0,1,1,66.67,33.33,66.67,0.0,33.33
-Sanju Samson,Unknown,Unknown,115,56,0,0,0,19,10,1,205.36,,,33.93,17.86
+Sanju Samson,Unknown,Unknown,122,59,0,0,0,20,11,2,206.78,,,33.9,18.64
 Sanju Samson,Wide Outside Offstump,Full,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Sanju Samson,Wide Outside Offstump,Short,14,3,3,3,0,3,0,0,466.67,100.0,0.0,100.0,0.0
 Sanju Samson,Wide Outside Offstump,Short Of A Good Length,16,6,6,4,2,3,1,0,266.67,66.67,33.33,50.0,16.67
@@ -886,6 +893,7 @@ Sarfaraz Khan,Outside Offstump,Full Toss,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Sarfaraz Khan,Outside Offstump,Good Length,5,12,12,6,6,0,7,0,41.67,50.0,50.0,0.0,58.33
 Sarfaraz Khan,Outside Offstump,Short,9,3,3,2,1,1,0,0,300.0,66.67,33.33,33.33,0.0
 Sarfaraz Khan,Outside Offstump,Short Of A Good Length,50,20,20,15,5,11,7,1,250.0,75.0,25.0,55.0,35.0
+Sarfaraz Khan,Unknown,Unknown,25,19,0,0,0,3,5,1,131.58,,,15.79,26.32
 Sarfaraz Khan,Wide Outside Offstump,Short Of A Good Length,7,4,4,4,0,1,1,0,175.0,100.0,0.0,25.0,25.0
 Sarfaraz Khan,Wide Outside Offstump,Yorker,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Shahbaz Ahmed,On The Stumps,Good Length,2,2,2,2,0,0,0,0,100.0,100.0,0.0,0.0,0.0
@@ -951,7 +959,7 @@ Shivam Dube,Outside Offstump,Good Length,12,5,5,3,2,2,2,0,240.0,60.0,40.0,40.0,4
 Shivam Dube,Outside Offstump,Short,5,2,2,2,0,1,0,0,250.0,100.0,0.0,50.0,0.0
 Shivam Dube,Outside Offstump,Short Of A Good Length,4,4,4,4,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Shivam Dube,Outside Offstump,Yorker,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
-Shivam Dube,Unknown,Unknown,20,10,0,0,0,3,2,0,200.0,,,30.0,20.0
+Shivam Dube,Unknown,Unknown,41,26,0,0,0,5,6,1,157.69,,,19.23,23.08
 Shivam Dube,Wide Outside Offstump,Full,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Shivam Dube,Wide Outside Offstump,Full Toss,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Shivam Dube,Wide Outside Offstump,Good Length,0,2,2,2,0,0,2,0,0.0,100.0,0.0,0.0,100.0
@@ -961,6 +969,7 @@ Shivang Kumar,On The Stumps,Full,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Shivang Kumar,On The Stumps,Yorker,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Shivang Kumar,Outside Offstump,Full Toss,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Shivang Kumar,Outside Offstump,Good Length,0,1,1,1,0,0,1,0,0.0,100.0,0.0,0.0,100.0
+Shivang Kumar,Unknown,Unknown,12,8,0,0,0,2,4,1,150.0,,,25.0,50.0
 Shivang Kumar,Wide Outside Offstump,Full Toss,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Shivang Kumar,Wide Outside Offstump,Short Of A Good Length,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Shreyas Iyer,Down Leg,Full,1,2,2,2,0,0,1,0,50.0,100.0,0.0,0.0,50.0
@@ -1073,7 +1082,7 @@ Travis Head,On The Stumps,Short Of A Good Length,16,7,7,4,3,4,3,1,228.57,57.14,4
 Travis Head,Outside Offstump,Full,6,1,1,1,0,1,0,0,600.0,100.0,0.0,100.0,0.0
 Travis Head,Outside Offstump,Full Toss,4,1,1,1,0,1,0,0,400.0,100.0,0.0,100.0,0.0
 Travis Head,Outside Offstump,Short,0,1,1,0,1,0,1,0,0.0,0.0,100.0,0.0,100.0
-Travis Head,Unknown,Unknown,56,41,0,0,0,9,17,2,136.59,,,21.95,41.46
+Travis Head,Unknown,Unknown,79,61,0,0,0,13,28,3,129.51,,,21.31,45.9
 Trent Boult,On The Stumps,Yorker,0,1,1,0,1,0,1,1,0.0,0.0,100.0,0.0,100.0
 Trent Boult,Outside Offstump,Short Of A Good Length,1,1,1,1,0,0,0,0,100.0,100.0,0.0,0.0,0.0
 Tristan Stubbs,Down Leg,Full,3,2,2,2,0,0,0,0,150.0,100.0,0.0,0.0,0.0
