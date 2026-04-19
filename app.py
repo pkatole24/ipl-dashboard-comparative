@@ -770,10 +770,23 @@ def main() -> None:
         st.markdown("<div class='sidebar-section'>Appearance</div>", unsafe_allow_html=True)
         ui_theme = st.radio("Theme", ["Dark", "Light"], horizontal=True, index=0)
         st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
-        player_a = st.selectbox("Batter A", players, index=players.index(default_a))
+        if "player_a" not in st.session_state or st.session_state["player_a"] not in players:
+            st.session_state["player_a"] = default_a
+        player_a = st.selectbox(
+            "Batter A",
+            players,
+            index=players.index(st.session_state["player_a"]),
+            key="player_a",
+        )
         player_b_options = [player for player in players if player != player_a]
-        player_b_default = default_b if default_b in player_b_options else player_b_options[0]
-        player_b = st.selectbox("Batter B", player_b_options, index=player_b_options.index(player_b_default))
+        if "player_b" not in st.session_state or st.session_state["player_b"] not in player_b_options:
+            st.session_state["player_b"] = default_b if default_b in player_b_options else player_b_options[0]
+        player_b = st.selectbox(
+            "Batter B",
+            player_b_options,
+            index=player_b_options.index(st.session_state["player_b"]),
+            key="player_b",
+        )
         player_pair_legend([player_a, player_b])
 
         st.markdown("<div class='sidebar-section'>View</div>", unsafe_allow_html=True)
