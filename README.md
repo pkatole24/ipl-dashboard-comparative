@@ -2,7 +2,7 @@
 
 A public Streamlit dashboard for comparing two IPL batters across current-season batting phases, model-based Runs Above Expected views, and model-free strike-rate context views. https://ipl-dashboard-comparative-ku4yz8ukhhqkhdsbtb66re.streamlit.app/
 
-The app is designed for quick cricket analysis for the IPL 2026 season. It reads prepared dashboard CSV files from `data/current/` and renders the comparison UI in `app.py`.
+The app is designed for quick cricket analysis for the IPL 2026 season. It reads prepared dashboard CSV files from `data/current/` and renders the comparison UI in `app.py`. This repository is dashboard-only; data refreshes are prepared outside this public repo and published here as CSV files.
 
 ## What The Dashboard Shows
 
@@ -16,6 +16,10 @@ The app is designed for quick cricket analysis for the IPL 2026 season. It reads
   - difficulty-adjusted strike rate
 - Powerplay and death-over comparison charts.
 - Worm charts showing cumulative runs gained or lost versus league phase rate.
+- Shot and control views:
+  - Control % by own 15-ball phase
+  - Most Productive Shots
+  - Line-Length Matchup Grid
 - Match-level phase detail table with CSV download.
 - Built-in Light and Dark dashboard themes. The app opens in Dark mode by default.
 
@@ -47,6 +51,8 @@ The strike-rate context views do not use model output. They compare batting stri
 
 The worm chart is also model-free. It shows cumulative runs gained or lost versus the league phase rate.
 
+The shot and control views are descriptive and model-free. Control %, shot-type rates, boundary %, dot %, and line-length matchup rates are calculated directly from the prepared current-season ball-by-ball data.
+
 ## Data Files
 
 The app reads dashboard-ready CSVs from:
@@ -61,6 +67,9 @@ Expected files include:
 - `player_match.csv`
 - `phase_15_ball.csv`
 - `context_15_ball.csv`
+- `control_profile.csv`
+- `shot_profile.csv`
+- `line_length_matchups.csv`
 - `powerplay_death_summary.csv`
 - `powerplay_death_worms.csv`
 - `last_updated.json`
@@ -94,7 +103,7 @@ Run the app:
 streamlit run app.py
 ```
 
-The app expects the `data/current/` CSV files to already exist.
+The app expects the `data/current/` CSV files to already exist. It does not rebuild the source data locally.
 
 ## Deployment
 
@@ -106,7 +115,7 @@ Recommended settings:
 - Python dependencies: `requirements.txt`
 - Data source: committed CSV files in `data/current/`
 
-When new dashboard CSVs are pushed to this repository, Streamlit Cloud should pick up the new commit and refresh/redeploy the public app.
+When new prepared dashboard CSVs are pushed to this repository, Streamlit Cloud should pick up the new commit and refresh/redeploy the public app. The data build and model scoring pipeline live outside this public repository.
 
 ## Current Season
 
@@ -116,16 +125,19 @@ The dashboard is currently built for the IPL 2026 season.
 
 ```text
 .
-├── app.py
-├── requirements.txt
-├── data/
-│   └── current/
-│       ├── context_15_ball.csv
-│       ├── last_updated.json
-│       ├── phase_15_ball.csv
-│       ├── player_match.csv
-│       ├── player_season.csv
-│       ├── powerplay_death_summary.csv
-│       └── powerplay_death_worms.csv
-└── README.md
+|-- app.py
+|-- requirements.txt
+|-- data/
+|   `-- current/
+|       |-- context_15_ball.csv
+|       |-- control_profile.csv
+|       |-- last_updated.json
+|       |-- line_length_matchups.csv
+|       |-- phase_15_ball.csv
+|       |-- player_match.csv
+|       |-- player_season.csv
+|       |-- powerplay_death_summary.csv
+|       |-- powerplay_death_worms.csv
+|       `-- shot_profile.csv
+`-- README.md
 ```
