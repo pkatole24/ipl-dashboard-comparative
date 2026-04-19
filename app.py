@@ -214,6 +214,10 @@ def player_swatch(name: str, color: str) -> str:
     )
 
 
+def player_color_map(players: list[str]) -> dict[str, str]:
+    return {player: color for player, color in zip(players, PLAYER_COLORS)}
+
+
 def player_pair_legend(players: list[str]) -> None:
     rows = "".join(player_swatch(player, color) for player, color in zip(players, PLAYER_COLORS))
     st.markdown(f"<div class='player-legend'>{rows}</div>", unsafe_allow_html=True)
@@ -521,7 +525,14 @@ def metric_cards(player_row: pd.Series, label: str, color: str) -> None:
     )
 
 
-def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str, palette: dict[str, str]) -> go.Figure:
+def line_metric_chart(
+    df: pd.DataFrame,
+    y: str,
+    title: str,
+    y_title: str,
+    palette: dict[str, str],
+    players: list[str],
+) -> go.Figure:
     hover_candidates = [
         "phase_label",
         "runs",
@@ -544,7 +555,8 @@ def line_metric_chart(df: pd.DataFrame, y: str, title: str, y_title: str, palett
         y=y,
         color="player",
         markers=True,
-        color_discrete_sequence=PLAYER_COLORS,
+        color_discrete_map=player_color_map(players),
+        category_orders={"player": players},
         title=None,
         hover_data=hover_data,
     )
@@ -1240,7 +1252,7 @@ def main() -> None:
         chart_header(f"{y_title} by Own 15-Ball Phase", metric_badge)
         player_pair_legend(selected)
         st.plotly_chart(
-            line_metric_chart(chart_df, y_col, "", y_title, palette),
+            line_metric_chart(chart_df, y_col, "", y_title, palette, selected),
             use_container_width=True,
         )
         explain(
@@ -1304,7 +1316,8 @@ def main() -> None:
             y="strike_rate",
             color="player",
             size="balls",
-            color_discrete_sequence=PLAYER_COLORS,
+            color_discrete_map=player_color_map(selected),
+            category_orders={"player": selected},
             hover_data=["phase_label", "start_date", "opposition", "venue", "runs", "balls", "expected_runs", "runs_above_expected"],
             title=None,
         )
@@ -1334,7 +1347,10 @@ def main() -> None:
             ]
             for metric_col, title in metrics:
                 chart_header(title, "Model-free")
-                st.plotly_chart(line_metric_chart(context_summary, metric_col, "", title, palette), use_container_width=True)
+                st.plotly_chart(
+                    line_metric_chart(context_summary, metric_col, "", title, palette, selected),
+                    use_container_width=True,
+                )
                 if metric_col == "sr_points_vs_match":
                     explain(
                         "Model-free metric: batter phase strike rate minus the match scoring rate. Example: `+15` means the batter's phase SR was "
@@ -1470,7 +1486,7 @@ def main() -> None:
         player_pair_legend(selected)
         control_chart = selected_control[selected_control["balls"].ge(max(1, min_balls))].copy()
         st.plotly_chart(
-            line_metric_chart(control_chart, "control_pct", "", "Control %", palette),
+            line_metric_chart(control_chart, "control_pct", "", "Control %", palette, selected),
             use_container_width=True,
         )
         explain(
