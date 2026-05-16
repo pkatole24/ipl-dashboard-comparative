@@ -1266,13 +1266,82 @@ season,season_year,match_id,start_date,venue,innings,batting_team,opposition,pla
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Delhi Capitals,Suryansh Shedge,1,1-15,21,8,13.23,7.77,21,262.5,165.34,97.16,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Abishek Porel,1,1-15,5,6,7.42,-2.42,5,83.33,123.74,-40.41,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Ashutosh Sharma,1,1-15,24,10,14.36,9.64,24,240.0,143.62,96.38,1-15
-2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Auqib Nabi,1,1-15,10,2,2.77,7.23,10,500.0,138.3,361.7,1-15
+2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Auqib Nabi,1,1-15,10,2,2.77,7.23,10,500.0,138.33,361.67,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Axar Patel,1,1-15,30,15,16.84,13.16,30,200.0,112.27,87.73,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Axar Patel,2,16-30,26,15,21.62,4.38,26,173.33,144.13,29.2,16-30
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,David Miller,1,1-15,24,15,17.94,6.06,24,160.0,119.61,40.39,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,David Miller,2,16-30,27,13,20.84,6.16,27,207.69,160.31,47.38,16-30
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,KL Rahul,1,1-15,9,8,9.68,-0.68,9,112.5,120.99,-8.49,1-15
-2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Madhav Tiwari,1,1-15,18,8,11.55,6.45,18,225.0,144.39,80.61,1-15
+2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Madhav Tiwari,1,1-15,18,8,11.55,6.45,18,225.0,144.4,80.6,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Sahil Parakh,1,1-15,13,6,6.63,6.37,13,216.67,110.45,106.22,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Tristan Stubbs,1,1-15,10,15,17.87,-7.87,10,66.67,119.15,-52.48,1-15
 2026,2026,1529298,2026-05-11,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Delhi Capitals,Punjab Kings,Tristan Stubbs,2,16-30,2,2,2.57,-0.57,2,100.0,128.62,-28.62,16-30
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Jason Holder,1,1-15,11,10,15.41,-4.41,11,110.0,154.09,-44.09,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Jos Buttler,1,1-15,7,11,13.47,-6.47,7,63.64,122.48,-58.85,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Nishant Sindhu,1,1-15,22,14,15.62,6.38,22,157.14,111.54,45.6,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Rahul Tewatia,1,1-15,4,1,1.46,2.54,4,400.0,145.57,254.43,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Sai Sudharsan,1,1-15,13,15,19.15,-6.15,13,86.67,127.66,-40.99,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Sai Sudharsan,2,16-30,24,15,18.84,5.16,24,160.0,125.57,34.43,16-30
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Sai Sudharsan,3,31-45,24,14,19.1,4.9,24,171.43,136.45,34.98,31-45
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Shubman Gill,1,1-15,5,7,9.02,-4.02,5,71.43,128.83,-57.4,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Washington Sundar,1,1-15,19,15,17.78,1.22,19,126.67,118.56,8.1,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Washington Sundar,2,16-30,24,15,25.09,-1.09,24,160.0,167.26,-7.26,16-30
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Sunrisers Hyderabad,Washington Sundar,3,31-45,7,3,5.75,1.25,7,233.33,191.74,41.59,31-45
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Abhishek Sharma,1,1-15,6,4,4.28,1.72,6,150.0,107.09,42.91,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Eshan Malinga,1,1-15,0,3,2.25,-2.25,0,0.0,75.01,-75.01,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Heinrich Klaasen,1,1-15,14,15,15.93,-1.93,14,93.33,106.21,-12.88,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Heinrich Klaasen,2,16-30,0,1,1.14,-1.14,0,0.0,113.54,-113.54,16-30
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Ishan Kishan,1,1-15,11,7,7.64,3.36,11,157.14,109.19,47.96,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Nitish Kumar Reddy,1,1-15,2,4,3.22,-1.22,2,50.0,80.46,-30.46,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Pat Cummins,1,1-15,19,9,7.41,11.59,19,211.11,82.31,128.8,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Praful Hinge,1,1-15,3,8,6.34,-3.34,3,37.5,79.2,-41.7,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Ravichandran Smaran,1,1-15,9,15,17.56,-8.56,9,60.0,117.07,-57.07,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Salil Arora,1,1-15,16,13,12.98,3.02,16,123.08,99.82,23.26,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Shivang Kumar,1,1-15,4,6,4.71,-0.71,4,66.67,78.56,-11.9,1-15
+2026,2026,1529299,2026-05-12,"Narendra Modi Stadium, Ahmedabad",2,Sunrisers Hyderabad,Gujarat Titans,Travis Head,1,1-15,0,4,4.26,-4.26,0,0.0,106.46,-106.46,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Ajinkya Rahane,1,1-15,19,13,16.71,2.29,19,146.15,128.53,17.62,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Angkrish Raghuvanshi,1,1-15,20,15,18.94,1.06,20,133.33,126.29,7.05,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Angkrish Raghuvanshi,2,16-30,25,15,20.76,4.24,25,166.67,138.37,28.3,16-30
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Angkrish Raghuvanshi,3,31-45,25,15,24.69,0.31,25,166.67,164.57,2.1,31-45
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Angkrish Raghuvanshi,4,46-60,1,1,1.98,-0.98,1,100.0,197.73,-97.73,46-60
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Cameron Green,1,1-15,13,15,18.15,-5.15,13,86.67,121.02,-34.35,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Cameron Green,2,16-30,19,9,12.82,6.18,19,211.11,142.5,68.62,16-30
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Finn Allen,1,1-15,18,8,10.17,7.83,18,225.0,127.12,97.88,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Rinku Singh,1,1-15,25,15,21.55,3.45,25,166.67,143.68,22.99,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",1,Kolkata Knight Riders,Royal Challengers Bengaluru,Rinku Singh,2,16-30,24,14,27.6,-3.6,24,171.43,197.12,-25.69,16-30
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Devdutt Padikkal,1,1-15,24,15,19.22,4.78,24,160.0,128.16,31.84,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Devdutt Padikkal,2,16-30,15,12,18.08,-3.08,15,125.0,150.64,-25.64,16-30
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Jacob Bethell,1,1-15,15,12,15.48,-0.48,15,125.0,128.97,-3.97,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Jitesh Sharma,1,1-15,8,5,7.86,0.14,8,160.0,157.18,2.82,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Rajat Patidar,1,1-15,11,8,11.05,-0.05,11,137.5,138.18,-0.68,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Tim David,1,1-15,2,3,4.39,-2.39,2,66.67,146.38,-79.71,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,1,1-15,30,15,20.24,9.76,30,200.0,134.9,65.1,1-15
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,2,16-30,18,15,20.91,-2.91,18,120.0,139.38,-19.38,16-30
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,3,31-45,22,15,23.27,-1.27,22,146.67,155.16,-8.49,31-45
+2026,2026,1529300,2026-05-13,"Shaheed Veer Narayan Singh International Stadium, Raipur",2,Royal Challengers Bengaluru,Kolkata Knight Riders,Virat Kohli,4,46-60,35,15,25.57,9.43,35,233.33,170.49,62.84,46-60
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Azmatullah Omarzai,1,1-15,32,15,19.49,12.51,32,213.33,129.93,83.4,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Azmatullah Omarzai,2,16-30,6,2,3.22,2.78,6,300.0,160.83,139.17,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Cooper Connolly,1,1-15,19,15,18.17,0.83,19,126.67,121.1,5.56,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Cooper Connolly,2,16-30,2,7,10.08,-8.08,2,28.57,144.06,-115.49,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Marco Jansen,1,1-15,2,7,8.28,-6.28,2,28.57,118.3,-89.73,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Prabhsimran Singh,1,1-15,19,15,21.29,-2.29,19,126.67,141.96,-15.29,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Prabhsimran Singh,2,16-30,32,15,21.42,10.58,32,213.33,142.81,70.52,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Prabhsimran Singh,3,31-45,6,2,2.96,3.04,6,300.0,148.24,151.76,31-45
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Priyansh Arya,1,1-15,22,15,20.85,1.15,22,146.67,139.0,7.67,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Priyansh Arya,2,16-30,0,2,3.42,-3.42,0,0.0,171.21,-171.21,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Shashank Singh,1,1-15,2,3,3.47,-1.47,2,66.67,115.66,-48.99,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Shreyas Iyer,1,1-15,4,2,2.29,1.71,4,200.0,114.57,85.43,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Suryansh Shedge,1,1-15,8,5,5.87,2.13,8,160.0,117.31,42.69,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Vishnu Vinod,1,1-15,15,8,9.95,5.05,15,187.5,124.35,63.15,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",1,Punjab Kings,Mumbai Indians,Xavier Bartlett,1,1-15,18,7,9.28,8.72,18,257.14,132.55,124.59,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Naman Dhir,1,1-15,9,6,6.62,2.38,9,150.0,110.28,39.72,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Rohit Sharma,1,1-15,12,15,20.52,-8.52,12,80.0,136.8,-56.8,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Rohit Sharma,2,16-30,13,11,15.05,-2.05,13,118.18,136.82,-18.64,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Ryan Rickelton,1,1-15,35,15,21.05,13.95,35,233.33,140.34,93.0,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Ryan Rickelton,2,16-30,13,8,13.34,-0.34,13,162.5,166.7,-4.2,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Sherfane Rutherford,1,1-15,12,15,19.24,-7.24,12,80.0,128.24,-48.24,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Sherfane Rutherford,2,16-30,8,6,10.23,-2.23,8,133.33,170.52,-37.18,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Tilak Varma,1,1-15,29,15,19.2,9.8,29,193.33,127.98,65.35,1-15
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Tilak Varma,2,16-30,34,15,25.78,8.22,34,226.67,171.84,54.83,16-30
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Tilak Varma,3,31-45,12,3,6.22,5.78,12,400.0,207.4,192.6,31-45
+2026,2026,1529301,2026-05-14,"Himachal Pradesh Cricket Association Stadium, Dharamsala",2,Mumbai Indians,Punjab Kings,Will Jacks,1,1-15,25,10,16.21,8.79,25,250.0,162.1,87.9,1-15
