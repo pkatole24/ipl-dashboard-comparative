@@ -1460,3 +1460,169 @@ season,season_year,match_id,start_date,venue,innings,batting_team,opposition,pla
 2026,2026,1529306,2026-05-18,"MA Chidambaram Stadium, Chepauk, Chennai",2,Sunrisers Hyderabad,Chennai Super Kings,Ravichandran Smaran,1,1-15,5,2,2.85,2.15,5,250.0,142.5,107.5,1-15
 2026,2026,1529306,2026-05-18,"MA Chidambaram Stadium, Chepauk, Chennai",2,Sunrisers Hyderabad,Chennai Super Kings,Salil Arora,1,1-15,10,5,7.39,2.61,10,200.0,147.81,52.19,1-15
 2026,2026,1529306,2026-05-18,"MA Chidambaram Stadium, Chepauk, Chennai",2,Sunrisers Hyderabad,Chennai Super Kings,Travis Head,1,1-15,6,6,7.7,-1.7,6,100.0,128.34,-28.34,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Ayush Badoni,1,1-15,0,1,1.65,-1.65,0,0.0,164.98,-164.98,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Josh Inglis,1,1-15,34,15,20.91,13.09,34,226.67,139.39,87.27,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Josh Inglis,2,16-30,26,14,23.67,2.33,26,185.71,169.11,16.61,16-30
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Mitchell Marsh,1,1-15,31,15,21.0,10.0,31,206.67,140.0,66.67,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Mitchell Marsh,2,16-30,28,15,23.64,4.36,28,186.67,157.58,29.08,16-30
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Mitchell Marsh,3,31-45,24,15,25.75,-1.75,24,160.0,171.68,-11.68,31-45
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Mitchell Marsh,4,46-60,13,12,24.13,-11.13,13,108.33,201.05,-92.72,46-60
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Nicholas Pooran,1,1-15,16,11,14.79,1.21,16,145.45,134.46,11.0,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Rishabh Pant,1,1-15,22,15,23.44,-1.44,22,146.67,156.29,-9.62,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",1,Lucknow Super Giants,Rajasthan Royals,Rishabh Pant,2,16-30,13,8,16.37,-3.37,13,162.5,204.66,-42.16,16-30
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Dhruv Jurel,1,1-15,18,15,19.71,-1.71,18,120.0,131.39,-11.39,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Dhruv Jurel,2,16-30,24,15,27.12,-3.12,24,160.0,180.82,-20.82,16-30
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Dhruv Jurel,3,31-45,11,8,15.99,-4.99,11,137.5,199.82,-62.32,31-45
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Donovan Ferreira,1,1-15,16,10,17.04,-1.04,16,160.0,170.39,-10.39,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Lhuan-dre Pretorius,1,1-15,7,6,9.03,-2.03,7,116.67,150.55,-33.89,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Vaibhav Sooryavanshi,1,1-15,21,15,21.17,-0.17,21,140.0,141.12,-1.12,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Vaibhav Sooryavanshi,2,16-30,55,15,23.0,32.0,55,366.67,153.32,213.35,16-30
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Vaibhav Sooryavanshi,3,31-45,17,8,14.53,2.47,17,212.5,181.68,30.82,31-45
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Yashasvi Jaiswal,1,1-15,36,15,22.71,13.29,36,240.0,151.41,88.59,1-15
+2026,2026,1529307,2026-05-19,"Sawai Mansingh Stadium, Jaipur",2,Rajasthan Royals,Lucknow Super Giants,Yashasvi Jaiswal,2,16-30,7,8,12.99,-5.99,7,87.5,162.41,-74.91,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Corbin Bosch,1,1-15,25,15,17.68,7.32,25,166.67,117.85,48.82,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Corbin Bosch,2,16-30,7,3,4.8,2.2,7,233.33,160.12,73.21,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Deepak Chahar,1,1-15,10,7,8.02,1.98,10,142.86,114.63,28.22,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Hardik Pandya,1,1-15,12,15,15.51,-3.51,12,80.0,103.42,-23.42,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Hardik Pandya,2,16-30,14,12,15.3,-1.3,14,116.67,127.49,-10.82,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Naman Dhir,1,1-15,0,3,3.37,-3.37,0,0.0,112.4,-112.4,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Rohit Sharma,1,1-15,15,13,16.73,-1.73,15,115.38,128.66,-13.28,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Ryan Rickelton,1,1-15,6,7,8.78,-2.78,6,85.71,125.39,-39.68,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Suryakumar Yadav,1,1-15,15,6,6.01,8.99,15,250.0,100.23,149.77,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Tilak Varma,1,1-15,9,15,16.26,-7.26,9,60.0,108.38,-48.38,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Tilak Varma,2,16-30,10,15,18.51,-8.51,10,66.67,123.43,-56.76,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Tilak Varma,3,31-45,1,2,2.58,-1.58,1,50.0,128.94,-78.94,31-45
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",1,Mumbai Indians,Kolkata Knight Riders,Will Jacks,1,1-15,14,7,6.95,7.05,14,200.0,99.35,100.65,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Ajinkya Rahane,1,1-15,17,15,19.87,-2.87,17,113.33,132.44,-19.1,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Ajinkya Rahane,2,16-30,4,2,3.31,0.69,4,200.0,165.42,34.58,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Anukul Roy,1,1-15,4,4,4.89,-0.89,4,100.0,122.37,-22.37,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Cameron Green,1,1-15,4,8,8.18,-4.18,4,50.0,102.22,-52.22,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Finn Allen,1,1-15,8,5,6.09,1.91,8,160.0,121.8,38.2,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Manish Pandey,1,1-15,20,15,19.51,0.49,20,133.33,130.1,3.24,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Manish Pandey,2,16-30,24,15,20.13,3.87,24,160.0,134.17,25.83,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Manish Pandey,3,31-45,1,3,4.43,-3.43,1,33.33,147.6,-114.27,31-45
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Rinku Singh,1,1-15,9,5,6.21,2.79,9,180.0,124.2,55.8,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Rovman Powell,1,1-15,22,15,17.35,4.65,22,146.67,115.64,31.03,1-15
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Rovman Powell,2,16-30,18,15,21.54,-3.54,18,120.0,143.61,-23.61,16-30
+2026,2026,1529308,2026-05-20,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Mumbai Indians,Tejasvi Dahiya,1,1-15,11,12,16.34,-5.34,11,91.67,136.18,-44.51,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Jos Buttler,1,1-15,34,15,22.4,11.6,34,226.67,149.36,77.31,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Jos Buttler,2,16-30,23,12,24.64,-1.64,23,191.67,205.37,-13.7,16-30
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Rahul Tewatia,1,1-15,0,1,1.61,-1.61,0,0.0,160.51,-160.51,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Sai Sudharsan,1,1-15,16,15,20.91,-4.91,16,106.67,139.4,-32.73,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Sai Sudharsan,2,16-30,27,15,22.32,4.68,27,180.0,148.79,31.21,16-30
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Sai Sudharsan,3,31-45,25,15,24.88,0.12,25,166.67,165.85,0.82,31-45
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Sai Sudharsan,4,46-60,16,8,15.56,0.44,16,200.0,194.56,5.44,46-60
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Shubman Gill,1,1-15,27,15,21.13,5.87,27,180.0,140.87,39.13,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Shubman Gill,2,16-30,35,15,22.15,12.85,35,233.33,147.67,85.67,16-30
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Shubman Gill,3,31-45,2,7,11.26,-9.26,2,28.57,160.87,-132.3,31-45
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Chennai Super Kings,Washington Sundar,1,1-15,7,3,5.19,1.81,7,233.33,172.98,60.35,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Anshul Kamboj,1,1-15,19,8,9.93,9.07,19,237.5,124.18,113.32,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Dewald Brevis,1,1-15,8,10,11.46,-3.46,8,80.0,114.56,-34.56,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Kartik Sharma,1,1-15,19,15,17.06,1.94,19,126.67,113.72,12.95,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Matthew Short,1,1-15,24,14,17.68,6.32,24,171.43,126.28,45.15,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Mukesh Choudhary,1,1-15,2,2,2.18,-0.18,2,100.0,109.1,-9.1,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Noor Ahmad,1,1-15,1,5,5.79,-4.79,1,20.0,115.71,-95.71,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Ruturaj Gaikwad,1,1-15,16,7,7.85,8.15,16,228.57,112.15,116.42,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Sanju Samson,1,1-15,0,1,1.03,-1.03,0,0.0,102.82,-102.82,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Shivam Dube,1,1-15,41,15,17.13,23.87,41,273.33,114.21,159.12,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Shivam Dube,2,16-30,6,2,2.83,3.17,6,300.0,141.71,158.29,16-30
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Spencer Johnson,1,1-15,0,1,1.08,-1.08,0,0.0,108.33,-108.33,1-15
+2026,2026,1529309,2026-05-21,"Narendra Modi Stadium, Ahmedabad",2,Chennai Super Kings,Gujarat Titans,Urvil Patel,1,1-15,0,2,2.04,-2.04,0,0.0,102.0,-102.0,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Abhishek Sharma,1,1-15,32,15,20.3,11.7,32,213.33,135.32,78.01,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Abhishek Sharma,2,16-30,24,7,9.9,14.1,24,342.86,141.37,201.49,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Heinrich Klaasen,1,1-15,34,15,21.12,12.88,34,226.67,140.77,85.89,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Heinrich Klaasen,2,16-30,17,9,16.54,0.46,17,188.89,183.83,5.06,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Ishan Kishan,1,1-15,18,15,19.23,-1.23,18,120.0,128.21,-8.21,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Ishan Kishan,2,16-30,31,15,23.85,7.15,31,206.67,158.98,47.69,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Ishan Kishan,3,31-45,30,15,31.05,-1.05,30,200.0,206.99,-6.99,31-45
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Ishan Kishan,4,46-60,0,1,2.33,-2.33,0,0.0,233.08,-233.08,46-60
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Nitish Kumar Reddy,1,1-15,29,12,21.93,7.07,29,241.67,182.72,58.95,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Travis Head,1,1-15,26,15,21.0,5.0,26,173.33,139.99,33.35,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",1,Sunrisers Hyderabad,Royal Challengers Bengaluru,Travis Head,2,16-30,0,1,1.7,-1.7,0,0.0,169.61,-169.61,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Devdutt Padikkal,1,1-15,21,14,17.96,3.04,21,150.0,128.29,21.71,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Krunal Pandya,1,1-15,21,15,19.86,1.14,21,140.0,132.41,7.59,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Krunal Pandya,2,16-30,18,15,27.02,-9.02,18,120.0,180.15,-60.15,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Krunal Pandya,3,31-45,2,1,2.11,-0.11,2,200.0,211.3,-11.3,31-45
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Rajat Patidar,1,1-15,18,15,19.12,-1.12,18,120.0,127.44,-7.44,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Rajat Patidar,2,16-30,16,15,23.74,-7.74,16,106.67,158.27,-51.61,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Rajat Patidar,3,31-45,22,9,15.7,6.3,22,244.44,174.43,70.01,31-45
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Tim David,1,1-15,15,7,11.68,3.32,15,214.29,166.8,47.48,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Venkatesh Iyer,1,1-15,32,15,21.06,10.94,32,213.33,140.42,72.92,1-15
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Venkatesh Iyer,2,16-30,12,4,6.98,5.02,12,300.0,174.45,125.55,16-30
+2026,2026,1529310,2026-05-22,"Rajiv Gandhi International Stadium, Uppal, Hyderabad",2,Royal Challengers Bengaluru,Sunrisers Hyderabad,Virat Kohli,1,1-15,15,11,14.63,0.37,15,136.36,132.96,3.4,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Abdul Samad,1,1-15,23,15,23.13,-0.13,23,153.33,154.21,-0.87,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Abdul Samad,2,16-30,14,5,9.41,4.59,14,280.0,188.12,91.88,16-30
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Arjun Tendulkar,1,1-15,5,5,6.95,-1.95,5,100.0,138.94,-38.94,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Arshin Kulkarni,1,1-15,0,1,1.12,-1.12,0,0.0,112.13,-112.13,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Ayush Badoni,1,1-15,38,15,19.15,18.85,38,253.33,127.65,125.69,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Ayush Badoni,2,16-30,5,3,4.3,0.7,5,166.67,143.28,23.39,16-30
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Josh Inglis,1,1-15,22,15,19.55,2.45,22,146.67,130.35,16.32,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Josh Inglis,2,16-30,33,15,20.78,12.22,33,220.0,138.52,81.48,16-30
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Josh Inglis,3,31-45,17,14,21.52,-4.52,17,121.43,153.72,-32.3,31-45
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Mukul Choudhary,1,1-15,1,3,4.08,-3.08,1,33.33,136.02,-102.69,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Nicholas Pooran,1,1-15,2,7,8.39,-6.39,2,28.57,119.86,-91.29,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Rishabh Pant,1,1-15,16,15,18.4,-2.4,16,106.67,122.66,-15.99,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",1,Lucknow Super Giants,Punjab Kings,Rishabh Pant,2,16-30,10,7,10.73,-0.73,10,142.86,153.33,-10.47,16-30
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Cooper Connolly,1,1-15,18,10,12.6,5.4,18,180.0,126.04,53.96,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Prabhsimran Singh,1,1-15,23,15,19.06,3.94,23,153.33,127.04,26.29,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Prabhsimran Singh,2,16-30,33,15,21.42,11.58,33,220.0,142.8,77.2,16-30
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Prabhsimran Singh,3,31-45,13,9,14.61,-1.61,13,144.44,162.38,-17.94,31-45
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Priyansh Arya,1,1-15,0,1,1.03,-1.03,0,0.0,102.82,-102.82,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Shreyas Iyer,1,1-15,24,15,19.14,4.86,24,160.0,127.58,32.42,1-15
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Shreyas Iyer,2,16-30,23,15,20.91,2.09,23,153.33,139.43,13.91,16-30
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Shreyas Iyer,3,31-45,39,15,24.6,14.4,39,260.0,164.02,95.98,31-45
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Shreyas Iyer,4,46-60,15,6,10.95,4.05,15,250.0,182.52,67.48,46-60
+2026,2026,1529311,2026-05-23,"Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",2,Punjab Kings,Lucknow Super Giants,Suryansh Shedge,1,1-15,9,7,10.77,-1.77,9,128.57,153.84,-25.26,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Dasun Shanaka,1,1-15,29,15,17.53,11.47,29,193.33,116.88,76.45,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Dhruv Jurel,1,1-15,16,15,17.79,-1.79,16,106.67,118.62,-11.95,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Dhruv Jurel,2,16-30,22,11,15.65,6.35,22,200.0,142.24,57.76,16-30
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Donovan Ferreira,1,1-15,18,15,19.32,-1.32,18,120.0,128.77,-8.77,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Jofra Archer,1,1-15,32,15,20.69,11.31,32,213.33,137.9,75.43,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Nandre Burger,1,1-15,10,3,3.68,6.32,10,333.33,122.67,210.67,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Ravindra Jadeja,1,1-15,19,11,15.34,3.66,19,172.73,139.44,33.29,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Riyan Parag,1,1-15,14,8,9.27,4.73,14,175.0,115.86,59.14,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Shubham Dubey,1,1-15,5,6,7.4,-2.4,5,83.33,123.36,-40.02,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Vaibhav Sooryavanshi,1,1-15,4,6,7.55,-3.55,4,66.67,125.89,-59.23,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Yashasvi Jaiswal,1,1-15,27,15,20.86,6.14,27,180.0,139.05,40.95,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",1,Rajasthan Royals,Mumbai Indians,Yashasvi Jaiswal,2,16-30,0,2,3.46,-3.46,0,0.0,173.23,-173.23,16-30
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,AM Ghazanfar,1,1-15,2,3,3.31,-1.31,2,66.67,110.45,-43.78,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Corbin Bosch,1,1-15,2,4,4.6,-2.6,2,50.0,114.88,-64.88,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Deepak Chahar,1,1-15,8,5,5.71,2.29,8,160.0,114.18,45.82,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Hardik Pandya,1,1-15,34,15,20.3,13.7,34,226.67,135.35,91.32,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Naman Dhir,1,1-15,6,5,5.35,0.65,6,120.0,106.99,13.01,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Rohit Sharma,1,1-15,0,4,4.26,-4.26,0,0.0,106.46,-106.46,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Ryan Rickelton,1,1-15,12,7,7.77,4.23,12,171.43,111.01,60.42,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Shardul Thakur,1,1-15,10,11,13.8,-3.8,10,90.91,125.44,-34.53,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Suryakumar Yadav,1,1-15,27,15,17.24,9.76,27,180.0,114.94,65.06,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Suryakumar Yadav,2,16-30,21,15,19.81,1.19,21,140.0,132.1,7.9,16-30
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Suryakumar Yadav,3,31-45,12,12,18.97,-6.97,12,100.0,158.07,-58.07,31-45
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Tilak Varma,1,1-15,3,7,7.3,-4.3,3,42.86,104.23,-61.37,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Will Jacks,1,1-15,27,15,16.6,10.4,27,180.0,110.68,69.32,1-15
+2026,2026,1529312,2026-05-24,"Wankhede Stadium, Mumbai",2,Mumbai Indians,Rajasthan Royals,Will Jacks,2,16-30,6,3,4.14,1.86,6,200.0,137.89,62.11,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Abishek Porel,1,1-15,22,15,20.85,1.15,22,146.67,138.98,7.69,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Abishek Porel,2,16-30,0,3,5.23,-5.23,0,0.0,174.4,-174.4,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Ashutosh Sharma,1,1-15,18,11,18.24,-0.24,18,163.64,165.84,-2.2,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Axar Patel,1,1-15,21,15,19.98,1.02,21,140.0,133.2,6.8,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Axar Patel,2,16-30,18,10,17.22,0.78,18,180.0,172.17,7.83,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,David Miller,1,1-15,16,15,22.63,-6.63,16,106.67,150.9,-44.23,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,David Miller,2,16-30,12,4,8.04,3.96,12,300.0,201.08,98.92,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,KL Rahul,1,1-15,20,15,20.11,-0.11,20,133.33,134.07,-0.73,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,KL Rahul,2,16-30,40,15,21.18,18.82,40,266.67,141.22,125.44,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Sahil Parakh,1,1-15,23,15,18.67,4.33,23,153.33,124.45,28.89,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Sahil Parakh,2,16-30,1,2,2.83,-1.83,1,50.0,141.4,-91.4,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",1,Delhi Capitals,Kolkata Knight Riders,Tristan Stubbs,1,1-15,0,1,1.55,-1.55,0,0.0,154.56,-154.56,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Ajinkya Rahane,1,1-15,24,15,20.41,3.59,24,160.0,136.05,23.95,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Ajinkya Rahane,2,16-30,25,15,21.03,3.97,25,166.67,140.2,26.46,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Ajinkya Rahane,3,31-45,14,9,12.92,1.08,14,155.56,143.56,12.0,31-45
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Anukul Roy,1,1-15,9,8,9.91,-0.91,9,112.5,123.91,-11.41,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Cameron Green,1,1-15,2,3,3.33,-1.33,2,66.67,111.14,-44.47,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Finn Allen,1,1-15,20,13,17.88,2.12,20,153.85,137.56,16.29,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Kartik Tyagi,1,1-15,0,1,1.01,-1.01,0,0.0,100.68,-100.68,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Manish Pandey,1,1-15,25,15,18.77,6.23,25,166.67,125.13,41.54,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Manish Pandey,2,16-30,0,1,1.43,-1.43,0,0.0,142.73,-142.73,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Rinku Singh,1,1-15,0,1,1.17,-1.17,0,0.0,116.7,-116.7,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Rovman Powell,1,1-15,19,15,19.41,-0.41,19,126.67,129.39,-2.72,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Rovman Powell,2,16-30,10,6,9.12,0.88,10,166.67,151.92,14.74,16-30
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Saurabh Dubey,1,1-15,4,2,2.0,2.0,4,200.0,99.79,100.21,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Tejasvi Dahiya,1,1-15,1,3,3.46,-2.46,1,33.33,115.27,-81.94,1-15
+2026,2026,1529313,2026-05-24,"Eden Gardens, Kolkata",2,Kolkata Knight Riders,Delhi Capitals,Varun Chakravarthy,1,1-15,5,5,5.4,-0.4,5,100.0,107.93,-7.93,1-15
