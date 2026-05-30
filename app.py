@@ -24,7 +24,7 @@ OWN_PHASE_LABELS = [f"{(phase - 1) * 15 + 1}-{phase * 15}" for phase in OWN_PHAS
 
 
 st.set_page_config(
-    page_title="IPL Batsman Comparison",
+    page_title="IPL 2026 Batting Impact",
     page_icon=None,
     layout="wide",
     initial_sidebar_state="expanded",
@@ -745,6 +745,284 @@ def phase_coverage_note(source_df: pd.DataFrame, filtered_df: pd.DataFrame, min_
     explain(" ".join(lines))
 
 
+def overall_kpi_cards(season: pd.DataFrame, player_match: pd.DataFrame, min_balls: int) -> None:
+    total_runs = season["actual_runs"].sum()
+    total_balls = season["balls_faced"].sum()
+    average_sr = total_runs * 100 / total_balls if total_balls else pd.NA
+    kpis = [
+        ("Matches", format_number(player_match["match_id"].nunique(), 0)),
+        ("Batters", format_number(season["player"].nunique(), 0)),
+        ("Runs", format_number(total_runs, 0)),
+        ("Balls", format_number(total_balls, 0)),
+        ("Average SR", format_number(average_sr, 1)),
+        (f"Qualified {min_balls}+", format_number(season["balls_faced"].ge(min_balls).sum(), 0)),
+    ]
+    for col, (label, value) in zip(st.columns(6), kpis):
+        with col:
+            st.markdown(stat_tile(label, value, "model" if label.startswith("Qualified") else "neutral"), unsafe_allow_html=True)
+
+
+def season_column_config() -> dict:
+    return {
+        "player": st.column_config.TextColumn("Batter"),
+        "matches": st.column_config.NumberColumn("Matches", format="%d"),
+        "innings_batted": st.column_config.NumberColumn("Innings", format="%d"),
+        "balls_faced": st.column_config.NumberColumn("Balls", format="%d"),
+        "actual_runs": st.column_config.NumberColumn("Runs", format="%d"),
+        "strike_rate": st.column_config.NumberColumn("SR", format="%.1f"),
+        "expected_runs": st.column_config.NumberColumn("Expected runs", format="%.2f"),
+        "runs_above_expected": st.column_config.NumberColumn("Runs Above Expected", format="%.2f"),
+        "runs_above_expected_per_30_balls": st.column_config.NumberColumn("RAE per 30", format="%.2f"),
+        "control_pct": st.column_config.NumberColumn("Control %", format="%.1f"),
+    }
+
+
+def show_table_or_empty(df: pd.DataFrame, columns: list[str], column_config: dict, empty_text: str) -> None:
+    if df.empty:
+        st.info(empty_text)
+        return
+    st.dataframe(
+        df[columns],
+        use_container_width=True,
+        hide_index=True,
+        column_config=column_config,
+    )
+
+
+def horizontal_bar(
+    df: pd.DataFrame,
+    value_col: str,
+    label_col: str,
+    value_title: str,
+    palette: dict[str, str],
+    color: str = "#0B6E69",
+) -> go.Figure:
+    plot_df = df.sort_values(value_col, ascending=True)
+    fig = go.Figure(
+        go.Bar(
+            x=plot_df[value_col],
+            y=plot_df[label_col],
+            orientation="h",
+            marker={"color": color},
+            customdata=plot_df[["actual_runs", "balls_faced", "strike_rate"]],
+            hovertemplate=(
+                "<b>%{y}</b><br>"
+                f"{value_title}: %{{x:.2f}}<br>"
+                "Runs: %{customdata[0]:.0f}<br>"
+                "Balls: %{customdata[1]:.0f}<br>"
+                "SR: %{customdata[2]:.1f}<extra></extra>"
+            ),
+        )
+    )
+    fig.update_layout(xaxis_title=value_title, yaxis_title=None)
+    chart_theme(fig, palette, height=max(380, 30 * len(plot_df) + 120))
+    return fig
+
+
+def phase_specialists(phase: pd.DataFrame, min_balls: int) -> pd.DataFrame:
+    summary = (
+        phase[phase["own_15_ball_phase"].isin(OWN_PHASE_ORDER)]
+        .groupby(["player", "own_15_ball_phase", "phase_label"], as_index=False)
+        .agg(
+            runs=("runs", "sum"),
+            balls=("balls", "sum"),
+            expected_runs=("expected_runs", "sum"),
+            runs_above_expected=("runs_above_expected", "sum"),
+        )
+    )
+    summary = summary[summary["balls"].ge(min_balls)].copy()
+    summary["strike_rate"] = summary["runs"] * 100 / summary["balls"].clip(lower=1)
+    summary["runs_above_expected_per_30"] = summary["runs_above_expected"] * 30 / summary["balls"].clip(lower=1)
+    return summary.sort_values(["runs_above_expected", "balls"], ascending=[False, False], kind="stable")
+
+
+def render_overall_page(
+    season: pd.DataFrame,
+    phase: pd.DataFrame,
+    player_match: pd.DataFrame,
+    pd_summary: pd.DataFrame,
+    min_balls: int,
+    palette: dict[str, str],
+) -> None:
+    st.subheader("Overall Stats")
+    overall_kpi_cards(season, player_match, min_balls)
+
+    qualified = season[season["balls_faced"].ge(min_balls)].copy()
+    if qualified.empty:
+        st.info(f"No batters have faced at least {min_balls} balls in the current data.")
+        return
+
+    season_columns = [
+        "player",
+        "matches",
+        "innings_batted",
+        "balls_faced",
+        "actual_runs",
+        "strike_rate",
+        "runs_above_expected",
+        "runs_above_expected_per_30_balls",
+        "control_pct",
+    ]
+    season_config = season_column_config()
+
+    chart_col, rate_col = st.columns([1.15, 0.85])
+    with chart_col:
+        chart_header("Runs Above Expected Leaders", "Model-based")
+        top_impact = qualified.sort_values("runs_above_expected", ascending=False).head(15)
+        st.plotly_chart(
+            horizontal_bar(top_impact, "runs_above_expected", "player", "Runs Above Expected", palette),
+            use_container_width=True,
+        )
+    with rate_col:
+        chart_header("RAE Rate Leaders", f"Min {min_balls} balls")
+        show_table_or_empty(
+            qualified.sort_values("runs_above_expected_per_30_balls", ascending=False).head(12),
+            season_columns,
+            season_config,
+            "No rate leaders at the current minimum-ball filter.",
+        )
+
+    st.divider()
+    tab_season, tab_innings, tab_phase, tab_power_death, tab_diagnostics = st.tabs(
+        ["Season", "Innings", "Phases", "Powerplay / Death", "Diagnostics"]
+    )
+
+    with tab_season:
+        left, right = st.columns(2)
+        with left:
+            chart_header("Total Impact", f"Min {min_balls} balls")
+            show_table_or_empty(
+                qualified.sort_values("runs_above_expected", ascending=False).head(15),
+                season_columns,
+                season_config,
+                "No total-impact leaders at the current minimum-ball filter.",
+            )
+        with right:
+            chart_header("Run Volume", "Raw metric")
+            show_table_or_empty(
+                season.sort_values("actual_runs", ascending=False).head(15),
+                season_columns,
+                season_config,
+                "No run-volume rows are available.",
+            )
+
+    with tab_innings:
+        innings = player_match[player_match["balls_faced"].ge(20)].copy()
+        innings = innings.sort_values("runs_above_expected", ascending=False).head(20)
+        columns = [
+            "start_date",
+            "player",
+            "batting_team",
+            "opposition",
+            "balls_faced",
+            "actual_runs",
+            "strike_rate",
+            "expected_runs",
+            "runs_above_expected",
+        ]
+        chart_header("Best Innings By Runs Above Expected", "Min 20 balls")
+        show_table_or_empty(
+            innings,
+            columns,
+            {
+                "start_date": st.column_config.DateColumn("Date", format="YYYY-MM-DD"),
+                "player": st.column_config.TextColumn("Batter"),
+                "batting_team": st.column_config.TextColumn("Team"),
+                "opposition": st.column_config.TextColumn("Opposition"),
+                "balls_faced": st.column_config.NumberColumn("Balls", format="%d"),
+                "actual_runs": st.column_config.NumberColumn("Runs", format="%d"),
+                "strike_rate": st.column_config.NumberColumn("SR", format="%.1f"),
+                "expected_runs": st.column_config.NumberColumn("Expected runs", format="%.2f"),
+                "runs_above_expected": st.column_config.NumberColumn("Runs Above Expected", format="%.2f"),
+            },
+            "No innings have at least 20 balls in the current data.",
+        )
+
+    with tab_phase:
+        specialists = phase_specialists(phase, min_balls)
+        chart_header("15-Ball Phase Specialists", f"Min {min_balls} phase balls")
+        show_table_or_empty(
+            specialists.head(20),
+            [
+                "phase_label",
+                "player",
+                "balls",
+                "runs",
+                "strike_rate",
+                "expected_runs",
+                "runs_above_expected",
+                "runs_above_expected_per_30",
+            ],
+            {
+                "phase_label": st.column_config.TextColumn("Own phase"),
+                "player": st.column_config.TextColumn("Batter"),
+                "balls": st.column_config.NumberColumn("Balls", format="%d"),
+                "runs": st.column_config.NumberColumn("Runs", format="%d"),
+                "strike_rate": st.column_config.NumberColumn("SR", format="%.1f"),
+                "expected_runs": st.column_config.NumberColumn("Expected runs", format="%.2f"),
+                "runs_above_expected": st.column_config.NumberColumn("Runs Above Expected", format="%.2f"),
+                "runs_above_expected_per_30": st.column_config.NumberColumn("RAE per 30", format="%.2f"),
+            },
+            "No 15-ball phase rows meet the current minimum-ball filter.",
+        )
+
+    with tab_power_death:
+        filtered = pd_summary[pd_summary["balls"].ge(min_balls)].copy()
+        filtered = add_live_quartiles(filtered)
+        phase_cols = [
+            "phase_group",
+            "batter",
+            "runs",
+            "balls",
+            "raw_sr",
+            "leave_one_out_league_sr",
+            "sr_points_above_league_phase",
+            "runs_above_league_phase_rate",
+            "quartile",
+        ]
+        phase_config = {
+            "phase_group": st.column_config.TextColumn("Phase"),
+            "batter": st.column_config.TextColumn("Batter"),
+            "runs": st.column_config.NumberColumn("Runs", format="%d"),
+            "balls": st.column_config.NumberColumn("Balls", format="%d"),
+            "raw_sr": st.column_config.NumberColumn("Raw SR", format="%.1f"),
+            "leave_one_out_league_sr": st.column_config.NumberColumn("Leave-one-out SR", format="%.1f"),
+            "sr_points_above_league_phase": st.column_config.NumberColumn("SR points", format="%.1f"),
+            "runs_above_league_phase_rate": st.column_config.NumberColumn("Runs above phase rate", format="%.2f"),
+            "quartile": st.column_config.TextColumn("Quartile"),
+        }
+        left, right = st.columns(2)
+        with left:
+            chart_header("Powerplay Impact", f"Min {min_balls} balls")
+            show_table_or_empty(
+                filtered[filtered["phase_group"].eq("Powerplay")]
+                .sort_values("runs_above_league_phase_rate", ascending=False)
+                .head(12),
+                phase_cols,
+                phase_config,
+                "No powerplay rows meet the current minimum-ball filter.",
+            )
+        with right:
+            chart_header("Death Impact", f"Min {min_balls} balls")
+            show_table_or_empty(
+                filtered[filtered["phase_group"].eq("Death last 5")]
+                .sort_values("runs_above_league_phase_rate", ascending=False)
+                .head(12),
+                phase_cols,
+                phase_config,
+                "No death-over rows meet the current minimum-ball filter.",
+            )
+
+    with tab_diagnostics:
+        chart_header("Biggest Negative Runs Above Expected", f"Min {min_balls} balls")
+        show_table_or_empty(
+            qualified.sort_values("runs_above_expected", ascending=True).head(15),
+            season_columns,
+            season_config,
+            "No diagnostic rows meet the current minimum-ball filter.",
+        )
+
+
 def main() -> None:
     data_version = current_data_version()
     season = load_csv("player_season.csv", data_version=data_version)
@@ -767,48 +1045,53 @@ def main() -> None:
     default_b = default_player(players, ["RG Sharma", "Rohit Sharma"], "Sharma", 1)
 
     with st.sidebar:
-        st.header("Compare")
+        st.header("Dashboard")
         st.markdown("<div class='sidebar-section'>Appearance</div>", unsafe_allow_html=True)
         ui_theme = st.radio("Theme", ["Dark", "Light"], horizontal=True, index=0)
-        st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
-        if "player_a" not in st.session_state or st.session_state["player_a"] not in players:
-            st.session_state["player_a"] = default_a
-        player_a = st.selectbox(
-            "Batter A",
-            players,
-            index=players.index(st.session_state["player_a"]),
-            key="player_a",
-        )
-        player_b_options = [player for player in players if player != player_a]
-        if "player_b" not in st.session_state or st.session_state["player_b"] not in player_b_options:
-            st.session_state["player_b"] = default_b if default_b in player_b_options else player_b_options[0]
-        player_b = st.selectbox(
-            "Batter B",
-            player_b_options,
-            index=player_b_options.index(st.session_state["player_b"]),
-            key="player_b",
-        )
-        player_pair_legend([player_a, player_b])
 
         st.markdown("<div class='sidebar-section'>View</div>", unsafe_allow_html=True)
-        min_balls = st.slider("Minimum balls", min_value=0, max_value=100, value=6, step=1)
-        metric_choice = st.selectbox(
-            "Own 15-ball chart metric",
-            [
-                "Runs Above Expected",
-                "Runs Above Expected per 100",
-                "Strike rate",
-                "SR points vs match",
-                "SR points vs teammates",
-                "SR points vs league phase",
-                "Difficulty-adjusted strike rate",
-            ],
-        )
-        show_adjusted = st.toggle("Adjusted views", value=True)
+        page = st.radio("Page", ["Overall", "Compare"], horizontal=True, index=0)
+        if page == "Overall":
+            min_balls = st.select_slider("Minimum balls", options=[30, 60, 100, 150], value=100)
+            metric_choice = "Runs Above Expected"
+            show_adjusted = False
+            player_a = default_a
+            player_b = default_b if default_b != default_a else players[min(1, len(players) - 1)]
+        else:
+            st.markdown("<div class='sidebar-section'>Players</div>", unsafe_allow_html=True)
+            if "player_a" not in st.session_state or st.session_state["player_a"] not in players:
+                st.session_state["player_a"] = default_a
+            player_a = st.selectbox(
+                "Batter A",
+                players,
+                index=players.index(st.session_state["player_a"]),
+                key="player_a",
+            )
+            player_b_options = [player for player in players if player != player_a]
+            if "player_b" not in st.session_state or st.session_state["player_b"] not in player_b_options:
+                st.session_state["player_b"] = default_b if default_b in player_b_options else player_b_options[0]
+            player_b = st.selectbox(
+                "Batter B",
+                player_b_options,
+                index=player_b_options.index(st.session_state["player_b"]),
+                key="player_b",
+            )
+            player_pair_legend([player_a, player_b])
+            min_balls = st.slider("Minimum balls", min_value=0, max_value=100, value=6, step=1)
+            metric_choice = st.selectbox(
+                "Own 15-ball chart metric",
+                [
+                    "Runs Above Expected",
+                    "Runs Above Expected per 100",
+                    "Strike rate",
+                    "SR points vs league phase",
+                ],
+            )
+            show_adjusted = st.toggle("Context views", value=False)
 
     palette = theme_palette(ui_theme)
 
-    st.title("IPL Batsman Comparison")
+    st.title("IPL 2026 Batting Impact" if page == "Overall" else "IPL Batsman Comparison")
     css = """
         <style>
         :root {
@@ -1193,6 +1476,10 @@ def main() -> None:
         indicator_parts.append(("Last refreshed", generated))
     status_bar(indicator_parts)
 
+    if page == "Overall":
+        render_overall_page(season, phase, player_match, pd_summary, min_balls, palette)
+        return
+
     selected = [player_a, player_b]
     selected_season = selected_players_frame(season, player_a, player_b)
     selected_phase = selected_players_frame(phase, player_a, player_b)
@@ -1213,7 +1500,7 @@ def main() -> None:
     tab_phase, tab_adjusted, tab_power, tab_worm, tab_shot_control, tab_table = st.tabs(
         [
             "15-Ball Phases",
-            "Adjusted SR",
+            "Context Views",
             "Powerplay / Death",
             "Worm",
             "Shot / Control",
@@ -1357,10 +1644,7 @@ def main() -> None:
         if show_adjusted:
             context_summary = build_context_phase_summary(selected_context, selected, min_balls)
             metrics = [
-                ("sr_points_vs_match", "SR Points vs Match"),
-                ("sr_points_vs_teammates", "SR Points vs Teammates"),
                 ("sr_points_vs_league_phase", "SR Points vs League Phase"),
-                ("difficulty_adjusted_sr", "Difficulty-Adjusted Strike Rate"),
             ]
             for metric_col, title in metrics:
                 chart_header(title, "Model-free")
@@ -1392,7 +1676,7 @@ def main() -> None:
                         "gets boosted relative to the same raw SR in a high-scoring match."
                     )
         else:
-            st.info("Turn on adjusted views in the sidebar to show context adjustment charts.")
+            st.info("Turn on context views in the sidebar to show the model-free league phase comparison.")
 
     with tab_power:
         pd_filtered = pd_summary[pd_summary["balls"].ge(min_balls)].copy()

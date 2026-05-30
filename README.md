@@ -1,25 +1,16 @@
-# IPL Batsman Comparison Dashboard
+# IPL 2026 Batting Impact Dashboard
 
-A public Streamlit dashboard for comparing two IPL batters across current-season batting phases, model-based Runs Above Expected views, and model-free strike-rate context views. https://ipl-dashboard-comparative-ku4yz8ukhhqkhdsbtb66re.streamlit.app/
+A public Streamlit dashboard for current-season IPL batting impact, with an overall Runs Above Expected page and a second two-batter comparison page. https://ipl-dashboard-comparative-ku4yz8ukhhqkhdsbtb66re.streamlit.app/
 
-The app is designed for quick cricket analysis for the IPL 2026 season. It reads prepared dashboard CSV files from `data/current/` and renders the comparison UI in `app.py`. This repository is dashboard-only; data refreshes are prepared outside this public repo and published here as CSV files.
+The app is designed for quick cricket analysis for the IPL 2026 season. It reads prepared dashboard CSV files from `data/current/` and renders the public UI in `app.py`. This repository is dashboard-only; data refreshes are prepared outside this public repo and published here as CSV files.
 
 ## What The Dashboard Shows
 
-- Side-by-side season snapshots for any two batters.
+- Overall batting-impact leaderboards by Runs Above Expected, Runs Above Expected per 30 balls, run volume, innings impact, 15-ball phases, and powerplay/death impact.
+- Side-by-side season snapshots for any two batters on the Compare page.
 - Own 15-ball phase comparisons through `76-90` balls.
 - Runs Above Expected and Runs Above Expected rate views.
-- Strike-rate context views:
-  - SR points vs match
-  - SR points vs teammates
-  - SR points vs league phase
-  - difficulty-adjusted strike rate
-- Powerplay and death-over comparison charts.
-- Worm charts showing cumulative runs gained or lost versus league phase rate.
-- Shot and control views:
-  - Control % by own 15-ball phase
-  - Most Productive Shots
-  - Line-Length Matchup Grid
+- Model-free support views for league-phase strike rate, powerplay/death benchmarking, worms, shot profile, control %, and line-length matchups.
 - Match-level phase detail table with CSV download.
 - Built-in Light and Dark dashboard themes. The app opens in Dark mode by default.
 
