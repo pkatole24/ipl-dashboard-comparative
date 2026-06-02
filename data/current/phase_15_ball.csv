@@ -1692,7 +1692,7 @@ season,season_year,match_id,start_date,venue,innings,batting_team,opposition,pla
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",1,Rajasthan Royals,Gujarat Titans,Vaibhav Sooryavanshi,4,46-60,6,2,3.43,2.57,6,300.0,171.25,128.75,46-60
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",1,Rajasthan Royals,Gujarat Titans,Yashasvi Jaiswal,1,1-15,1,2,2.19,-1.19,1,50.0,109.65,-59.65,1-15
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Jos Buttler,1,1-15,9,9,13.77,-4.77,9,100.0,152.96,-52.96,1-15
-2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Rahul Tewatia,1,1-15,17,9,15.17,1.83,17,188.89,168.54,20.35,1-15
+2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Rahul Tewatia,1,1-15,17,9,15.17,1.83,17,188.89,168.57,20.32,1-15
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Sai Sudharsan,1,1-15,30,15,21.19,8.81,30,200.0,141.25,58.75,1-15
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Sai Sudharsan,2,16-30,27,15,23.6,3.4,27,180.0,157.32,22.68,16-30
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Sai Sudharsan,3,31-45,1,2,3.57,-2.57,1,50.0,178.52,-128.52,31-45
@@ -1701,3 +1701,28 @@ season,season_year,match_id,start_date,venue,innings,batting_team,opposition,pla
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Shubman Gill,3,31-45,45,15,25.69,19.31,45,300.0,171.26,128.74,31-45
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Shubman Gill,4,46-60,9,8,14.99,-5.99,9,112.5,187.42,-74.92,46-60
 2026,2026,1535464,2026-05-29,"Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",2,Gujarat Titans,Rajasthan Royals,Washington Sundar,1,1-15,16,9,14.11,1.89,16,177.78,156.83,20.95,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Arshad Khan,1,1-15,15,6,5.75,9.25,15,250.0,95.79,154.21,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Jason Holder,1,1-15,7,5,5.69,1.31,7,140.0,113.87,26.13,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Jos Buttler,1,1-15,14,15,16.95,-2.95,14,93.33,113.03,-19.7,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Jos Buttler,2,16-30,5,8,9.93,-4.93,5,62.5,124.17,-61.67,16-30
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Kagiso Rabada,1,1-15,3,3,3.42,-0.42,3,100.0,113.88,-13.88,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Nishant Sindhu,1,1-15,18,15,18.39,-0.39,18,120.0,122.63,-2.63,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Nishant Sindhu,2,16-30,2,3,3.79,-1.79,2,66.67,126.44,-59.77,16-30
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Rahul Tewatia,1,1-15,7,5,5.36,1.64,7,140.0,107.24,32.76,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Rashid Khan,1,1-15,7,3,3.52,3.48,7,233.33,117.43,115.9,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Sai Sudharsan,1,1-15,12,12,15.55,-3.55,12,100.0,129.62,-29.62,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Shubman Gill,1,1-15,10,8,10.22,-0.22,10,125.0,127.79,-2.79,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,1,1-15,14,15,15.92,-1.92,14,93.33,106.14,-12.8,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,2,16-30,23,15,21.13,1.87,23,153.33,140.89,12.44,16-30
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",1,Gujarat Titans,Royal Challengers Bengaluru,Washington Sundar,3,31-45,13,7,11.92,1.08,13,185.71,170.34,15.37,31-45
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Devdutt Padikkal,1,1-15,1,4,4.53,-3.53,1,25.0,113.36,-88.36,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Jitesh Sharma,1,1-15,11,14,20.01,-9.01,11,78.57,142.9,-64.32,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Krunal Pandya,1,1-15,1,2,2.11,-1.11,1,50.0,105.29,-55.29,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Rajat Patidar,1,1-15,15,13,15.9,-0.9,15,115.38,122.27,-6.89,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Tim David,1,1-15,24,15,19.42,4.58,24,160.0,129.46,30.54,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Tim David,2,16-30,0,2,3.17,-3.17,0,0.0,158.32,-158.32,16-30
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Venkatesh Iyer,1,1-15,32,15,21.05,10.95,32,213.33,140.31,73.03,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Venkatesh Iyer,2,16-30,0,1,1.72,-1.72,0,0.0,172.05,-172.05,16-30
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Virat Kohli,1,1-15,37,15,20.27,16.73,37,246.67,135.12,111.54,1-15
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Virat Kohli,2,16-30,19,15,21.06,-2.06,19,126.67,140.41,-13.74,16-30
+2026,2026,1535465,2026-05-31,"Narendra Modi Stadium, Ahmedabad",2,Royal Challengers Bengaluru,Gujarat Titans,Virat Kohli,3,31-45,19,12,18.76,0.24,19,158.33,156.3,2.03,31-45
